@@ -8,7 +8,8 @@
     <title>A Free Bird</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Content/css/all.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
     <link rel="stylesheet" href="/Content/css/hover-min.css">
     <link rel="stylesheet" href="/Content/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
@@ -19,13 +20,26 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+<style>
+    .linkwraplink{
+     background-color:#222222;
+    }
+    ul.b{
+        list-style-type: square;
+    }
+    h1 {font-size: 2em;}
+    h2 {font-size: 1.5em;}
+    h3 {font-size: 1.25em;}
+    p{font: 20px;}
+    body {margin:auto;}
+    </style>
+    
 
 
 </head>
 
-<body id="top" role="document">
-    <nav class="navbar navbar-default navbar-fixed-top smooth yellow affix"     >
+<body id="top" role="document" style="margin:auto">
+ <nav class="navbar navbar-default navbar-fixed-top smooth yellow   landing-nav" data-spy="affix" data-offset-top="50"     >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
@@ -35,13 +49,14 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand pull-right visible-xs">
-                    LOGO
+                 <img src="/Content/images/AFB_Logo.png">
                 </a>
+               
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-main">
                 <div class="menu-up-fix">
-                    <a href="/">HOME</a>
+                    
                     <div style="float:right">
                         <div class="social">
                             <a href="https://twitter.com/AFreeBirdOrg">
@@ -58,14 +73,11 @@
                             </a>
 
                         </div>
-                        <div class="menu-up-shop">
-
-                            <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
-                            <a href=""><span class="glyphicons glyphicon glyphicon-log-in"></span></a>
-                        </div>
+                        
                     </div>
                 </div>
                 <ul class="nav navbar-nav navbar-left">
+                    <li><a href="/">Home</a></li>
 
                     <li><a href="/about">About us</a></li>
 
@@ -109,7 +121,7 @@
                             <li><a href="/ambassadors"><span>Become a ambassadors</span></a></li>
                         </ul>
                     </li>
-                    <li><a href=""><s>Enroll Your Child or Hospital</s></a></li>
+                    <li><a href="/enrollchild.html"><span>Enroll Your Child or Hospital</span></a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>AFB Family</span>
@@ -118,15 +130,15 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="/tutors"><span>Tutors</span></a></li>
-                            <li><a href=""><s>AFB Children</s></a></li>
+                            <!--<li><a href=""><s>AFB Children</s></a></li>-->
                             <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
                         </ul>
                     </li>
                     <li><a href="/gallery">Gallery</a></li>
-                    <!--<li><a href="/blog">Blog</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li><a href="/sponsors">Sponsors</a></li>
                     <li><a href="/goods">Goods</a></li>
-                    <li><a href="#dark">Contact us</a></li>-->
+                    <li><a href="#dark">Contact us</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>AFB Happenings</span>
@@ -136,19 +148,20 @@
                         <ul class="dropdown-menu">
                             <li><a href="/event"><span>Events</span></a></li>
                             <li><a href="/blog"><span>Blog</span></a></li>
-                            <li><a href=""><s>Media Kit</s></a></li>
+                            <!--<li><a href=""><s>Media Kit</s></a></li>-->
                             <li><a href="http://online.fliphtml5.com/ynvi/mzfr/"><span>Magazine</span></a></li>
                             <li><a href="/goods"><span>The Goods</span></a></li>
-                            <li><a href=""><s>I Am Campaign</s></a></li>
+                            <!--<li><a href=""><s>I Am Campaign</s></a></li>-->
                             <li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="/sponsors">Sponsors</a></li>
-                    <li><a href=""><s>Donate</s></a></li>
+                    <li><a href="/sponsors.html">Sponsors</a></li>
+                    <!--li><a href=""><s>Donate</s></a></li-->
                 </ul>
             </div>
         </div>
     </nav>
+
 
 
 
@@ -182,10 +195,13 @@
     <div class="clouds"></div>
     <div class="grass"></div>
     <div class="container-narrow">
-        <h1>About us</h1>
+        <h1>About us:</h1>
         <div class="about-description">
+            <h2>Mission & Impact</h2>
+            <h3>A Free Bird’s mission is to empower each child to fly free with the arts.</h3>
             <p>
-               A Free Bird™ is a 501(c)3 nonprofit, arts education organization dedicated to helping young people, ages 4-18, affected by cancer, fight their disease through the therapeutic benefits of the arts.  We do this primarily through progressive, three-stage programming that integrates art therapy with art education and facilitates access to the arts and artistic expression. Our three core programs introduce children to and inspire them to explore the arts (<span class="bold-midle">Dream</span>); match children with artists to educate them in a creative expression of their choice (<span class="bold-midle">Fight Free</span>) and celebrate children as artists by providing them with opportunities to experience life in the artistic field of their choosing, through an exciting day of total immersion (<span class="bold-midle">Free & Free Pro</span>).
+               More than 10,000 children in the United States under the age of 15 will be diagnosed with cancer this year. We believe that access to arts education can help children in their battle against this pervasive disease, in which diagnoses are only increasing year over year.
+
 
             </p>
             <div class="collapse-button-wrap">
@@ -193,35 +209,42 @@
             </div>
             <div id="more-about" class="collapse">
                 <p>
-                    A Free Bird believes in the immense power of the arts, and is committed to spreading its healing properties to as many children affected by cancer as possible. We believe too, that children are natural artists, and when provided with the right guidance, will demonstrate exceptional talent. To this end, we offer artistic resources in all art forms, and make them available to children with cancer, their parents and hospitals.
+                    At A Free Bird, we see firsthand every day how impactful creative expression can be during the hardest time in a child’s life. The arts help them process complex emotions, find joy, and express things they can’t always say in words.  
 
                 </p>
                 <p>
-                    The artistic careers of our young artists are jump-started and nourished through our three core programs: <span class="bold-midle">Dream</span> (inspires children);<span class="bold-midle">Fight Free</span> (educates children); and <span class="bold-midle">Free & Free Pro</span> (celebrates children). We work closely with museums, dance and theatre companies, art schools and local universities, as well as local artists, musicians, actors, art students and other partners to provide art tutors to children, organize and host arts related activities at hospitals, and create opportunities for artistic growth even when cancer is in remission. In addition to our artistic partners, we also receive support from foundations and corporations, whose generous donations help us develop and maintain our programming.
-
-</p>
-                <p>
-                    A Free Bird was founded and established in New York City in 2008, and became a 501(c)3 tax-exempt organization in January 2011.We are headquartered in New York-New Jersey, and are currently building a national and global reach in our effort to provide aid for children undergoing medical treatment around the world.  This year we are planning to open up a branch office in Israel.
-
+                    Therapeutic arts have also been found to have numerous benefits to physical and mental health:
                 </p>
+                <ul class="b">
+                    <li>In an examination of multiple studies, researchers found that creative arts therapies significantly reduced anxiety, depression, and pain in cancer patients, and improved their overall quality of life. (JAMA Internal Medicine, May 2013)</li>
+
+                
+                <li>Other studies have shown artistic interventions to improve clinical outcomes, reduce hospital stays, reduce pain and improve moods in patients contending with chronic diseases. (American Journal of Public Health, February 2010)
+                </li></ul>
                 <p>
-                    A Free Bird is entirely volunteer-based with 100% of all donations and fundraising proceeds going directly towards programming. We were recently recognized by Mayor Bill DeBlasio and NYC Service as one of the city’s most engaged organizations for volunteer service.  
+                    Beyond the health benefits, arts education gives children something to look forward to during long days at the hospital, as well as a sense of personal accomplishment, a passion they can share with others, and an enduring love for the arts.
+
                 </p>
             </div>
         </div>
-        <h2>Mission</h2>
+        <h2>Our Inspiration</h2>
         <p>
-            Our mission is to help children discover the artist within, shape them as artists, and empower each child to fly free.
+            A Free Bird was founded in 2008 when multidisciplinary artist Godni Amir witnessed firsthand art’s potential to heal. His voice teacher, Gail, gave up teaching to become the primary caregiver for her husband when he was diagnosed with a rare form of cancer. Soon after, she received a cancer diagnosis herself.
 
         </p>
-        <h2>Vision</h2>
+        <p>Gail’s husband tragically passed away. But Gail herself made a full recovery, spurred on by her passion for music and photography.</p>
         <p>
-            Every day, 43 children are diagnosed with cancer in the United States. Our vision is to reach each of these children in the early stages of cancer, and inspire them to find the artist within, educate them in an art form of their choosing, and celebrate them as the artists they are—and in the process, instill hope and joy. 
+           Since then, Godni has made it his goal to bring the therapeutic power of the arts to those who have the most to live for: children. Today, AFB programs brighten up hospital rooms, provide entry into performances, and inspire children to express themselves during and beyond their time of treatment.
+
 
         </p>
-        <h2>Board of Directors</h2>
+        <p>Recognized by Mayor Bill de Blasio for our positive impact, we work primarily with hospitals and pediatric cancer centers in New York and New Jersey.  A Free Bird has operated as a 501(c)(3) tax-exempt organization since 2011.
+        </p>
+        <p>A Free Bird became a 501(c)(3) tax-exempt organization in 2011.</p>
+        
+        <!--<h2>Board of Directors</h2>
         <!-- board of directors tabs -->
-        <ul class="nav nav-tabs directors-list hidden-xs" role="tablist">
+        <!--<ul class="nav nav-tabs directors-list hidden-xs" role="tablist">
             <li role="presentation" class="text-center">
                 <a href="#godniAmirLiteman" aria-controls="godniAmirLiteman" role="tab" data-toggle="tab">
                     <img src="../../Content/images/godni-amir-liteman.jpg" alt="godni-amir-liteman" />
@@ -266,7 +289,7 @@
             </li>
         </ul>
         <!--temporary markup(just for displaying how it should work on mobile)-->
-        <ul class="nav nav-tabs directors-list" role="tablist">
+        <!--<ul class="nav nav-tabs directors-list" role="tablist">
             <div class="tab-content visible-xs">
                 <li role="presentation" class="text-center">
                     <img src="../../Content/images/godni-amir-liteman.jpg" alt="godni-amir-liteman" />
@@ -620,7 +643,7 @@
                     </div>
                     <div role="tabpanel" class="tab-pane" id="kalpanaPatelPress">
                         <img src="/Content/images/press.png" />
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
