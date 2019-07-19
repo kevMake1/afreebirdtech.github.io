@@ -8,7 +8,8 @@
     <title>A Free Bird</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Content/css/all.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
     <link rel="stylesheet" href="/Content/css/hover-min.css">
     <link rel="stylesheet" href="/Content/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
@@ -19,13 +20,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+<style>
+    .linkwraplink{
+     background-color:#222222;
+    }
+    </style>
 
 
 </head>
 
 <body id="top" role="document">
-    <nav class="navbar navbar-default navbar-fixed-top smooth yellow affix"     >
+    <nav class="navbar navbar-default navbar-fixed-top smooth yellow   landing-nav" data-spy="affix" data-offset-top="50"     >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
@@ -35,13 +40,14 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand pull-right visible-xs">
-                    LOGO
+                 <img src="/Content/images/AFB_Logo.png">
                 </a>
+               
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-main">
                 <div class="menu-up-fix">
-                    <a href="/">HOME</a>
+                    
                     <div style="float:right">
                         <div class="social">
                             <a href="https://twitter.com/AFreeBirdOrg">
@@ -58,14 +64,11 @@
                             </a>
 
                         </div>
-                        <div class="menu-up-shop">
-
-                            <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
-                            <a href=""><span class="glyphicons glyphicon glyphicon-log-in"></span></a>
-                        </div>
+                        
                     </div>
                 </div>
                 <ul class="nav navbar-nav navbar-left">
+                    <li><a href="/">Home</a></li>
 
                     <li><a href="/about">About us</a></li>
 
@@ -109,7 +112,7 @@
                             <li><a href="/ambassadors"><span>Become a ambassadors</span></a></li>
                         </ul>
                     </li>
-                    <li><a href=""><s>Enroll Your Child or Hospital</s></a></li>
+                    <li><a href="/enrollchild.html"><span>Enroll Your Child or Hospital</span></a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>AFB Family</span>
@@ -118,15 +121,15 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="/tutors"><span>Tutors</span></a></li>
-                            <li><a href=""><s>AFB Children</s></a></li>
+                            <!--<li><a href=""><s>AFB Children</s></a></li>-->
                             <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
                         </ul>
                     </li>
                     <li><a href="/gallery">Gallery</a></li>
-                    <!--<li><a href="/blog">Blog</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li><a href="/sponsors">Sponsors</a></li>
                     <li><a href="/goods">Goods</a></li>
-                    <li><a href="#dark">Contact us</a></li>-->
+                    <li><a href="#dark">Contact us</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>AFB Happenings</span>
@@ -136,19 +139,20 @@
                         <ul class="dropdown-menu">
                             <li><a href="/event"><span>Events</span></a></li>
                             <li><a href="/blog"><span>Blog</span></a></li>
-                            <li><a href=""><s>Media Kit</s></a></li>
+                            <!--<li><a href=""><s>Media Kit</s></a></li>-->
                             <li><a href="http://online.fliphtml5.com/ynvi/mzfr/"><span>Magazine</span></a></li>
                             <li><a href="/goods"><span>The Goods</span></a></li>
-                            <li><a href=""><s>I Am Campaign</s></a></li>
+                            <!--<li><a href=""><s>I Am Campaign</s></a></li>-->
                             <li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="/sponsors">Sponsors</a></li>
-                    <li><a href=""><s>Donate</s></a></li>
+                    <li><a href="/donate.html"><span>Donate</span></a></li>
+                    <!--li><a href=""><s>Donate</s></a></li-->
                 </ul>
             </div>
         </div>
     </nav>
+
 
 
 
@@ -246,7 +250,7 @@
                         <address>
                             <strong class="contact-subheading">Contact us</strong>
                             <br>Attn: A Free Bird
-                            <br>542 Atlantic Av
+                            <br>539 Atlantic Av
                             <br>P.O. Box 170112
                             <br>Brooklyn NY 11217
                         </address>
