@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
     <link rel="stylesheet" href="/Content/css/all.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
     <link rel="stylesheet" href="/Content/css/hover-min.css">
     <link rel="stylesheet" href="/Content/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
+    <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -512,10 +510,6 @@
                 }
             });
         });
-        $(window).on('load', function() { // makes sure the whole site is loaded 
-        $('#status').fadeOut(); // will first fade out the loading animation 
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-        $('body').delay(350).css({'overflow':'visible'});
     </script>
 
 </body>
