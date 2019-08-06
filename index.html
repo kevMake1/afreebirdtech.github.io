@@ -245,7 +245,7 @@
                 <!--a href="/doctor-corner" class="corner-link"></a>-->
                 <a href="/give-arts" class="give-art-link"></a>
                 <a href="/sponsors" class="sponsors-link"></a>
-                <iframe src="Content/upload/website-animation.mov" width="500px" height="500px">
+                <a class="fancybox" data-type="swf" href="Poem.MOV" title="Poem">Play Movie</a>
             </div>
         </div>
     </div>
@@ -517,6 +517,17 @@
                 }
             });
         });
+    </script>
+    <script>
+    JQuery(document).ready(function($){
+      $(".fancybox").on("click", function(){
+          $.fancybox({
+            href: this.href,
+            type: $(this).data("type")
+          }); // fancybox
+          return false
+      }); // on
+    }); // ready
     </script>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="jquery.fancybox.min.js"></script>
