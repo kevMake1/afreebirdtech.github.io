@@ -125,7 +125,7 @@
                       <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
                   </ul>
               </li>-->
-              <li><a href="/gallery"style="color:white;">Gallery</a></li>   
+              <li><a href="/gallery"style="color:white;">Gallery</a></li>
               <!--<li><a href="/blog">Blog</a></li>-->
               <li><a href="/sponsors"style="color:white;">Sponsors</a></li>
               <!--<li><a href="/goods">Goods</a></li>-->
@@ -150,7 +150,7 @@
                   </ul>
               </li-->
 
-              
+
           </ul>
           <li><a href="/donate.html"style="color:white;"><span>Donate</span></a></li>
       </div>
@@ -179,30 +179,41 @@
                     stroke-linejoin: round;
                     stroke-miterlimit: 11;
                   }
-
-                  #video-container {
-                    background-position: center;
-                    margin-top: 0rem;
-                    top: 0%;
-                    width:100%;
-                    height:27rem;
-                    overflow: hidden;
-                    z-index:-1; 
-                    }
-
-                    video.fillWidth {
-                      width:100%;
-                      }
-                      .content{padding-top:240px}
-              
-                                      
+                  .video-wrapper{
+                  overflow:hidden;
+                  width:100%;
+                  min-height: 1000px;
+                  height:100%;
+                  min-height:500px;
+                  position:absolute;
+                  display:block;
+                  }
+                .video-wrapper:after {
+                  content:"";
+                  background: rgba(0,0,0,.4);
+                  width:100%;
+                  height:100%;
+                  position:absolute;
+                  display:table;
+                  left:0;
+                  top:0;
+                  }
+                .wrapper-message{
+                  position:absolute;
+                  z-index:999;
+                  color: #fff;
+                  text-align:center;
+                  width:100%;
+                  height:100%;
+                  }
                 </style>
                 <div id="video-container">
-                <video autoplay muted loop paused class="fillWidth">
-                  <source src="/Content/images/goods/header.mp4" type="video/mp4"/>
-                  <source src="/Content/images/goods/header.mp4" type="video/webm"/> 
-                  Your browser does not support the video tag. I suggest you upgrade your browser.
-                </video>
+                <  <div class="video-wrapper">
+                  <div class="wrapper-message">
+                    <video src="Content/images/goods/header.mp4" autoplay muted loop>
+                    </video>
+                  </div>
+                </div>
               </div><!-- end video-container -->
                 <circle class="st0" cx="30" cy="30" r="24" />
                 <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
