@@ -191,27 +191,7 @@
 </style>
 
 
-    <div role="main">
-        <div id="loader-bg">
-            <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
-            <style type="text/css">
-                .st0 {
-                    fill: none;
-                    stroke: #53351D;
-                    stroke-width: 10;
-                    stroke-miterlimit: 10;
-                }
 
-                .st1 {
-                    fill: none;
-                    stroke: #FFCC00;
-                    stroke-width: 11;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 11;
-                }
-</style>
             <circle class="st0" cx="30" cy="30" r="24" />
             <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
             </svg>
@@ -380,23 +360,23 @@
                     </div>
                     <div class="col-md-4">
                         <div class="wrapper">
-                            <form class="contact">
-                                <strong class="text-center-xs">For general information, please complete the following form (Currently unavailable).</strong>
+                            <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="contactform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
+                                <strong class="text-center-xs">For general information, please complete the following form</strong>
                                 <div class="form-group name">
                                     <label for="name">your name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="please introduce">
+                                    <input type="text" class="form-control" id="name" placeholder="please introduce" name="name">
                                 </div>
                                 <div class="form-group email">
                                     <label for="email">Your email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                                    <input type="email" class="form-control" id="email" placeholder="example@mail.com" name="email">
                                 </div>
                                 <div class="form-group subject">
                                     <label for="subject">Subject</label>
-                                        <input type="text" class="form-control" id="subject" placeholder="">
+                                    <input type="text" class="form-control" id="subject" placeholder=""name="subject"> 
                                 </div>
                                 <div class="form-group message">
                                     <label for="message">What's your message?</label>
-                                        <textarea class="form-control" rows="4"></textarea>
+                                    <textarea class="form-control" rows="4"name="message"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-warning submit">Send</button>
                             </form>
