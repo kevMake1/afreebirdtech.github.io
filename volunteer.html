@@ -213,28 +213,28 @@
                     and we will contact you.</br>
                 </p>
             </div>
-            <form>
+            <form method="POST" action="thank-you" class="contact" data-netlify="true" name="Volunteerform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
                 <div class="skills-choose-title">
                     <h5>CONTACT INFORMATION</h5>
                 </div>
                 <div class="form-tutor">
                     <div class="form-group inputExtent ">
                         <label for="name">First name</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" id="name" placeholder="" name="first name">
                     </div>
                     <div class="form-group inputExtent">
                         <label for="name">Last name</label>
-                        <input type="text" class="form-control" id="email" placeholder="">
+                        <input type="text" class="form-control" id="email" placeholder="" name="Last name">
                     </div>
                 </div>
                 <div class="form-tutor">
                     <div class="form-group inputExtent ">
                         <label for="name">Street Adress</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" id="name" placeholder="" name="Street Adress">
                     </div>
                     <div class="form-group inputExtent">
                         <label for="name">City</label>
-                        <input type="text" class="form-control" id="email" placeholder="">
+                        <input type="text" class="form-control" id="email" placeholder="" name="City">
                     </div>
                 </div>
                 <div class="form-tutor">
@@ -316,13 +316,20 @@
                     <h5>DEPARTAMENT</h5>
                     <p class="lightblue">Please check the department which would best fit your skills and abilities:</p>
                 </div>
-                <div class="skills-choose-container">
-                    <div class="skills-choose-section">
-                        <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                            Administrator<i class="fa fa-times" aria-hidden="true"></i>
-                        </button>
-
-                    </div>
+                <div class="freeform-column  freeform-column-12">
+                    <label class="freeform-label" for="form-input-volunteerDepartment">Please select which department best fits your interest and skills</label>
+                <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Administration">Administration</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Public Relations">Public Relations</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Marketing">Marketing</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Grants">Grants</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Billing">Billing</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="IT">IT</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Fundraising">Fundraising</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Programs">Programs</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Multimedia (web, graphics, video)">Multimedia (web, graphics, video)</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Tutor">Tutor</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Other (specify)">Other (specify)</label></div>
+                
                 </div>
                 <div class="form-tutor-days">
                     <h5>SPECIAL SKILLS OR QUALIFICATIONS</h5>
@@ -349,48 +356,47 @@
                 </div>
                 <div class="resume-choose-title">
                     <h5>RESUME</h5>
-                    <label class="btn btn-default choose-resume-tutor">
-                        <span> Choose picture </span><input type="file" id="noChoose">
-                    </label>
-                    <span class="file-choose lightblue">No file chosen</span>
-                </div>
+                    <div class="freeform-column  freeform-column-12">
+                        <label class="freeform-label freeform-required" for="form-input-volunteerResume">My resume</label>
+        <input name="volunteerResume" type="file" id="form-input-volunteerResume" class="freeform-input">
+                    </div>
                 <div class="form-tutor-days">
                     <h5>PERSON TO NOTIFY IN CASE OF EMERGENCY</h5>
                 </div>
                 <div class="form-tutor">
                     <div class="form-group inputExtent ">
                         <label for="name">First name</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" name="firstname" placeholder="">
                     </div>
                     <div class="form-group inputExtent">
                         <label for="name">Last name</label>
-                        <input type="text" class="form-control" id="email" placeholder="">
+                        <input type="text" class="form-control" name="Lastname" placeholder="">
                     </div>
                 </div>
                 <div class="form-tutor">
                     <div class="form-group inputExtent ">
                         <label for="name">Contact phone</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" name="phone" placeholder="">
                     </div>
                     <div class="form-group inputExtent">
                         <label for="email">Contact email</label>
-                        <input type="text" class="form-control" id="email" placeholder="">
+                        <input type="text" class="form-control" name="email" placeholder="">
                     </div>
                 </div>
-                <div class="tutor-captcha">
-                    <img src="/Content/images/captcha.png" />
-                </div>
+                <input name="8RxwKoL5g" type="checkbox" name="newsletter" class="freeform-input" value="1" checked="">Do you want to receive our e-mail newsletter?</label>
+               
                 <h5 class="skills-choose-title">AGREEMENT</h5>
-                <div class="tutor-checkbox">
-                    <input class="checkbox-style" type="checkbox" id="volunteer1" name="volunteer" />
-                    <label class="checkbox-custom" for="volunteer1">
-                        <span></span>By submitting this application I agree with
-                        <a class="link-checkbox" href="#">FreeBird Policy and Terms.</a>
-                    </label>
+               
+                <div class="freeform-column  freeform-column-12">
+                    <p>It is the policy of this organization to provide equal opportunities without regard to race, color, religion, national origin, gender, sexual preference, age, or disability.</p>
+    
+    <p>By submitting this application, I affirm that the facts set forth in it are true and complete. I understand that if I am accepted as a volunteer, any false statements, omissions, or other misrepresentations made by me on this application may result in my immediate dismissal.</p>
+    
                 </div>
-                <div class="next-button-tutor">
-                    <button type="submit" class="btn btn-warning">Send</button>
+        <p>By submitting this application, I agree to the terms above.</p>
+        <button type="submit" class="btn btn-warning">Submit</button>
                 </div>
+         
             </form>
         </div>
     </section>
