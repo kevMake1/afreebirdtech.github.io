@@ -227,7 +227,7 @@
                 </div>
             </div>
         </div>
-        <form>
+        <form  method="POST" action="thank-you" class="contact" data-netlify="true" name="tutor" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"></form>
             <div class="form-tutor-days">
                 <h5>AVAILABILITY</h5>
                 <p class="lightblue">During which hours are you available for volunteer assignments?</p>
@@ -253,46 +253,24 @@
                     </div>
                 </div>
             </div>
-
-            <div class="skills-choose-title">
-                <h5>YOUR SKILLS</h5>
-                <p class="lightblue">Which areas you are interested in tutor?</p>
-            </div>
-            <div class="skills-choose-container">
-
-                <div class="skills-choose-section skills-choose-border">
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Music<i class="fa fa-times" aria-hidden="true"></i>
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Cooking<i class="fa fa-times" aria-hidden="true"></i>
-                    </button>
+            <div class="freeform-column  freeform-column-12">
+                    <label  style="padding-top:25px;" class="freeform-label" for="form-input-volunteerArtisticDiscipline">Please select your skill(s)</label>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Drawing or Painting">Drawing or Painting</label></div>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Photography">Photography</label></div>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Acting">Acting</label></div>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Music">Music</label></div>
+    <div> <label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Creative Writing">Creative Writing</label></div>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Dance">Dance</label></div>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Martial Arts">Martial Arts</label></div>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Culinary Arts">Culinary Arts</label></div>
+    <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Other (specify)">Other (specify)</label></div>
                 </div>
-                <div class="skills-choose-section">
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Picture
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Painting
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Gumnastic
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Instrumentations
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Karate
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Singing
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm skills-choose-button">
-                        Writing
-                    </button>
-
-                </div>
-            </div>
+                <div class="freeform-column  freeform-column-12">
+                        <label class="freeform-label" for="form-input-volunteerDepartmentOther">Other</label>
+                        <div>
+        <input name="volunteerDepartmentOther" type="text" id="form-input-volunteerDepartmentOther" class="freeform-input">
+    </div>
+                    </div>
 
             <div>
                 <h5>DISTANCE</h5>
@@ -364,15 +342,15 @@
                                 <strong class="text-center-xs">For general information, please complete the following form</strong>
                                 <div class="form-group name">
                                     <label for="name">your name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="please introduce" name="name">
+                                    <input type="text" class="form-control"  placeholder="please introduce" name="name">
                                 </div>
                                 <div class="form-group email">
                                     <label for="email">Your email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="example@mail.com" name="email">
+                                    <input type="email" class="form-control" placeholder="example@mail.com" name="email">
                                 </div>
                                 <div class="form-group subject">
                                     <label for="subject">Subject</label>
-                                    <input type="text" class="form-control" id="subject" placeholder=""name="subject"> 
+                                    <input type="text" class="form-control"  placeholder=""name="subject"> 
                                 </div>
                                 <div class="form-group message">
                                     <label for="message">What's your message?</label>

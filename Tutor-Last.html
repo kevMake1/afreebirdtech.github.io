@@ -226,44 +226,42 @@
                 </div>
             </div>
         </div>
-        <form action="#">
+        <form  method="POST" action="thank-you" class="contact" data-netlify="true" name="tutor" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"></form>
             <div class="form-tutor-days">
                 <h5>SPECIAL SKILLS OR QUALIFICATIONS</h5>
                 <p class="lightblue">
                     Summarize special skills and qualifications you have acquired from employment, </br>
                     previous volunteer work, or through other activities, including hobbies or sports...
                 </p>
-                <textarea class="form-control" rows="5"></textarea>
+                <textarea class="form-control" rows="5" name="SPECIAL SKILLS OR QUALIFICATIONS"></textarea>
             </div>
             <div class="skills-choose-title">
                 <h5>PREVIOUS EXPERIENCE</h5>
                 <p class="lightblue">
                     Summarize previous experience in your selected field..
                 </p>
-                <textarea class="form-control" rows="5"></textarea>
+                <textarea class="form-control" rows="5" name="PREVIOUS EXPERIENCE"></textarea>
             </div>
             <div class="skills-choose-title">
                 <p class="lightblue">
                     Why you would like to work as A Free Bird Volunteer?
                 </p>
-                <textarea class="form-control" rows="5"></textarea>
+                <textarea class="form-control" rows="5" name="message"></textarea>
             </div>
             <div class="resume-choose-title">
                 <h5>RESUME</h5>
-                <label class="btn btn-default choose-resume-tutor">
-                    <span> Choose picture </span><input type="file" id="noChoose">
-                </label>
-                <span class="file-choose lightblue">No file chosen</span>
-            </div>
-            <div class="tutor-captcha">
-                <img src="/Content/images/captcha.png" />
-            </div>
+                <div class="freeform-column  freeform-column-12">
+                        <label class="freeform-label freeform-required" for="form-input-volunteerResume">My resume</label>
+        <input type="file" name="tutorresume" class="freeform-input">
+                    </div>
+          
             <h5 class="skills-choose-title">AGREEMENT</h5>
-            <div class="tutor-checkbox">
-                <input class="checkbox-style" type="checkbox" id="tutor1" name="tutor" />
-                <label class="checkbox-custom" for="tutor1"><span></span>By submitting this application I agree with
-                <a class="link-checkbox"  href="#">FreeBird Policy and Terms.</a></label>
-              </div>
+            <div class="freeform-column  freeform-column-12">
+                    <p>It is the policy of this organization to provide equal opportunities without regard to race, color, religion, national origin, gender, sexual preference, age, or disability.</p>
+    
+    <p>By submitting this application, I affirm that the facts set forth in it are true and complete. I understand that if I am accepted as a volunteer, any false statements, omissions, or other misrepresentations made by me on this application may result in my immediate dismissal.</p>
+    
+                </div>
             <div class="next-button-tutor">
                 <a href="/Tutor-Second" class="btn btn-warning button-tutor">Back</a>
                 <button type="submit" class="btn btn-warning button-tutor">Send</button>
