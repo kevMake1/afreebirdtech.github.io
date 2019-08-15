@@ -225,63 +225,59 @@
                 </div>
             </div>
         </div>
-        <form>
+        <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="intern" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
             <div class="form-tutor">
                 <div class="form-group inputExtent ">
                     <label for="name">First name</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
+                    <input type="text" class="form-control" name="First name" placeholder="">
                 </div>
                 <div class="form-group inputExtent">
                     <label for="name">Last name</label>
-                    <input type="text" class="form-control" id="email" placeholder="">
+                    <input type="text" class="form-control" name="Last name" placeholder="">
                 </div>
             </div>
             <div class="form-tutor">
                 <div class="form-group inputExtent ">
-                    <label for="adress">Street Adress</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
+                    <label for="adress">Street Address</label>
+                    <input type="text" class="form-control" name="Street Address" placeholder="">
                 </div>
                 <div class="form-group inputExtent">
-                    <label for="sity">Sity</label>
-                    <input type="text" class="form-control" id="email" placeholder="">
+                    <label for="sity">City</label>
+                    <input type="text" class="form-control" name="City" placeholder="">
                 </div>
             </div>
             <div class="form-tutor">
-                <div class="inputExtent">
-                    <label class="table-block" for="country">Country</label>
-                    <div class="btn-group country-choose">
-                        <button type="button" class="btn btn-default dropdown-toggle country-choose" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret-style caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Country</a></li>
-                            <li><a href="#">Another Country</a></li>
-
-                        </ul>
-                    </div>
+                    <div class="inputExtent">
+                        <label class="table-block" for="country">Country</label>
+                                
+                                <select style="color: black"id="country" name="country" class="form-control">
+                            
+                                <option value="USA" selected>USA </option>
+                                <option value="Another Country">Another Country</option>
+                            </select>
+                      
+                        <div>
+                        </div>
                     <div>
                     </div>
                 </div>
                 <div class="state-zip-inputExtent">
-                    <div class="zip-code-form">
-                        <div class="state-inputExtent">
-                            <label class="table-block" for="state">State</label>
-                            <div class="btn-group country-choose">
-                                <button type="button" class="btn btn-default dropdown-toggle country-choose" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="caret-style-small caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">State</a></li>
-                                    <li><a href="#">Another State</a></li>
-
-                                </ul>
+                        <div class="zip-code-form">
+                            <div class="state-inputExtent">
+                                 <label class="table-block" for="country">State</label>
+                                 <select style="color: black"id="country" name="State" class="form-control">
+                                       
+                                        <option value="New Jersey">New Jersey</option>
+                                        <option value="New York" selected>NewYork</opton>
+                                        <option value="Another State">Another State</option>
+                                        </select>
+                            
+                                <div>
+                                </div>
                             </div>
-                            <div>
-                            </div>
-                        </div>
                         <div class="form-group zip-inputExtent">
                             <label for="zip">Zip code</label>
-                            <input type="text" class="form-control" id="email" placeholder="">
+                            <input type="text" class="form-control" name="zip" placeholder="">
                         </div>
                     </div>
                 </div>
@@ -289,63 +285,14 @@
             <div class="form-tutor">
                 <div class="form-group inputExtent ">
                     <label for="phone">Contact phone</label>
-                    <input type="email" class="form-control" id="name" placeholder="">
+                    <input type="phone" class="form-control" name="phone" placeholder="">
                 </div>
                 <div class="form-group inputExtent">
-                    <label for="email">You email</label>
-                    <input type="password" class="form-control" id="email" placeholder="">
+                    <label for="email">Your email</label>
+                    <input type="email" class="form-control" name="email" placeholder="">
                 </div>
             </div>
-            <div class="skills-choose-title">
-                <h5>EDUCATION - HIGH SHCOOL</h5>
-                <div class="form-tutor">
-                    <div class="form-group inputExtent ">
-                        <label for="location">Location</label>
-                        <input type="text" class="form-control" id="location" placeholder="">
-                    </div>
-                    <div class="form-group inputExtent">
-                        <div class="form-intern">
-                            <div class="intern-inputExtent">
-                                <label for="attended">Year Attended</label>
-                                <input type="text" class="form-control" id="location" placeholder="">
-                            </div>
-                            <div class="intern-inputExtent">
-                                <label for="graduated">Year Graduated</label>
-                                <input type="password" class="form-control" id="graduated" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="skills-choose-title">
-                <h5>EDUCATION - COLLEGE/UNIVERSITY</h5>
-                <div class="form-tutor">
-                    <div class="form-group inputExtent ">
-                        <label for="location">Location</label>
-                        <input type="text" class="form-control" id="location" placeholder="">
-                    </div>
-                    <div class="form-group inputExtent">
-                        <div class="form-intern">
-                            <div class="intern-inputExtent">
-                                <label for="conpleted">Years Completed</label>
-                                <input type="text" class="form-control" id="location" placeholder="">
-                            </div>
-                            <div class="intern-inputExtent">
-                                <label for="graduation">Graduation date</label>
-                                <input type="password" class="form-control" id="graduated" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div>
-                <div class="intern-half-form ">
-                    <label for="location">Major/Concentration</label>
-                    <input type="text" class="form-control" id="location" placeholder="">
-                </div>
-            </div>
+    
             <div class="next-button-tutor">
                 <a href="/intern-second" class="btn btn-warning button-tutor">Next</a>
 
