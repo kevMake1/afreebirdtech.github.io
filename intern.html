@@ -229,19 +229,7 @@
             </p>
         </div>
 
-        <div class="progress-tutor">
-            <div class="progress-tutor-wr">
-                <img src="/Content/images/progress-step.png" alt="step" />
-                <div class="tutor-indicator">
-                    <span class="first-step-ind">1</span>
-                    <span class="second-step">2</span>
-                    <span class="third-step">3</span>
-                    <span class="first-step-info">Personal information</span>
-                    <span class="second-step-info">Internship details</span>
-                    <span class="third-step-info">Recommendations</span>
-                </div>
-            </div>
-        </div>
+       
         <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="intern" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
             <div class="form-tutor">
                 <div class="form-group inputExtent ">
@@ -309,11 +297,122 @@
                     <input type="email" class="form-control" name="email" placeholder="">
                 </div>
             </div>
-    
-            <div class="next-button-tutor">
-                <a href="/intern-second" class="btn btn-warning button-tutor" type="submit">Next</a>
+            <div class="form-tutor-days">
+                <h5>AVAILABILITY</h5>
+                <p class="lightblue">During which hours are you available for volunteer assignments?</p>
+            </div>
+
+            <div class="form-group  freeform-column-12">
+                    <label class="freeform-label" for="form-input-volunteerDepartment" style="color:#8fdbee">Weekdays</label>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdaymorning">Morning</label></div>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdayAfternoon">Afternoon</label></div>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdayEvening">Evening</label></div>
+                    <div class="form-group  freeform-column-12">
+                    <label class="freeform-label" for="form-input-volunteerDepartment" style="color:#8fdbee">Weekends</label>
+                     <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendmorning">Morning</label></div>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendAfternoon">Afternoon</label></div>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendEvening">Evening</label></div>
+                    <div class="form-group  freeform-column-12">
+                    <label class="freeform-label" for="form-input-volunteerDepartment"style="color: #8fdbee">Season</label>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Summer">Summer</label></div>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Fall">Fall</label></div>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Spring">Spring</label></div>
+                         
+                 
+         
+                   
+                
+                    
+               
 
             </div>
+
+            <div class="form-tutor-days">
+                <p class="lightblue">
+                    If seeking academic credit, interns are responsible for obtaining and meeting</br>
+                    their specific program requirements. A Free Bird will provide necessary</br>
+                    documentation for credit upon request.
+                </p>
+
+            </div>
+            <div class="form-intern-days">
+                <h5>Please provide contact information, if any, for your academic advisor</h5>
+            </div>
+            <div class="form-tutor">
+                <div class="form-group inputExtent ">
+                    <label for="name">First name</label>
+                    <input type="text" class="form-control" name="Acadmeic advisor'sFirst name" placeholder="">
+                </div>
+                <div class="form-group inputExtent">
+                    <label for="name">Last name</label>
+                    <input type="text" class="form-control" name="Academic advisor'sLast name" placeholder="">
+                </div>
+            </div>
+            <div class="form-tutor">
+                <div class="form-group inputExtent ">
+                    <label for="name">Contact phone</label>
+                    <input type="text" class="form-control" name="Academic advisor's Contact Phone" placeholder="">
+                </div>
+                <div class="form-group inputExtent">
+                    <label for="email">Contact email</label>
+                    <input type="text" class="form-control" name="Academic advisor's Email" placeholder="">
+                </div>
+            </div>
+         
+                <div class="freeform-column  freeform-column-12">
+                        <label class="freeform-label" for="form-input-volunteerDepartment">Please check the department which would best fit your field of study:</label>
+                    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Administration">Administration</label></div>
+        <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Public Relations">Public Relations</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Marketing">Marketing</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Grants">Grants</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Billing">Billing</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="IT">IT</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Fundraising">Fundraising</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Programs">Programs</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Multimedia (web, graphics, video)">Multimedia (web, graphics, video)</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Tutor">Tutor</label></div>
+    <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Other (specify)">Other (specify)</label></div>
+                    
+                    </div>
+            <div class="form-tutor-days">
+                <h5>SPECIAL SKILLS OR QUALIFICATIONS</h5>
+                <p class="lightblue">
+                    Summarize special skills and qualifications you have acquired from employment, </br>
+                    previous volunteer work, or through other activities, including hobbies or sports...
+                </p>
+                <textarea class="form-control" rows="5" name="message"></textarea>
+            </div>
+            <div class="skills-choose-title">
+                <h5>PREVIOUS EXPERIENCE</h5>
+                <p class="lightblue">
+                    Summarize your previous volunteer experience...
+                </p>
+                <textarea class="form-control" rows="5" name="meessage"></textarea>
+            </div>
+            <div class="skills-choose-title">
+                <p class="lightblue">
+                    Why you would like to work as A Free Bird Volunteer?
+                </p>
+                <textarea class="form-control" rows="5" name="message"></textarea>
+            </div>
+            <div class="resume-choose-title">
+                    <h5>RESUME</h5>
+                    <div class="freeform-column  freeform-column-12">
+                        <label class="freeform-label freeform-required" for="form-input-volunteerResume">My resume</label>
+        <input name="internResume" type="file" id="form-input-volunteerResume" class="freeform-input">
+                    </div>
+                    <h5 class="skills-choose-title">AGREEMENT FORM</h5>
+                    <div class="freeform-column  freeform-column-12">
+                            <p>It is the policy of this organization to provide equal opportunities without regard to race, color, religion, national origin, gender, sexual preference, age, or disability.</p>
+            
+            <p>By submitting this application, I affirm that the facts set forth in it are true and complete. I understand that if I am accepted as a volunteer, any false statements, omissions, or other misrepresentations made by me on this application may result in my immediate dismissal.</p>
+            
+                        </div>
+            <div class="next-button-tutor">
+                <a class="btn btn-warning button-tutor" type="submit">Submit</a>
+
+            </div>
+            
         </form>
     </div>
 </section>
