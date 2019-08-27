@@ -733,6 +733,7 @@
     <input name="Sponsor One child" type="checkbox"id="Sponsor One child" value="Sponsor One Child" > Sponsor One Child</input></div>
    <div> <input name="Sponsor an Entire Program" type="checkbox"id="Sponsor an Entire Program" value="Sponsor an Entire Program" > Sponsor an Entire Program</input> </div>
 </div>
+</form>
 
 <label for="How much would you like to donate?">How much would you like to donate?</label>
 <div >
@@ -743,18 +744,19 @@
        
     </div>
 
+
 <h3>Payment Information</h3>
         <div class="gray-container" >
           
                 <h3>Payment</h3>
-         <div class="color-black">
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                  <i class="fa fa-cc-visa" style="color:navy;"></i>
-                  <i class="fa fa-cc-amex" style="color:blue;"></i>
-                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                  <i class="fa fa-cc-discover" style="color:orange;"></i>
-                </div>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="2T4NVQXYZGMNJ" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    
+                    
+        <form>
                 <label for="cname">Name on Card</label>
                 <input type="text" id="cname" name="cardname" placeholder="">
                 <label for="ccnum">Credit card number</label>
@@ -792,6 +794,7 @@
                       <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                     </label>
                     <input type="submit" value="Continue to checkout" class="btn">
+                </form>
                 </div>
               </div>
 
