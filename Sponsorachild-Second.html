@@ -234,7 +234,8 @@
                 .isbellaheader{position:relative; bottom:1280px; left:1300px;}
                 .isbella-text{position:relative; bottom:1250px; left:1210px; text-align: center; margin-left:10px; width:400px}
                 .footerend{position: relative; bottom:1100px; max-width:1500px; }
-                .gray-container{color:black}
+                .contact{display: inherit}
+             
                 * {
                     box-sizing: border-box;
                   }
@@ -281,6 +282,7 @@
                     padding: 12px;
                     border: 1px solid #ccc;
                     border-radius: 3px;
+                    color:black;
                   }
                   
                   label {
@@ -734,14 +736,14 @@
     <input name="Sponsor One child" type="checkbox"id="Sponsor One child" value="Sponsor One Child" > Sponsor One Child</input></div>
    <div> <input name="Sponsor an Entire Program" type="checkbox"id="Sponsor an Entire Program" value="Sponsor an Entire Program" > Sponsor an Entire Program</input> </div>
 </div>
-</form>
+
 
 <label for="How much would you like to donate?">How much would you like to donate?</label>
 <div >
 
         <div>
         <input name="A one time contribution of" type="checkbox"id="A one time contribution of" value="A one time contribution of" > A one time contribution of</input> <input style="color:black" type="number" min="1" step="any" name="amout of one time contribution" placeholder="$2,762"/></div>
-       <div> <input name="A monthly contribution of" type="checkbox"id="A monthly contribution of" value="A monthly contribution of" > A monthly contribution of</input><input style="color:black" type="number" min="1" step="any" name="amout of monthly contribution" /> </div>
+       <div style="padding-top: 25px"> <input name="A monthly contribution of" type="checkbox"id="A monthly contribution of" value="A monthly contribution of" > A monthly contribution of</input><input style="color:black" type="number" min="1" step="any" name="amout of monthly contribution" /> </div>
        
     </div>
 
@@ -759,9 +761,9 @@
                     
         <form method="POST" action="thank-you" class="contact" data-netlify="true" name="Sponsor a child payment form" netlify-honeypot="bot-field">
                 <h3>Payment Card</h3>
-                <div class="gray-container" >
+               
                 <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="">
+                <input type="text" id="cname" name="cardname" placeholder="" >
                 <label for="ccnum">Credit card number</label>
                 <input type="text" id="ccnum" name="cardnumber" placeholder="">
                 <label for="expmonth">Exp Month</label>
@@ -798,7 +800,7 @@
                     </label>
                     <input type="submit" value="Continue to checkout" class="btn">
                 </form>
-                </div>
+                
               </div>
 
 
