@@ -24,13 +24,34 @@
     .linkwraplink{
      background-color:#222222;
     }
+    .navbar  {
+    border-width:1px 0;
+    list-style:none;
+    margin-top:-29px;
+    padding:0;
+    text-align:center;} 
+    .nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:1px;
+}
+@media (min-width: 768px){
+.navbar-nav {
+    float: none;
+    margin-left: 93px;
+    margin-right: 70px;
+  
+}
+}
     </style>
 
 
 </head>
 
 <body id="top" role="document">
-    <nav class="navbar navbar-default navbar-fixed-top smooth yellow   landing-nav" data-spy="affix" data-offset-top="50"     >
+    <nav class="navbar navbar-default navbar-fixed-top smooth yellow text-ceneter landing-nav" data-spy="affix" data-offset-top="50"     >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
@@ -67,7 +88,7 @@
 
                     </div>
                 </div>
-                <ul class="nav navbar-nav navbar-left">
+                <ul class="nav navbar-nav navbar-center">
                     <li><a href="/">Home</a></li>
 
                     <li><a href="/about">About us</a></li>
@@ -149,8 +170,9 @@
                           <!--li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
                       </ul>
                     </li-->
-                    <li><a href="/gala.html">Gala</a></li>
+                    
               </ul>
+              <li><a href="/gala.html">Gala</a></li>
               <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>Donate</span>
@@ -166,6 +188,7 @@
                        
              
           </div>
+          
       </div>
   </nav>
 
