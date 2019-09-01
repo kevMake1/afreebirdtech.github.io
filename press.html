@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Free Bird</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="/Content/css/all.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
+  <link rel="stylesheet" href="/Content/css/hover-min.css">
+  <link rel="stylesheet" href="/Content/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+            .linkwraplink{
+             background-color:#222222;
+            }
+            .navbar  {
+            border-width:1px 0;
+            list-style:none;
+            margin-top:0;
+            padding:0;
+            text-align:center;} 
+            .nav li{
+            display:inline;
+        }
+        .nav a{
+            display:inline-block;
+            padding:1px;
+        }
+        @media (min-width: 769px){
+        .navbar-nav {
+            float: none;
+            margin-left: 450px;
+            margin-right: 450px;
+          
+        }
+        .navbar{margin-top:-29px;}
+        }
+            </style>
+        
+        
+        </head>
+        
+        <body id="top" role="document">
+            <nav class="navbar navbar-default navbar-fixed-top smooth yellow text-ceneter landing-nav" data-spy="affix" data-offset-top="50"     >
+                <div class="container">
+                    <div class="navbar-header">
+      
+            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand pull-right visible-xs">
+             <img src="/Content/images/AFB_Logo.png">
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <div class="menu-up-fix">
+
+                
+                    <div class="social">
+                        <a href="https://twitter.com/AFreeBirdOrg">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/I-Am-A-Free-Bird-322794984718926/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/afreebirdorg/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+
+         
+
+                </div>
+            </div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/"style="color:white;">Home</a></li>
+
+                <li><a href="/about"style="color:white;">About us</a></li>
+
+                <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Tutors
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/tutors">Our tutors</a></li>
+                            <li><a href="/tutor"><s>Become a tutor</s></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank">Magazine</a></li>
+                    <li><a href="/doctor-corner">Doctor's corner</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Programs
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/fightfree">Fight free</a></li>
+                            <li><a href="/freepro">Free and Pro</a></li>
+                            <li><a href="/dreaminspiration">Dream Inspiration</a></li>
+                            <li><a href=""><s>Kids supporting kids</s></a></li>
+                            <li><a href=""><s>Artists supporting artists</s></a></li>
+                        </ul>
+                    </li>-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span style="color:white;">Get involved</span>
+                        <span class="caret"style="color:white;"></span>
+                        <span class="caret-mobile"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/volunteer"style="color:#764c29;"><span>Become a volunteer</span></a></li>
+                        <li><a href="/tutor"style="color:#764c29;"><span>Become a tutor</span></a></li>
+                        <li><a href="/intern"style="color:#764c29;"><span>Become an intern</span></a></li>
+                        <li><a href="/ambassadors"style="color:#764c29;"><span>Become an ambassador</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/EnrollChild"style="color:white;"><span>Enroll Your Child or Hospital</span></a></li>
+                                    <!--<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <span>AFB Family</span>
+                      <span class="caret"></span>
+                      <span class="caret-mobile"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="/tutors"><span>Tutors</span></a></li>
+                      <li><a href=""><s>AFB Children</s></a></li>
+                      <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
+                  </ul>
+              </li>-->
+              <li><a href="/gallery"style="color:white;">Gallery</a></li>   
+              <!--<li><a href="/blog">Blog</a></li>-->
+              <li><a href="/sponsors"style="color:white;">Sponsors</a></li>
+              <!--<li><a href="/goods">Goods</a></li>-->
+
+              <li><a href="#dark"style="color:white;">Contact us</a></li>
+
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="color:white;">
+                      <span>AFB Happenings</span>
+                      <span class="caret"></span>
+                      <span class="caret-mobile"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!--<li><a href="/event"><span>Events</span></a></li>-->
+                    <li><a href="/blog"style="color:#764c29"><span>Blog</span></a></li>
+                    <li><a href="/magazine.html"target="_blank"><span>Magazine</span></a></li>
+                    <li><a href="/press.html"target="_blank"><span>Press</span></a></li>
+
+                    <li><a href="/goods"style="color:#764c29"><span>The Goods</span></a></li>
+                    <!--<li><a href=""><s>I Am Campaign</s></a></li>-->
+                    <!--li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
+                </ul>
+            </li-->
+
+            
+        </ul>
+        <li><a href="/gala.html" style="color:white;">Gala</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span style="color:white;">Donate</span>
+                    <span style="color:white;" class="caret"></span>
+                    <span class="caret-mobile"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <!--<li><a href="/event"><span>Events</span></a></li>-->
+                    <li><a href="/Donate.html"><span>Donate</span></a></li>
+                    <li><a href="/Sponsorachild.html"><span>Sponsor a child</span></a></li>
+                    <!--<li><a href=""><s>Media Kit</s></a></li>-->
+
+               
+     
+  </div>
+  </div>
+</nav>
+
+
+
+
+            <div role="main">
+              <div id="loader-bg">
+                <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
+                <style type="text/css">
+                  .st0 {
+                    fill: none;
+                    stroke: #53351D;
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .st1 {
+                    fill: none;
+                    stroke: #FFCC00;
+                    stroke-width: 11;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 11;
+                  }
+                  .video-wrapper{
+                  overflow:hidden;
+                  width:100%;
+                  min-height: 1150px;
+                  height:100%;
+            
+                  position: relative;;
+                  display:block;
+                  }
+                .video-wrapper:after {
+                  content:"";
+                  background: rgba(0,0,0,.4);
+                  width:100%;
+                  height:100%;
+                  position:absolute;
+                  display:table;
+                  left:0;
+                  top:0;
+                  }
+                .wrapper-message{
+                  position:absolute;
+                  z-index:999;
+                  color: #fff;
+                  text-align:center;
+                  width:100%;
+                  height:100%;
+                  }
+                  .container{max-width:1500px}
+                  .content{padding-top:200px}
+            .background-wrapper{width:fit-content}
+            h3{font-size:25px; font-weight: 500; color:#8fdbee;}
+
+                </style>
+        
+                <circle class="st0" cx="30" cy="30" r="24" />
+                <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
+              </svg>
+            </div>
+            <section class="section content darkblue decreased-font">
+              
+              <div class="clouds"></div>
+              <div class="grass"></div>
+              <div class="container">
+                <div class="subsection">
+                
+                  
+
+                 
+                  <header>
+                  
+
+
+                    <h1 style="text-align: center">Press</h1>
+                   
+                  </header>
+                  <div class="goods-wrapper flex">
+                    <!--Video-01-->
+                    <section>
+                      <div class="background-wrapper">
+                        <a href="Content\images\press\AFB_Media-Kit_01d-1.pdf" target="_blank"> <img src="Content\images\press\AFB-Media-Cover-Thumbnail_180207_154010.png"></a>
+                        <div class="caption">
+                          <h3>A Free Bird Media Kit</h3>
+                          
+                          <p><a href="Content\images\press\AFB_Media-Kit_01d-1.pdf" target="_blank">Click to download</a></p>		
+                        </div>
+                      </section>
+                      <!--Video-02-->
+                      <section>
+                        <div class="background-wrapper">
+                        <a href="https://www.broadwayworld.com/article/FROZENs-Jelani-Alladin-to-Perform-at-A-Free-Birds-2017-Benefit-Gala-20171115" target="_blank"><img src="Content\images\press\Screenshot-12.png">
+                          </a>
+                            <h3>Broadway World</h3>
+                           
+                            <p> <a href="https://www.broadwayworld.com/article/FROZENs-Jelani-Alladin-to-Perform-at-A-Free-Birds-2017-Benefit-Gala-20171115"target="_blank">Learn More</a></p>
+                          
+                        </div>
+                      </section>
+                      <section>
+                        <div class="background-wrapper">
+                          <a href="http://www.fox5ny.com/public-affairs/221334487-video" target="_blank"><img src="Content\images\press\Screenshot-18-copy.jpg"></a>
+                          <div class="caption">
+                            <h3>Fox 5 Spolights A Free Bird</h3>
+                          
+                            <p> <a href="http://www.fox5ny.com/public-affairs/221334487-video" target="_blank">Learn more</a></p>
+                          </div>
+                        </section>
+
+                        <section>
+                          <div class="background-wrapper">
+                            <a href="https://fliphtml5.com/tupo/wxfc" target="_blank"><img src="Content\images\press\b4cccc84-4cd0-44cf-bd79-c54fb8eea26f.png" ></a>
+                           
+                              <h3>4th annual A Free Bird Magazine</h3>
+                         
+                              <p> <a href="https://fliphtml5.com/tupo/wxfc" target="_blank">Click To Read</a></p>
+                            
+                          </div>
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                           <a href="https://www.pressreader.com/usa/closer-weekly/20180316/283476436715398" target="_blank"><img src="Content\images\press\Closer-Weekly-Press-copy.jpg"></a>
+                           
+                             <h3>Closer Magazine features "I Am A Free Bird Music Video.</h3>
+                           
+                             <p><a href="https://www.pressreader.com/usa/closer-weekly/20180316/283476436715398" target="_blank">Learn More</a></p>
+                           </div>
+                         </section>
+                         <section>
+                          <div class="background-wrapper">
+                            <a href="https://www.facebook.com/PowerOnTheBlockWithKimKane/posts/1747577315304379"><img src="Content\images\press\kimkane.png"></a>
+                            
+                            <h3>Kim Kane features A Free Bird Organization</h3>
+                              
+                              <p> <a href="https://www.facebook.com/PowerOnTheBlockWithKimKane/posts/1747577315304379" target="_blank">Learn More</a></p>
+                            
+                          </div>
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                           <a href="http://njrockstar.com/a-free-bird-organization-of-nyc-is-offering-a-sponsor-membership-program-to-help-children-with-cancer"><img src="Content\images\press\NJrockstar.png"></a>
+                            
+                              <h3>NJ Rockstar features <br> A Free Bird</h3>
+                            
+                              <p> <a href="http://njrockstar.com/a-free-bird-organization-of-nyc-is-offering-a-sponsor-membership-program-to-help-children-with-cancer" target="_blank">Learn More</a></p>
+                         
+                          </div>
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                            <a href="http://pix11.com/2016/06/08/its-a-g-thing-local-nonprofit-a-free-bird-helps-inspire-and-empower-kids-with-cancer-through-the-arts/"><img src="Content\images\press\Screenshot-8.jpg"></a>
+                            
+                              <h3>PIX 11 features Ryan</h3>
+                        
+                              <p> <a href="https://pix11.com/2016/06/08/its-a-g-thing-local-nonprofit-a-free-bird-helps-inspire-and-empower-kids-with-cancer-through-the-arts/" target="_blank">Learn More</a></p>
+                            
+                          </div>
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                           <a href="http://brooklyn.news12.com/story/34778091/brooklyn-teen-turns-to-art-after-beating-cancer"><img src="Content\images\press\Screenshot-9.png"></a>
+                            
+                              <h3>Ryan Works with News 12 <br> Brooklyn</h3>
+                          
+                              <p><a href="http://brooklyn.news12.com/story/34778091/brooklyn-teen-turns-to-art-after-beating-cancer" target="_blank">Learn More</a></p>
+                            
+                          </div>
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                           <a href="https://www.nycservice.org/organizations/index.php?org_id=1955"><img src="Content\images\press\Screenshot-19.png"></a>
+                            
+                              <h3> NYC Service talks about A Free Bird</h3>
+                              
+                              <p> <a href="https://www.nycservice.org/organizations/index.php?org_id=1955" target="_blank">Learn more</a></p>
+                            </div>
+                         
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                           <a href="http://www.drew.edu/news/2016/12/28/6-of-the-coolest-drew-internships"><img src="Content\images\press\Screenshot-21.png"></a>
+                              <h3>Drew University Names AFB One <br> of the Coolest Internships</h3>
+                              
+                              <p><a href="http://www.drew.edu/news/2016/12/28/6-of-the-coolest-drew-internships" target="_blank">Learn More</a></p>
+                            
+                          </div>
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                           <a href="https://www.brooklyndaily.com/stories/2014/23/bn-bb-boody-jhs-dancers-life-2014-06-06-bk_2014_23.html"><img src="Content\images\press\Screenshot-22.png"></a>
+                            
+                              <h3>Brooklyn Daily features Godni</h3>
+                              
+                              <p> <a href="https://www.brooklynpaper.com/stories/2014/23/bn-bb-boody-jhs-dancers-life-2014-06-06-bk_2014_23.html?from=bd" target="_blank">Learn More</a></p>
+                          </div>
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                           <a href="https://www.theodysseyonline.com/rising-star-falyn-vega-to-perform-at-madison-square-garden-event?utm_expid=.53hHQ_sIS_GVYl9TPM4psw.0&utm_referrer="><img src="Content\images\press\Screenshot-24.png"></a>
+                            
+                              <h3>The Odyssey features AFB's <br> Madison Square Garden <br>Performance!</h3>
+                             
+                              <p> <a href="https://www.theodysseyonline.com/rising-star-falyn-vega-to-perform-at-madison-square-garden-event?utm_expid=.53hHQ_sIS_GVYl9TPM4psw.0&utm_referrer=1" target="_blank">Learn More</a></p>
+                            </div>
+                         
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                            <a href="https://blogs.baruch.cuny.edu/dogood1/?p=4"><img src="Content\images\press\Screenshot-25.png"></a>
+                            
+                              <h3>#BaruchFightsCancer <br> with A Free Bird</h3>
+                             
+                              <p><a href="https://blogs.baruch.cuny.edu/dogood1/?p=4" target="_blank">Learn More</a></p>
+                            </div>
+                          
+                        </section>
+                        <section>
+                          <div class="background-wrapper">
+                            <a href="https://audioboom.com/posts/3227820-06-22-14-part-1-a-free-bird"><img src="Content\images\press\nash.png"></a>
+                            
+                              <h3>NASH Matters with Kelly Ford <br>featuring A Free Bird</h3>
+                           
+                             
+                              
+                              <p> <a href="https://audioboom.com/posts/3227820-06-22-14-part-1-a-free-bird" target="_blank">Learn More</a></p>
+                            
+                          </div>
+                        </section>
+                       
+                      </div>
+                    </div>
+
+                  </div>
+                </section>
+
+                <div class="modal fade black modal-flex" tabindex="-1" id="getTicketsModal" role="dialog" aria-labelledby="getTicketsModal">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">GET TICKETS</h3>
+                      </div>
+                      <div class="modal-body">
+                        <form action="/" method="post" class="get-ticket-form">
+                          <div class="form-group">
+                            <label for="nameOfParents">Name of the parents</label>
+                            <input type="text" id="nameOfParents" name="nameOfParents" value=" " class="form-control bordered" />
+                          </div>
+                          <div class="row">
+                            <div class="form-group col-sm-6">
+                              <label for="numberOfAdults">How many adults</label>
+                              <input type="number" id="numberOfAdults" name="numberOfAdults" value=" " class="form-control bordered" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label for="numberOfChildren">How many children</label>
+                              <input type="number" id="numberOfChildren" name="numberOfChildren" value=" " class="form-control bordered" />
+                            </div>
+                          </div>
+                          <div class="form-group margin-null">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" value=" " class="form-control bordered" />
+                          </div>
+                          <div class="form-group checkbox-group">
+                            <input type="checkbox" id="reminder" name="reminder" value="" class="form-control bordered hidden" />
+                            <label for="reminder" class="flex">
+                              <i class="icon checkbox-icon"></i>
+                              <span>
+                                Reminder we will send you a reminder of the event, remember that cancellations are only accepted a week before so we can give this opportunity to other children if necessary”
+                              </span>
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-details btn-xl">Get tickets</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+              </div>
+
+              <section id="dark" class="section dark information">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-offset-2 col-md-10 text-center-xs">
+                      <h3>Contact us</h3>
+                    </div>
+                    <div class="flex-column-reverse flex-wrap">
+                      <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
+                        <address>
+                          <strong class="contact-subheading">Contact us</strong>
+                          <br>Attn: A Free Bird
+                          <br>539 Atlantic Av
+                          <br>P.O. Box 170112
+                          <br>Brooklyn NY 11217
+                        </address>
+                        <address>
+                          <strong class="contact-subheading">To contact a specific department, please refer to the following:</strong>
+                          <dl class="dl-horizontal">
+                            <dt>Human Resources:</dt>
+                            <dd>hr@afreebird.org</dd>
+                            <br />
+                            <dt>Programs:</dt>
+                            <dd>programs@afreebird.org</dd>
+                            <br />
+                            <dt>Public Relations:</dt>
+                            <dd>pr@afreebird.org</dd>
+                            <br />
+                            <dt>Marketing:</dt>
+                            <dd>marketing@afreebird.org</dd>
+                          </dl>
+                        </address>
+                        <div class="social">
+                          <a href="https://twitter.com/AFreeBirdOrg">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/I-Am-A-Free-Bird-322794984718926/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.instagram.com/afreebirdorg/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="wrapper">
+                          <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="contactform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
+                            <strong class="text-center-xs">For general information, please complete the following form</strong>
+                            <div class="form-group name">
+                                <label for="name">your name</label>
+                                <input type="text" class="form-control" id="name" placeholder="please introduce" name="name">
+                            </div>
+                            <div class="form-group email">
+                                <label for="email">Your email</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@mail.com" name="email">
+                            </div>
+                            <div class="form-group subject">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder=""name="subject"> 
+                            </div>
+                            <div class="form-group message">
+                                <label for="message">What's your message?</label>
+                                <textarea class="form-control" rows="4"name="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning submit">Send</button>
+                        </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="footer">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                      Copyright © 2019, A Free Bird. All Rights Reserved.
+                      <div class="pull-right smooth">
+                        <a class="top hvr-bob" href="#top">back to top <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+              crossorigin="anonymous"></script>
+
+              <script>
+                $(document).ready(function () {
+            // loader hides when page is loaded
+            $('#loader-bg').fadeOut(600);
+
+            $('body').scrollspy({ target: ".navbar", offset: 72 });
+            $(".smooth a").on('click', function (event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 600, function () {
+                  window.location.hash = hash;
+                });
+              }
+            });
+          });
+        </script>
+
+      </body>
+
+      </html>
