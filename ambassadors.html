@@ -36,12 +36,12 @@
         .nav a{
             display:inline-block;
             padding:1px;
-        }
+          }
         @media (min-width: 769px){
         .navbar-nav {
             float: none;
-            margin-left: 450px;
-            margin-right: 450px;
+            margin-left: 25%;
+            margin-right: 25%;
           
         }
         .navbar{margin-top:-29px;}
@@ -353,27 +353,23 @@
                 <textarea class="form-control" rows="5" name="Why you would like to work as A Free Bird Ambassador?"></textarea>
             </div>
             <div class="resume-choose-title">
-                <h5>RESUME</h5>
-                <label class="btn btn-default choose-resume-tutor">
-                    <span> Choose a file </span><input type="file" id="noChoose" name="resume-file">
-                </label>
-                <span class="file-choose lightblue">No file choosen</span>
-            </div>
-            <div class="tutor-captcha">
-                <img src="/Content/images/captcha.png" />
-            </div>
-            <h5 class="skills-choose-title">AGREEMENT</h5>
-            <div class="tutor-checkbox">
-                <input class="checkbox-style" type="checkbox" id="volunteer1" name="checkboxagreement" />
-                <label class="checkbox-custom" for="volunteer1">
-                    <span></span>By submitting this application I agree with
-                    <a class="link-checkbox" href="">FreeBird Policy and Terms.</a>
-                </label>
-                
-            </div>
-            <div class="next-button-tutor">
-                <button type="submit" class="btn btn-warning">Send</button>
-            </div>
+                    <h5>RESUME</h5>
+                    <div class="freeform-column  freeform-column-12">
+                        <label class="freeform-label freeform-required" for="name">My resume</label>
+        <input name="volunteerResume" type="file" id="file" class="freeform-input">
+                    </div>
+                    <h5 class="skills-choose-title">AGREEMENT</h5>
+               
+                    <div class="freeform-column  freeform-column-12">
+                        <p>It is the policy of this organization to provide equal opportunities without regard to race, color, religion, national origin, gender, sexual preference, age, or disability.</p>
+        
+        <p>By submitting this application, I affirm that the facts set forth in it are true and complete. I understand that if I am accepted as a volunteer, any false statements, omissions, or other misrepresentations made by me on this application may result in my immediate dismissal.</p>
+        
+                    </div>
+            <p>By submitting this application, I agree to the terms above.</p>
+            <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+            
         </form>
     </div>
 </section>

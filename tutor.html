@@ -41,8 +41,8 @@
         @media (min-width: 769px){
         .navbar-nav {
             float: none;
-            margin-left: 450px;
-            margin-right: 450px;
+            margin-left: 25%;
+            margin-right: 25%;
           
         }
         .navbar{margin-top:-29px;}
@@ -249,94 +249,137 @@
                 tutors for our programs. Please complete the application below</br>
                 and we will contact you.</br>
             </p>
-        </div>
-
-        <div class="progress-tutor">
-            <div class="progress-tutor-wr">
-                <img src="/Content/images/progress-step.png" alt="step" />
-                <div class="tutor-indicator">
-                    <span class="first-step-ind">1</span>
-                    <span class="second-step">2</span>
-                    <span class="third-step">3</span>
-                    <span class="first-step-info">Basic information</span>
-                    <span class="second-step-info">Internship details</span>
-                    <span class="third-step-info">Recommendations</span>
-                </div>
+      
             </div>
-        </div>
-        <form method="POST" action="thank-you" class="contact" data-netlify="true" name="tutor" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
-            <div class="form-tutor">
-                <div class="form-group inputExtent ">
-                    <label for="name">First name</label>
-                    <input type="text" class="form-control" placeholder="" name="firstname">
+        
+            <form method="POST" action="thank-you" class="contact" data-netlify="true" name="Tutorform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
+                <div class="skills-choose-title">
+                    <h5>CONTACT INFORMATION</h5>
                 </div>
-                <div class="form-group inputExtent">
-                    <label for="name">Last name</label>
-                    <input type="text" class="form-control" placeholder="" name="firstname">
+                <div class="form-tutor">
+                    <div class="form-group inputExtent ">
+                        <label for="name">First name</label>
+                        <input type="text" class="form-control" id="name" placeholder="" name="firstname">
+                    </div>
+                    <div class="form-group inputExtent">
+                        <label for="name">Last name</label>
+                        <input type="text" class="form-control" id="name" placeholder="" name="lastname">
+                    </div>
                 </div>
-            </div>
-            <div class="form-tutor">
-
-                <div class="form-group inputExtent">
-                    <label for="name">Gender (Male or Female)</label>
-                    <input type="text" class="form-control" placeholder=""name="Childs's gender">
-                
-                    
+                <div class="form-tutor">
+                    <div class="form-group inputExtent ">
+                        <label for="address">Street Adress</label>
+                        <input type="text" class="form-control" id="address" placeholder="" name="address">
+                    </div>
+                    <div class="form-group inputExtent">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="" name="city">
+                    </div>
                 </div>
-                <div class="form-group inputExtent">
-                    <label for="name">Birth date</label>
-                    <input type="text" class="form-control"  placeholder="" name="D.O.B">
-                </div>
-            </div>
-            <div class="form-tutor">
-            
+                <div class="form-tutor">
                     <div class="inputExtent">
                         <label class="table-block" for="country">Country</label>
-                        <input type="text" class="form-control"  placeholder="" name="country">
-                   
-                    <div>
+                        <input type="text" class="form-control" id="country" placeholder="" name="country">
+                      
+                        <div>
+                        </div>
                     </div>
-                </div>
-                <div class="state-zip-inputExtent">
-                    <div class="zip-code-form">
-                        <div class="state-inputExtent">
-                            <label class="table-block" for="state">State</label>
-                            <div class="btn-group country-choose">
-                                <input type="text" class="form-control"  placeholder="" name="state">
-                        
+                    <div class="state-zip-inputExtent">
+                        <div class="zip-code-form">
+                            <div class="state-inputExtent">
+                                <label class="table-block" for="state">State</label>
+                                <div class="btn-group country-choose">
+                                    <input type="text" class="form-control" id="state" placeholder="" name="state">
                             
+                                </div>
+                                <div>
+                                </div>
                             </div>
-                            <div>
+                            <div class="form-group zip-inputExtent">
+                                <label for="zip">Zip code</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" name="zip">
                             </div>
-                        </div>
-                        <div class="form-group zip-inputExtent">
-                            <label for="zip">Zip code</label>
-                            <input type="text" class="form-control" iplaceholder="" name="zip">
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-tutor">
-                <div class="form-group inputExtent ">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control"  placeholder="" name="email">
+                <div class="form-tutor">
+                    <div class="form-group inputExtent ">
+                        <label for="Phone">Contact Phone</label>
+                        <input type="phone" class="form-control" id="Phone" placeholder="" name="phone">
+                    </div>
+                    <div class="form-group inputExtent">
+                        <label for="email">Your email</label>
+                        <input type="email" class="form-control" id="email" placeholder="" name="email">
+                    </div>
                 </div>
-             
-            </div>
-            <div class="form-tutor" style="padding-right:100px">
-                <div class="form-group inputExtent ">
-                    <label for="Skype">Skype ID</label>
-                    <input type="text" class="form-control" placeholder="" name="skype id">
+                <div style="width:100%"class="skills-choose-title">
+                    <h5>AVAILABILITY</h5>
+                    <p class="lightblue">During which hours are you available for helping us in our pursuit?</p>
                 </div>
-
+                <div style="width:100%" class="freeform-column ">
+                    <div class="inputExtent">
+    
+                        <label> <input name="availabiltyday[]" type="checkbox"id="form-control" value="Sunday"> Sunday</label>
+                       <div> <label> <input name="availabiltyday[]" type="checkbox"id="form-control" value="Monday"> Monday</label></div>
+                       <div><label> <input name="availabiltyday[]" type="checkbox"id="form-control" value="Tuesday"> Tuesday</label></div>
+                        <div><label> <input name="availabiltyday[]" type="checkbox"id="form-control" value="Wednesday"> Wednesday</label></div>
+                        <div><label> <input name="availabiltyday[]" type="checkbox"id="form-control" value="Thursday"> Thursday</label></div>
+                        <div><label> <input name="availabiltyday[]" type="checkbox"id="form-control" value="Friday"> Friday</label></div>
+                        <div><label> <input name="availabiltyday[]" type="checkbox"id="form-control" value="Saturday"> Saturday</label></div>
+                      
+                    </div>
+                </div>
+                <div class="freeform-column  freeform-column-12">
+                        <label  style="padding-top:25px;" class="freeform-label" for="form-input-volunteerArtisticDiscipline">Please select your skill(s)</label>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Drawing or Painting">Drawing or Painting</label></div>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Photography">Photography</label></div>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Acting">Acting</label></div>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Music">Music</label></div>
+        <div> <label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Creative Writing">Creative Writing</label></div>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Dance">Dance</label></div>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Martial Arts">Martial Arts</label></div>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Culinary Arts">Culinary Arts</label></div>
+        <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Other (specify)">Other (specify)</label></div>
+                    </div>
+                    <div  style="width: 100%"freeform-column  freeform-column-12">
+                            <label class="freeform-label" for="form-input-volunteerDepartmentOther">Other</label>
+                            <div>
+            <input name="volunteerDepartmentOther" type="text" id="form-input-volunteerDepartmentOther" class="freeform-input">
+        </div>
+                        </div>
+                <div class="form-tutor-days">
+                    <h5>SPECIAL SKILLS OR QUALIFICATIONS</h5>
+                    <p class="lightblue">
+                        Summarize special skills and qualifications you have acquired from employment, </br>
+                        previous volunteer work, or through other activities, including hobbies or sports...
+                    </p>
+                    <textarea class="form-control" rows="5" name="SPECIAL SKILLS OR QUALIFICATIONS"></textarea>
+                </div>
+                <div class="skills-choose-title">
+                    <p class="lightblue">
+                        Why you would like to work as A Free Bird Tutor?
+                    </p>
+                    <textarea class="form-control" rows="5" name="Why you would like to work as A Free Bird Ambassador?"></textarea>
+                </div>
+                <div class="resume-choose-title">
+                        <h5>RESUME</h5>
+                        <div class="freeform-column  freeform-column-12">
+                            <label class="freeform-label freeform-required" for="name">My resume</label>
+            <input name="volunteerResume" type="file" id="file" class="freeform-input">
+                        </div>
+                        <h5 class="skills-choose-title">AGREEMENT</h5>
+                   
+                        <div class="freeform-column  freeform-column-12">
+                            <p>It is the policy of this organization to provide equal opportunities without regard to race, color, religion, national origin, gender, sexual preference, age, or disability.</p>
             
-
-            </div>
-            <div class="next-button-tutor">
-                <a href="/Tutor-Second" class="btn btn-warning button-tutor">Next</a>
-
-            </div>
-        </form>
+            <p>By submitting this application, I affirm that the facts set forth in it are true and complete. I understand that if I am accepted as a volunteer, any false statements, omissions, or other misrepresentations made by me on this application may result in my immediate dismissal.</p>
+            
+                        </div>
+                <p>By submitting this application, I agree to the terms above.</p>
+                <button type="submit" class="btn btn-warning">Submit</button>
+                        </div>
+                
+            </form>
     </div>
 </section>
     </div>

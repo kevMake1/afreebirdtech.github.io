@@ -41,8 +41,8 @@
         @media (min-width: 769px){
         .navbar-nav {
             float: none;
-            margin-left: 450px;
-            margin-right: 450px;
+            margin-left: 25%;
+            margin-right: 25%;
           
         }
         .navbar{margin-top:-29px;}
@@ -322,29 +322,36 @@
                         <input type="email" class="form-control" id="email" placeholder="" name="contactemail">
                     </div>
                 </div>
-                <div class="skills-choose-title">
-                    <h5 style="text-align: center">AVAILABILITY</h5>
-                    <p class="lightblue">During which hours are you available for volunteer assignments?</p>
-                </div>
-                <div class="form-tutor">
-                    <div class="inputExtent">
-
-                        <label for="name">Weekday</label>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button name="Weekday-morning"type="button" class="btn btn-default weekday-tagle-view">morning</button>
-                            <button name="Weekday-afternoon"type="button" class="btn btn-default weekday-tagle-view">afternoon</button>
-                            <button name="Weekday-evening"type="button" class="btn btn-default weekday-tagle-view">evening</button>
-                        </div>
+                <div class="form-tutor-days">
+                        <h5>AVAILABILITY</h5>
+                        <p class="lightblue">During which hours are you available for volunteer assignments?</p>
                     </div>
-                    <div class="inputExtent">
-
-                        <label for="weekend">Weekend</label>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button name="Weekend-evening" type="button" class="btn btn-default weekday-tagle-view">morning</button>
-                            <button  name="Weekend-evening" type="button" class="btn btn-default weekday-tagle-view">afternoon</button>
-                            <button name="Weekend -evening" type="button" class="btn btn-default weekday-tagle-view">evening</button>
-                        </div>
+        
+                    <div class="form-group  freeform-column-12">
+                            <label class="freeform-label" for="form-input-volunteerDepartment" style="color:#8fdbee">Weekdays</label>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdaymorning">Morning</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdayAfternoon">Afternoon</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdayEvening">Evening</label></div>
+                            <div class="form-group  freeform-column-12">
+                            <label class="freeform-label" for="form-input-volunteerDepartment" style="color:#8fdbee">Weekends</label>
+                             <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendmorning">Morning</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendAfternoon">Afternoon</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendEvening">Evening</label></div>
+                            <div class="form-group  freeform-column-12">
+                            <label class="freeform-label" for="form-input-volunteerDepartment"style="color: #8fdbee">Season</label>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Summer">Summer</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Fall">Fall</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Spring">Spring</label></div>
+                                 
+                         
+                 
+                           
+                        
+                            
+                       
+        
                     </div>
+                   
                 </div>
                 <div class="skills-choose-title">
                     <h5 style="text-align: center">DEPARTAMENT</h5>
