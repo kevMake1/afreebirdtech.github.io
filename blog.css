@@ -152,7 +152,7 @@
   }
   .blog .carousel div {
     display: inline-block;
-    float: left;
+    
     width: auto;
     margin-bottom: 40px;
   }
@@ -241,6 +241,12 @@
 }
 .featured-item7 {
   background-image: url('../images/blog/featured-item7.jpg');
+}
+.featured-item8 {
+  background-image: url('../images/blog/featured-item8.jpg');
+}
+.featured-item9 {
+  background-image: url('../images/blog/featured-item9.jpg');
 }
 .blog {
   margin-left: -20px;
