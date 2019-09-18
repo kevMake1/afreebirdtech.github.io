@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <style>
         .linkwraplink{
          background-color:#222222;
@@ -40,13 +40,16 @@
 @media (min-width: 769px){
 .navbar-nav {
     float: none;
-    margin:0 100px;
+    margin:0 100px;;
     
   
 }
-        .navbar{margin-top:-29px;}
-        }
-            </style>
+.title{position: relative; bottom: -100px; left:-40px}
+.title2{position: relative; bottom: -100px;}
+.container{height: 1%;}
+    .navbar{margin-top:-29px;}
+    }
+        </style>
         
         
         </head>
@@ -55,7 +58,6 @@
             <nav class="navbar navbar-default navbar-fixed-top smooth yellow text-ceneter landing-nav" data-spy="affix" data-offset-top="50"     >
                 <div class="container">
                     <div class="navbar-header">
-        
                 <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -88,11 +90,12 @@
                             <a href="https://www.linkedin.com/company/3505146/admin/">
                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
+
                        
 
                     </div>
                 </div>
-                <ul class="nav navbar-nav navbar-left">
+                <ul class="nav navbar-nav navbar-center">
                     <li><a href="/">Home</a></li>
 
                     <li><a href="/about">About us</a></li>
@@ -137,7 +140,7 @@
                             <li><a href="/ambassadors"><span>Become an ambassador</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="/EnrollChild"><span>Enroll Your Child </span></a></li>
+                    <li><a href="/EnrollChild"><span>Enroll Your Child</span></a></li>
                                         <!--<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                           <span>AFB Family</span>
@@ -166,7 +169,7 @@
                       <ul class="dropdown-menu">
                           <!--<li><a href="/event"><span>Events</span></a></li>-->
                           <li><a href="/blog"><span>Blog</span></a></li>
-                      
+                     
                           <li><a href="/press.html"target="_blank"><span>Press</span></a></li>
 
                           <li><a href="/goods"><span>The Goods</span></a></li>
@@ -174,7 +177,7 @@
                           <!--li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
                       </ul>
                     </li-->
-                    
+                    <li><a href="/Thankyou.html"><span>Thankyou.html</span></a></li>
                 </ul>
                 <li><a href="/gala.html">Gala</a></li>
                 <li><a href="/magazine.html"target="_blank"><span>Magazine</span></a></li>
@@ -199,88 +202,62 @@
 
 
 
+
+
+
     <div role="main">
         <div id="loader-bg">
             <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
-                 <style type="text/css">
-                    .st0 {
-                        fill: none;
-                        stroke: #53351D;
-                        stroke-width: 10;
-                        stroke-miterlimit: 10;
-                    }
+            <style type="text/css">
+                .st0 {
+                    fill: none;
+                    stroke: #53351D;
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                }
 
-                    .st1 {
-                        fill: none;
-                        stroke: #FFCC00;
-                        stroke-width: 11;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-miterlimit: 11;
-                    }
-                    .small-btn {
-                        width: 140px;
-                        height: 31px;
-                        display:inline-block;
-                        text-align:center;
-                        margin: 4px 2px;
-
-
-                    }
-
-                    .row donate-buttons{
-                        width:1140px;
-                        height: 56px;
-
-
-                    }
-                    .col{
-                        width: 33.333%;
-                        height:850px;
-                        float: left;
-                        text-align: center;
-                        padding:1rem;
-                    }
-                    @media only screen and (max-width:768px){
-    
-                        .col1, .col2{
-                            width:100%;
-                        }
-                        .col3{
-                            width:100%;
-                        }
-                    }
+                .st1 {
+                    fill: none;
+                    stroke: #FFCC00;
+                    stroke-width: 11;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 11;
+                }
+                .position-left{
+                  position:absolute;
+                  left:0
+                }
+                #bubble_container{
+                  background: url('Content/upload/bubble-event copy.png') no-repeat top left transparent;
+                  width:600px;
+                  height:330px;
+                  position:relative;
+                }
+                <!--#bubble_container iframe{
+                  position:absolute;
+                  top:30px;
+                  left:40px;
+                }-->
+                .content{padding-top:200px}    
+                .container-narrow{max-width:fit-content;max-height:fit-content; margin-left:auto; margin-right:auto}
+                .thumbnail1 {
+                    position: relative;
+                    display: block;
                     
-                    @media only screen and (max-width:480px){
-                        .col{
-                           float: none;
-                            width:100%;
-                        }
-                    }
-            
-            .thumbnail1 {
-                position: relative;
-                display: inline-block;
-            }
-            
-            .caption1 {
-                position: absolute;
-                top: 110%;
-                left: 50%;
-                transform: translate( -50%, -50% );
-                text-align: center;
-             
-                font-weight: bold;}
-                .caption2 {
+                }
+                
+                .caption1 {
                     position: absolute;
-                    top: 80%;
+                    top: 50%;
                     left: 50%;
                     transform: translate( -50%, -50% );
                     text-align: center;
                  
+                 
                     font-weight: bold;}
-                    .caption3 {
+                    .caption2 {
                         position: absolute;
                         top: 80%;
                         left: 50%;
@@ -288,34 +265,253 @@
                         text-align: center;
                      
                         font-weight: bold;}
-                        .container-fluid{max-width: 1300px; position: relative;}
-                        .footerend{padding-bottom:100px;}
-                        .content{padding-top: 200px}
-                    
-                
-               
+                        .caption3 {
+                            position: absolute;
+                            top: 80%;
+                            left: 50%;
+                            transform: translate( -50%, -50% );
+                            text-align: center;}
+                            img{ max-width:380px}
+                            p{font-size: 17px}
+                         
 
-    </style>
-                <circle class="st0" cx="30" cy="30" r="24" />
-                <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
-                </svg>
+</style>
+            <circle class="st0" cx="30" cy="30" r="24" />
+            <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
+            </svg>
+        </div>
+
+<section id="lime" class="section content lime decreased-font">
+   
+    <div class="grass"></div>
+    <div class="container-narrow">
+        <h1 style="text-align:center;">Thank You!!</h1>
+        <div style="text-align: center" class="thumbnail1">
+            <img  src="Content\upload\bubble-event copy.png">
+         
+            <div class="caption1">
+       <p>“David had such a great experience from such a talented ‘teacher Joe’. David is very grateful for the inspiration and guidance from his teacher which allowed him to write an original song entitled ‘We Are’. Thank you to the Free Bird organization for such a wonderful experience for David to continue music lessons on guitar.” - Deborah Taylor 
+    </p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+    <img  src="Content\upload\bubble-event copy.png">
+ 
+    <div class="caption1">
+<p>“Yes I did have a great time. Mohit is an amazing artist and I am thrilled to work with him throughout more time to come.” - Jeong
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+    <img  src="Content\upload\bubble-event copy.png">
+ 
+    <div class="caption1">
+<p>“Mohit is very excited to meet his teacher” - Shalini Kapoor 
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+    <img  src="Content\upload\bubble-event copy.png">
+ 
+    <div class="caption1">
+<p>“Elijah loves taking piano lessons with Landon. He has come a really long way. Elijah is 15 and he constantly looks out the window when it’s near the time that Landon should be arriving.”
+    “You are truly amazing people. We are grateful for being part of A Free Bird. We wish and hope we could get to more programs in the future.” - Karon King-Blades
+    
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+    <img  src="Content\upload\bubble-event copy.png">
+ 
+    <div class="caption1">
+<p>“Thanks for your sacrifice and kindheartedness. My son will be very delighted to have the piano lessons! We deeply appreciate the program.” - Sunday Akanem
+    
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+    <img  src="Content\upload\bubble-event copy.png">
+ 
+    <div class="caption1">
+<p>“Mia and I learned a new vocal technique and worked on her song for the gala. She brought tears to mine and her mother’s eyes!” - Jobelle Mesa
+    
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+    <img  src="Content\upload\bubble-event copy.png">
+ 
+    <div class="caption1">
+<p>“Liana had a lovely time with Anthony and is looking forward to next week’s session” - Katie
+    
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Morgan is super photogenic! She is a little shy around new people, so the fact that Morgan is smiling and loosening up over the package means she is really excited. Really happy for her and thank you so much for coordinating and hand-delivering it today” - Jeong
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“David is an extremely bright kid and already has knowledge of basic chord structures. Gave him an assignment for next week and looking forward to seeing him again” - Joe Luino 
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Mia is a sweet little girl and the family is lovely. We had a great time!” - Jobelle Mesa
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Thank you very very very very very very much! We love you all!!!! Godni we looooooooove you!” - Rena Koeing
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“I wanted to send our sincerest thanks for selecting Mia to receive such a wonderful box of art goodies! She was super excited and has all sorts of plans for art projects!” - Cynthia Diaz
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“So excited for the ballet. Thank you so much for allowing Madison to participate in these programs. It will definitely lift her spirits” - Natasha Jackson-Jordan 
+
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“We are very excited to participate in this program and are so grateful to you for offering it to kids like Dash.” - Chloe Metz 
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Godni thank you so much for your dedication and volunteering your time and talents for an amazing girl! You helped her feel extra special for this well earned milestone!!!” - Lenia Maropakis Batas 
+
+</p>
+</div>
+</div>
+<div style="text-align: center" class="thumbnail1">
+</img>
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Thank you very very very very very very much! We love you all!!!! Godni we looooooooove you!” - Rena Koeing
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Fantastic organization with more than just a reputable cause” - Andrew McLin
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“The Blades family would like to thank A Free Bird for blessing us with a beautiful evening it was truly a fantastic experience for my family. Godni we love you and your foundation A Free Bird beyond measure, as words cannot truly dictate or express our thoughts. Once again thank Godni for a beautiful evening for me and my family.”  - Lennie Blades 
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Thank you very very very very very very much! We love you all!!!! Godni we looooooooove you!” - Rena Koeing
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Thankful for you!” - Raine and Reliy’s 
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“So much fun. I really enjoyed myself. Awesome evening. Laughter and comedy is good for the soul or a great distraction for a few hours from worrying about your child’s health. Rachel is awesome. Thank you A Free Bird” - Karon
+
+</p>
+</div>
+</div>
+</img>
+<div style="text-align: center" class="thumbnail1">
+<img  src="Content\upload\bubble-event copy.png">
+ 
+<div class="caption1">
+<p>“Thank you for your beautiful words. I *literally* stumbled across now… You mean the world to us A Free Bird Organization. I never saw this picture before.” Barbara Zak Anderson
+
+
+</p>
+</div>
+</div>
+</img>
+
+
+                </div>
             </div>
-
-    <link href="/Content/css/tutor.css" rel="stylesheet"/>
-
-    <link href="/Content/css/enroll.css" rel="stylesheet"/>
-
-    <section id="lime" class="section content green decreased-font">
-        <div class="clouds"></div>
-        <div class="grass"></div>
-        
-        <div class="container-fluid">
-            
-<h1 style= "padding-left:50px; text-align: center;"> Thank You For Sponsor A Free Bird Children</h1>
-<a style="color:yellow" href="/index.html"><h2 style="padding-left:50px; padding-top: 100px; text-align: center; color: yellow; padding-top:25px; font-size: 1.5em; min-height: 500px;" > Click here to return to our site</h2></a>
-
-
-
+        </div>
+    </div>
 </section>
 
     </div>
