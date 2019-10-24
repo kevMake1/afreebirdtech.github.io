@@ -469,17 +469,7 @@
         </div>
     </div>
 </div>
-<script>
-$(document).on('change', '.div-toggle', function() {
-  var target = $(this).data('target');
-  var show = $("option:selected", this).data('show');
-  $(target).children().addClass('hide');
-  $(show).removeClass('hide');
-});
-$(document).ready(function(){
-	$('.div-toggle').trigger('change');
-});
-</script>
+
 
   <!-- <img id="optional"src="Content\upload\Gala Sponsors Page.png"style="width:100%;" usemap="#galamap">
   <map name="galamap">
@@ -660,6 +650,15 @@ $(document).ready(function(){
                 }
             });
         });
+        $(document).on('change', '.div-toggle', function() {
+  var target = $(this).data('target');
+  var show = $("option:selected", this).data('show');
+  $(target).children().addClass('hide');
+  $(show).removeClass('hide');
+});
+$(document).ready(function(){
+	$('.div-toggle').trigger('change');
+});
     </script>
     <script>
     imageMapResize();</script>
