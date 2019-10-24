@@ -4391,7 +4391,7 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
   @media only screen and (max-width: 768px){
-    .navbar-collapse.collapse{
+    .navbar-default .navbar-collapse.collapse,.navbar-default .navbar-collapse.collapsing{
       background: #e9967a;
       -webkit-box-shadow: 9px 9px 34px -8px rgba(74,71,74,1);
       -moz-box-shadow: 9px 9px 34px -8px rgba(74,71,74,1);
