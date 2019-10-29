@@ -4397,25 +4397,20 @@ readers do not read off random characters that represent icons */
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+      padding: 5px 60px 15px 60px;
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li >a{
+      font-size: 6vw;
     }
     .navbar-default .navbar-collapse .navbar-nav > li:last-child{
-      display: block;
       background-image: url(/Content/upload/panel2.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      padding: 5px 60px 85px 60px;
     }
     .navbar-default .navbar-collapse .navbar-nav > li.dropdown.open{
       background: #d2691e;
     }
     .social{
-      margin-top: 0;
-    }
-
-  }
-  @media only screen and (max-width: 768px){
-    .navbar-default .navbar-collapse .navbar-nav > li{
-      background: #d2691e;
+      margin-top: 0 !important;
     }
   }
 
