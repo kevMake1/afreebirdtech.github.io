@@ -4392,9 +4392,13 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
   @media only screen and (max-width: 768px){
     .navbar-default .navbar-collapse.collapse,.navbar-default .navbar-collapse.collapsing{
-      background: #e9967a;
-      -webkit-box-shadow: 9px 9px 34px -8px rgba(74,71,74,1);
-      -moz-box-shadow: 9px 9px 34px -8px rgba(74,71,74,1);
-      box-shadow: 9px 9px 34px -8px rgba(74,71,74,1);
+      background-image: url(Content/upload/Menu.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .navbar-default .navbar-collapse.collapse .navbar-nav > li{
+      opacity: 0;
     }
   }
+
