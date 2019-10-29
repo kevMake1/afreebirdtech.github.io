@@ -4412,5 +4412,15 @@ readers do not read off random characters that represent icons */
     .social{
       margin-top: 0 !important;
     }
+    #landing .tree-nav{
+      bottom: 75px;
+      right: -80px;
+    }
+    #landing .tree-nav .treeInner img{
+      width: 800px;
+    }
+    #landing .tree-nav .treeInner .linkWrap{
+      display: none;
+    }
   }
 
