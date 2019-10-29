@@ -4414,7 +4414,7 @@ readers do not read off random characters that represent icons */
     }
     #landing .tree-nav{
       bottom: 75px;
-      right: -80px;
+      left: -340px;
     }
     #landing .tree-nav .treeInner img{
       width: 800px;
