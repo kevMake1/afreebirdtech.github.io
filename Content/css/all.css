@@ -4391,8 +4391,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
   @media only screen and (max-width: 768px){
-    .navbar-default .navbar-collapse.collapse,.navbar-default .navbar-collapse.collapsing{
-      background-image: url(Content/upload/Menu.png);
+    .navbar-default .navbar-collapse.collapse .navbar-nav{
+      background-image: url(/Content/upload/Menu.png);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
