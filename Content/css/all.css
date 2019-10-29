@@ -4391,14 +4391,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
   @media only screen and (max-width: 767px){
-    .navbar-default .navbar-collapse .navbar-nav{
-      /* background-image: url(/Content/upload/Menu.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 90vh;
-      max-height: 680px; */
-    }
     .navbar-default .navbar-collapse .navbar-nav > li{
       display: block;
       background-image: url(/Content/upload/panel.png);
@@ -4406,8 +4398,24 @@ readers do not read off random characters that represent icons */
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .navbar-default .navbar-collapse .navbar-nav > li:last-child{
+      display: block;
+      background-image: url(/Content/upload/panel2.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li.dropdown.open{
+      background: #d2691e;
+    }
     .social{
       margin-top: 0;
+    }
+
+  }
+  @media only screen and (max-width: 768px){
+    .navbar-default .navbar-collapse .navbar-nav > li{
+      background: #d2691e;
     }
   }
 
