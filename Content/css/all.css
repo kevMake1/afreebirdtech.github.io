@@ -4427,10 +4427,10 @@ readers do not read off random characters that represent icons */
       background-image: url(/Content/upload/panel9.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(10){
-      background-image: url(/Content/upload/panel9.1.png);
+      background-image: url(/Content/upload/panel10.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:last-child{
-      background-image: url(/Content/upload/panel10.png);
+      background-image: url(/Content/upload/panel11.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li >a{
       font-size: 4vw;
