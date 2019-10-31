@@ -4403,7 +4403,7 @@ readers do not read off random characters that represent icons */
       font-size: 6vw;
     }
     .navbar-default .navbar-collapse .navbar-nav > li:last-child{
-      background-image: url(/Content/upload/panel2.png);
+      background-image: url(/Content/upload/panel.png);
       padding: 5px 60px 85px 60px;
     }
     .navbar-default .navbar-collapse .navbar-nav > li.dropdown.open{
