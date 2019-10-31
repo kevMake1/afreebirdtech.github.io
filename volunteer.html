@@ -267,29 +267,29 @@
                 </div>
                 <div class="form-tutor">
                     <div class="form-group inputExtent ">
-                        <label for="name">First name</label>
-                        <input type="text" class="form-control" placeholder="" name="first name">
+                        <label for="name" class="required-field">First name</label>
+                        <input type="text" class="form-control" placeholder="" name="first name" required>
                     </div>
                     <div class="form-group inputExtent">
-                        <label for="name">Last name</label>
-                        <input type="text" class="form-control"  placeholder="" name="Last name">
+                        <label for="name" class="required-field">Last name</label>
+                        <input type="text" class="form-control"  placeholder="" name="Last name" required>
                     </div>
                 </div>
                 <div class="form-tutor">
                     <div class="form-group inputExtent ">
-                        <label for="name">Street Adress</label>
-                        <input type="text" class="form-control" id="streetadress" placeholder="" name="Street Adress">
+                        <label for="name" class="required-field">Street Adress</label>
+                        <input type="text" class="form-control" id="streetadress" placeholder="" name="Street Adress" required>
                     </div>
                     <div class="form-group inputExtent">
-                        <label for="name">City</label>
-                        <input type="text" class="form-control" id="city" placeholder="" name="City">
+                        <label for="name" class="required-field">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="" name="City" required>
                     </div>
                 </div>
                 <div class="form-tutor">
                     <div class="inputExtent">
-                        <label class="table-block" id="country" for="country">Country</label>
+                        <label class="table-block required-field" id="country" for="country">Country</label>
                                 
-                                <select style="color: black"id="country" name="country" class="form-control">
+                                <select style="color: black"id="country" name="country" class="form-control" required>
                             
                                 <option value="USA" selected>USA </option>
                                 <option value="Another Country">Another Country</option>
@@ -301,8 +301,8 @@
                     <div class="state-zip-inputExtent">
                         <div class="zip-code-form">
                             <div class="state-inputExtent">
-                                 <label class="table-block" for="country">State</label>
-                                 <select style="color: black"id="State" name="State" class="form-control">
+                                 <label class="table-block required-field" for="country">State</label>
+                                 <select style="color: black"id="State" name="State" class="form-control" required>
                                        
                                         <option value="New Jersey">New Jersey</option>
                                         <option value="New York" selected>NewYork</opton>
@@ -314,55 +314,44 @@
                             
                             
                             <div class="form-group zip-inputExtent">
-                                <label for="zip">Zip code</label>
-                                <input type="text" id="zipcode" class="form-control" placeholder="" name="zipcode">
+                                <label for="zip" class="required-field">Zip code</label>
+                                <input type="text" id="zipcode" class="form-control" placeholder="" name="zipcode" required>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-tutor">
                     <div class="form-group inputExtent ">
-                        <label for="name">Contact Phone</label>
-                        <input type="tle" class="form-control" id="contactphone" placeholder="" name="contactphone">
+                        <label for="name" class="required-field">Contact Phone</label>
+                        <input type="tle" class="form-control" id="contactphone" placeholder="" name="contactphone" required>
                     </div>
                     <div class="form-group inputExtent">
-                        <label for="name">Your email</label>
-                        <input type="email" class="form-control" id="email" placeholder="" name="contactemail">
+                        <label for="name" class="required-field">Your email</label>
+                        <input type="email" class="form-control" id="email" placeholder="" name="contactemail" required>
                     </div>
                 </div>
                 <div class="form-tutor-days">
-                        <h5>AVAILABILITY</h5>
-                        <p class="lightblue">During which hours are you available for volunteer assignments?</p>
+                        <h5 class="required-field">AVAILABILITY</h5>
+                        <p class="lightblue">During which days are you available for volunteer assignments?</p>
                     </div>
         
                     <div class="form-group  freeform-column-12">
-                            <label class="freeform-label" for="form-input-volunteerDepartment" style="color:#8fdbee">Weekdays</label>
-                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdaymorning">Morning</label></div>
-                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdayAfternoon">Afternoon</label></div>
-                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekdayEvening">Evening</label></div>
-                            <div class="form-group  freeform-column-12">
+                            <label class="freeform-label" for="form-input-volunteerDepartment" style="color:#8fdbee">Days</label>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="sunday">Morning</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="monday">Monday</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="tuesday">Tuesday</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="wednesday">Wednesday</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="thursday">Thursday</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="friday">Friday</label></div>
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="saturday">Saturday</label></div>
+                            <!-- <div class="form-group  freeform-column-12">
                             <label class="freeform-label" for="form-input-volunteerDepartment" style="color:#8fdbee">Weekends</label>
                              <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendmorning">Morning</label></div>
                             <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendAfternoon">Afternoon</label></div>
-                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendEvening">Evening</label></div>
-                            <div class="form-group  freeform-column-12">
-                            <label class="freeform-label" for="form-input-volunteerDepartment"style="color: #8fdbee">Season</label>
-                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Summer">Summer</label></div>
-                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Fall">Fall</label></div>
-                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Spring">Spring</label></div>
-                                 
-                         
-                 
-                           
-                        
-                            
-                       
-        
-                    </div>
-                   
+                            <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="weekendEvening">Evening</label></div> -->
                 </div>
                 <div class="skills-choose-title">
-                    <h5 style="text-align: center">DEPARTAMENT</h5>
+                    <h5 style="text-align: center" class="required-field">DEPARTAMENT</h5>
                     <p class="lightblue">Please check the department which would best fit your skills and abilities:</p>
                 </div>
                 <div class="freeform-column  freeform-column-12">
@@ -371,12 +360,13 @@
     <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Public Relations">Public Relations</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Marketing">Marketing</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Grants">Grants</label></div>
-<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Billing">Billing</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Finance">Finance</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="IT">IT</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Fundraising">Fundraising</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Programs">Programs</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Multimedia (web, graphics, video)">Multimedia (web, graphics, video)</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Tutor">Tutor</label></div>
+<div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Human Resources">Human Resources</label></div>
 <div><label><input name="volunteerDepartment[]" type="checkbox" id="form-input-volunteerDepartment" class="freeform-input" value="Other (specify)">Other (specify)</label></div>
                 
                 </div>
@@ -406,8 +396,8 @@
                 <div class="resume-choose-title">
                     <h5>RESUME</h5>
                     <div class="freeform-column  freeform-column-12">
-                        <label class="freeform-label freeform-required" for="name">My resume</label>
-        <input name="volunteerResume" type="file" id="file" class="freeform-input">
+                        <label class="freeform-label freeform-required required-field" for="name">My resume</label>
+        <input name="volunteerResume" type="file" id="file" class="freeform-input" required>
                     </div>
                 <div class="form-tutor-days">
                     <h5>PERSON TO NOTIFY IN CASE OF EMERGENCY</h5>

@@ -4393,18 +4393,47 @@ readers do not read off random characters that represent icons */
   @media only screen and (max-width: 767px){
     .navbar-default .navbar-collapse .navbar-nav > li{
       display: block;
-      background-image: url(/Content/upload/panel.png);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-      padding: 5px 60px 15px 60px;
+      padding: 0px;
     }
-    .navbar-default .navbar-collapse .navbar-nav > li >a{
-      font-size: 6vw;
+    
+    .navbar-default .navbar-collapse .navbar-nav > li:first-child{
+      background-image: url(/Content/upload/panel1.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(2){
+      background-image: url(/Content/upload/panel2.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(3){
+      background-image: url(/Content/upload/panel3.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(4){
+      background-image: url(/Content/upload/panel4.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(5){
+      background-image: url(/Content/upload/panel5.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(6){
+      background-image: url(/Content/upload/panel6.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(7){
+      background-image: url(/Content/upload/panel7.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(8){
+      background-image: url(/Content/upload/panel8.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(9){
+      background-image: url(/Content/upload/panel9.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li:nth-child(10){
+      background-image: url(/Content/upload/panel10.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:last-child{
-      background-image: url(/Content/upload/panel.png);
-      padding: 5px 60px 85px 60px;
+      background-image: url(/Content/upload/panel11.png);
+    }
+    .navbar-default .navbar-collapse .navbar-nav > li >a{
+      font-size: 4vw;
     }
     .navbar-default .navbar-collapse .navbar-nav > li.dropdown.open{
       background: #d2691e;
@@ -4423,4 +4452,8 @@ readers do not read off random characters that represent icons */
       display: none;
     }
   }
+  .required-field::after {
+    content: "*";
+    color: red;
+}
 
