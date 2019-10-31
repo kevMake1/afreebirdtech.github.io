@@ -4400,7 +4400,7 @@ readers do not read off random characters that represent icons */
     }
     
     .navbar-default .navbar-collapse .navbar-nav > li:first-child{
-      padding: 22px 0 0px 0;
+      padding: 21px 0 0px 0;
       background-image: url(/Content/upload/panel1.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(2){
@@ -4411,36 +4411,36 @@ readers do not read off random characters that represent icons */
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(3){
       margin-right: 11px;
-      margin-top: -3px;
+      margin-top: -6px;
       background-image: url(/Content/upload/panel3.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(4){
       padding-top: 4px;
-      margin-top: -4px;
+      margin-top: -8px;
       margin-right: 8px;
       background-image: url(/Content/upload/panel4.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(5){
-      margin-top: -2px;
-      margin-right: 1px;  
+      margin-top: -5px;
+      margin-right: 3px;
       background-image: url(/Content/upload/panel5.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(6){
       padding: 10px 0 0 0;
-      margin-top: -3px;
-      margin-left: 8px;
+      margin-top: -12px;
+      margin-left: 6px;
       background-image: url(/Content/upload/panel6.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(7){
       padding: 6px 0 0 0;
-      margin-top: -5px;
-      margin-left: 14px;
+      margin-top: -11px;
+      margin-left: 11px;
       background-image: url(/Content/upload/panel7.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(8){
       padding: 13px 0 0 12px;
-      margin-top: -6px;
-      margin-left: 16px;
+      margin-top: -13px;
+      margin-left: 11px;
       background-image: url(/Content/upload/panel8.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(9){
@@ -4473,12 +4473,15 @@ readers do not read off random characters that represent icons */
     }
     #landing .tree-nav{
       bottom: 75px;
-      left: -340px;
+      left: -300px;
     }
     #landing .tree-nav .treeInner img{
       width: 800px;
     }
     #landing .tree-nav .treeInner .linkWrap{
+      display: none;
+    }
+    .clouds{
       display: none;
     }
   }
