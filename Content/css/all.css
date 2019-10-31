@@ -4391,6 +4391,10 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
   @media only screen and (max-width: 767px){
+    .navbar-collapse .nav.navbar-nav{
+      margin-top: -10px;
+    width: 50%;
+    }
     .navbar-default .navbar-collapse .navbar-nav > li{
       display: block;
       background-position: center center;
@@ -4444,21 +4448,21 @@ readers do not read off random characters that represent icons */
       background-image: url(/Content/upload/panel8.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(9){
-      margin-right: 6px;
+      margin-right: -25px;
       padding: 10px 0 0 0;
-      margin-top: -4px;
+      margin-top: -12px;
       background-image: url(/Content/upload/panel9.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(10){
       padding: 6px 0 0 0;
-      margin-top: -3px;
-      margin-right: 24px;
+      margin-top: -10px;
+      margin-right: -41px;
       background-image: url(/Content/upload/panel10.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:last-child{
       padding: 8px 0 32px 0;
-      margin-right: 43px;
-      margin-top: -5px;
+      margin-right: -57px;
+      margin-top: -12px;
       background-image: url(/Content/upload/panel11.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li >a{
@@ -4483,6 +4487,9 @@ readers do not read off random characters that represent icons */
     }
     .clouds{
       display: none;
+    }
+    .sky .title h2{
+      font-size: 8vw !important;
     }
   }
   .required-field::after {
