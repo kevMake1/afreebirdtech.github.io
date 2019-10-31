@@ -4395,48 +4395,78 @@ readers do not read off random characters that represent icons */
       display: block;
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 150px;
       padding: 0px;
     }
     
     .navbar-default .navbar-collapse .navbar-nav > li:first-child{
+      padding: 22px 0 0px 0;
       background-image: url(/Content/upload/panel1.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(2){
+      margin-top: -6px;
+      margin-right: 7px;
+      padding: 2px 0 0px 0;
       background-image: url(/Content/upload/panel2.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(3){
+      margin-right: 11px;
+      margin-top: -3px;
       background-image: url(/Content/upload/panel3.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(4){
+      padding-top: 4px;
+      margin-top: -4px;
+      margin-right: 8px;
       background-image: url(/Content/upload/panel4.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(5){
+      margin-top: -2px;
+      margin-right: 1px;  
       background-image: url(/Content/upload/panel5.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(6){
+      padding: 10px 0 0 0;
+      margin-top: -3px;
+      margin-left: 8px;
       background-image: url(/Content/upload/panel6.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(7){
+      padding: 6px 0 0 0;
+      margin-top: -5px;
+      margin-left: 14px;
       background-image: url(/Content/upload/panel7.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(8){
+      padding: 13px 0 0 12px;
+      margin-top: -6px;
+      margin-left: 16px;
       background-image: url(/Content/upload/panel8.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(9){
+      margin-right: 6px;
+      padding: 10px 0 0 0;
+      margin-top: -4px;
       background-image: url(/Content/upload/panel9.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(10){
+      padding: 6px 0 0 0;
+      margin-top: -3px;
+      margin-right: 24px;
       background-image: url(/Content/upload/panel10.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:last-child{
+      padding: 8px 0 32px 0;
+      margin-right: 43px;
+      margin-top: -5px;
       background-image: url(/Content/upload/panel11.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li >a{
       font-size: 4vw;
     }
     .navbar-default .navbar-collapse .navbar-nav > li.dropdown.open{
-      background: #d2691e;
+      background: #a9a9a9;
+      margin: 0 !important;
     }
     .social{
       margin-top: 0 !important;
