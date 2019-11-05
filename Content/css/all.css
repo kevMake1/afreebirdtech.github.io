@@ -4392,8 +4392,15 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
   @media only screen and (max-width: 767px){
     .navbar-collapse .nav.navbar-nav{
-      margin-top: -10px;
+      margin-top: -40px;
     width: 50%;
+    }
+    .container .navbar-collaps .social{
+      padding-left: 140px;
+      margin-top: 0;
+    }
+    .container .navbar-collapse .social > a{
+      margin-right: 0;
     }
     .navbar-default .navbar-collapse .navbar-nav > li{
       display: block;
@@ -4488,8 +4495,20 @@ readers do not read off random characters that represent icons */
     .clouds{
       display: none;
     }
-    .sky .title h2{
-      font-size: 8vw !important;
+    .sky .title .titleps{
+      position: relative;
+      bottom: 120px;
+    }
+    .sky .title .titleps h2{
+      font-size: 7vw;
+      color:#FFCC00;
+      margin: 20px 0 10px 0;
+    }
+    .sky .title .titleps a{
+      font-size: 6vw;
+      font-weight: bold;
+      text-align: justify;
+      color: #FFCC00;
     }
   }
   .required-field::after {
