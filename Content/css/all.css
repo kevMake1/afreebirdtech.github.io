@@ -4394,7 +4394,7 @@ readers do not read off random characters that represent icons */
     .navbar-collapse .nav.navbar-nav{
       position: absolute;
       top: 0px;
-    width: 50%;
+      width: 50%;
     }
     .container .navbar-collapse .menu-up-fix{
       position: absolute;
