@@ -4392,12 +4392,21 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
   @media only screen and (max-width: 767px){
     .navbar-collapse .nav.navbar-nav{
-      margin-top: -40px;
+      position: absolute;
+      top: 0px;
     width: 50%;
     }
-    .container .navbar-collaps .social{
-      padding-left: 140px;
-      margin-top: 0;
+    .container .navbar-collapse .menu-up-fix{
+      position: absolute;
+    top: 0px;
+    right: 99px;
+    }
+    .container .navbar-collapse .social{
+      position: absolute;
+      top: 3px;
+      right: 60;
+      left: 92px;
+      z-index: 999;
     }
     .container .navbar-collapse .social > a{
       margin-right: 0;
@@ -4411,24 +4420,25 @@ readers do not read off random characters that represent icons */
     }
     
     .navbar-default .navbar-collapse .navbar-nav > li:first-child{
+      margin-top: -6px;
+      margin-right: 10px;
       padding: 21px 0 0px 0;
       background-image: url(/Content/upload/panel1.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(2){
       margin-top: -6px;
-      margin-right: 7px;
+      margin-right: 2px;
       padding: 2px 0 0px 0;
       background-image: url(/Content/upload/panel2.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(3){
-      margin-right: 11px;
+      margin-right: -2px;
       margin-top: -6px;
       background-image: url(/Content/upload/panel3.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(4){
       padding-top: 4px;
       margin-top: -8px;
-      margin-right: 8px;
       background-image: url(/Content/upload/panel4.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(5){
@@ -4439,23 +4449,23 @@ readers do not read off random characters that represent icons */
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(6){
       padding: 10px 0 0 0;
       margin-top: -12px;
-      margin-left: 6px;
+      margin-left: -9px;
       background-image: url(/Content/upload/panel6.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(7){
       padding: 6px 0 0 0;
-      margin-top: -11px;
-      margin-left: 11px;
+      margin-top: -10px;
+      margin-left: -10px;
       background-image: url(/Content/upload/panel7.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(8){
       padding: 13px 0 0 12px;
       margin-top: -13px;
-      margin-left: 11px;
+      margin-left: -9px;
       background-image: url(/Content/upload/panel8.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(9){
-      margin-right: -25px;
+      margin-right: -11px;
       padding: 10px 0 0 0;
       margin-top: -12px;
       background-image: url(/Content/upload/panel9.png);
@@ -4463,12 +4473,12 @@ readers do not read off random characters that represent icons */
     .navbar-default .navbar-collapse .navbar-nav > li:nth-child(10){
       padding: 6px 0 0 0;
       margin-top: -10px;
-      margin-right: -41px;
+      margin-right: -27px;
       background-image: url(/Content/upload/panel10.png);
     }
     .navbar-default .navbar-collapse .navbar-nav > li:last-child{
       padding: 8px 0 32px 0;
-      margin-right: -57px;
+      margin-right: -43px;
       margin-top: -12px;
       background-image: url(/Content/upload/panel11.png);
     }
