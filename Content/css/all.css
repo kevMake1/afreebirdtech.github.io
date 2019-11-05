@@ -4396,6 +4396,12 @@ readers do not read off random characters that represent icons */
       top: 0px;
       width: 50%;
     }
+    .navbar-collapse{
+      transition: .8s ease-in-out;
+  }
+    .container .navbar-header .navbar-toggle{
+      z-index: 999;
+    }
     .container .navbar-collapse .menu-up-fix{
       position: absolute;
     top: 0px;
