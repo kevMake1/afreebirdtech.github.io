@@ -265,63 +265,72 @@
                     <h5>CONTACT INFORMATION</h5>
                 </div>
                 <div class="form-tutor">
-                    <div class="form-group inputExtent ">
-                        <label for="name">First name</label>
-                        <input type="text" class="form-control" id="name" placeholder="" name="firstname">
-                    </div>
-                    <div class="form-group inputExtent">
-                        <label for="name">Last name</label>
-                        <input type="text" class="form-control" id="name" placeholder="" name="lastname">
-                    </div>
-                </div>
-                <div class="form-tutor">
-                    <div class="form-group inputExtent ">
-                        <label for="address">Street Adress</label>
-                        <input type="text" class="form-control" id="address" placeholder="" name="address">
-                    </div>
-                    <div class="form-group inputExtent">
-                        <label for="city">City</label>
-                        <input type="text" class="form-control" id="city" placeholder="" name="city">
-                    </div>
-                </div>
-                <div class="form-tutor">
-                    <div class="inputExtent">
-                        <label class="table-block" for="country">Country</label>
-                        <input type="text" class="form-control" id="country" placeholder="" name="country">
-                      
-                        <div>
+                        <div class="form-group inputExtent ">
+                            <label for="name" class="required-field">First name</label>
+                            <input type="text" class="form-control" placeholder="" name="first name" required>
+                        </div>
+                        <div class="form-group inputExtent">
+                            <label for="name" class="required-field">Last name</label>
+                            <input type="text" class="form-control"  placeholder="" name="Last name" required>
                         </div>
                     </div>
-                    <div class="state-zip-inputExtent">
-                        <div class="zip-code-form">
-                            <div class="state-inputExtent">
-                                <label class="table-block" for="state">State</label>
-                                <div class="btn-group country-choose">
-                                    <input type="text" class="form-control" id="state" placeholder="" name="state">
-                            
-                                </div>
-                                <div>
-                                </div>
+                    <div class="form-tutor">
+                        <div class="form-group inputExtent ">
+                            <label for="name" class="required-field">Street Adress</label>
+                            <input type="text" class="form-control" id="streetadress" placeholder="" name="Street Adress" required>
+                        </div>
+                        <div class="form-group inputExtent">
+                            <label for="name" class="required-field">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="" name="City" required>
+                        </div>
+                    </div>
+                    <div class="form-tutor">
+                        <div class="inputExtent">
+                            <label class="table-block required-field" id="country" for="country">Country</label>
+                                    
+                                    <select style="color: black"id="country" name="country" class="form-control" required>
+                                
+                                    <option value="USA" selected>USA </option>
+                                    <option value="Another Country">Another Country</option>
+                                </select>
+                          
+                            <div>
                             </div>
-                            <div class="form-group zip-inputExtent">
-                                <label for="zip">Zip code</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" name="zip">
+                        </div>
+                        <div class="state-zip-inputExtent">
+                            <div class="zip-code-form">
+                                <div class="state-inputExtent">
+                                     <label class="table-block required-field" for="country">State</label>
+                                     <select style="color: black"id="State" name="State" class="form-control" required>
+                                           
+                                            <option value="New Jersey">New Jersey</option>
+                                            <option value="New York" selected>NewYork</opton>
+                                            <option value="Another State">Another State</option>
+                                            </select>
+                                
+                                 
+                                </div>
+                                
+                                
+                                <div class="form-group zip-inputExtent">
+                                    <label for="zip" class="required-field">Zip code</label>
+                                    <input type="text" id="zipcode" class="form-control" placeholder="" name="zipcode" required>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-tutor">
-                    <div class="form-group inputExtent ">
-                        <label for="Phone">Contact Phone</label>
-                        <input type="phone" class="form-control" id="Phone" placeholder="" name="phone">
+                    <div class="form-tutor">
+                        <div class="form-group inputExtent ">
+                            <label for="name" class="required-field">Contact Phone</label>
+                            <input type="tle" class="form-control" id="contactphone" placeholder="" name="contactphone" required>
+                        </div>
+                        <div class="form-group inputExtent">
+                            <label for="name" class="required-field">Your email</label>
+                            <input type="email" class="form-control" id="email" placeholder="" name="contactemail" required>
+                        </div>
                     </div>
-                    <div class="form-group inputExtent">
-                        <label for="email">Your email</label>
-                        <input type="email" class="form-control" id="email" placeholder="" name="email">
-                    </div>
-                </div>
                 <div style="width:100%"class="skills-choose-title">
-                    <h5>AVAILABILITY</h5>
+                        <h5 class="required-field">AVAILABILITY(Please Check At Least One)</h5>
                     <p class="lightblue">During which hours are you available for helping us in our pursuit?</p>
                 </div>
                 <div style="width:100%" class="freeform-column ">
@@ -338,7 +347,7 @@
                     </div>
                 </div>
                 <div class="freeform-column  freeform-column-12">
-                        <label  style="padding-top:25px;" class="freeform-label" for="form-input-volunteerArtisticDiscipline">Please select your skill(s)</label>
+                        <label  style="padding-top:25px;" class="freeform-label required-field" for="form-input-volunteerArtisticDiscipline">Please select your skill(s)(Please Check At Least One)</label>
         <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Drawing or Painting">Drawing or Painting</label></div>
         <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Photography">Photography</label></div>
         <div><label><input name="volunteerArtisticDiscipline[]" type="checkbox" id="form-input-volunteerArtisticDiscipline" class="freeform-input" value="Acting">Acting</label></div>
@@ -356,12 +365,12 @@
         </div>
                         </div>
                 <div class="form-tutor-days">
-                    <h5>SPECIAL SKILLS OR QUALIFICATIONS</h5>
+                    <h5 class="required-field">SPECIAL SKILLS OR QUALIFICATIONS(Please explain your skills</h5>
                     <p class="lightblue">
                         Summarize special skills and qualifications you have acquired from employment, </br>
                         previous volunteer work, or through other activities, including hobbies or sports...
                     </p>
-                    <textarea class="form-control" rows="5" name="SPECIAL SKILLS OR QUALIFICATIONS"></textarea>
+                    <textarea class="form-control" rows="5" name="SPECIAL SKILLS OR QUALIFICATIONS" required></textarea>
                 </div>
                 <div class="skills-choose-title">
                     <p class="lightblue">
@@ -373,7 +382,7 @@
                         <h5>RESUME</h5>
                         <div class="freeform-column  freeform-column-12">
                             <label class="freeform-label freeform-required" for="name">My resume</label>
-            <input name="volunteerResume" type="file" id="file" class="freeform-input">
+            <input name="volunteerResume" type="file" id="file" class="freeform-input" required>
                         </div>
                         <h5 class="skills-choose-title">AGREEMENT</h5>
                    

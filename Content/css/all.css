@@ -4402,11 +4402,7 @@ readers do not read off random characters that represent icons */
     .container .navbar-header .navbar-toggle{
       z-index: 999;
     }
-    .container .navbar-collapse .menu-up-fix{
-      position: absolute;
-    top: 0px;
-    right: 99px;
-    }
+
     .container .navbar-collapse .social{
       position: absolute;
       top: 3px;
