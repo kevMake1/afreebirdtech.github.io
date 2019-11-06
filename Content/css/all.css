@@ -4527,4 +4527,12 @@ readers do not read off random characters that represent icons */
     content: "*";
     color: red;
 }
-
+.gala-address p{
+font-size: 24px;
+    font-weight: bold;
+}
+.gala-address a{
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+}
