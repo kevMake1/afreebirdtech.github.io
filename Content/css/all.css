@@ -4390,6 +4390,12 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+  @media only screen and (min-width: 768px){
+    .gala-videos{
+      width: 50%;
+    }
+  }
   @media only screen and (max-width: 767px){
     .navbar-collapse .nav.navbar-nav{
       position: absolute;
