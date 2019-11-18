@@ -4397,6 +4397,9 @@ readers do not read off random characters that represent icons */
     }
   }
   @media only screen and (max-width: 767px){
+    .navbar-collapse.collapse.in{
+      overflow-y: initial;
+    }
     .navbar-collapse .nav.navbar-nav{
       position: absolute;
       top: 0px;
