@@ -4392,8 +4392,14 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
   @media only screen and (min-width: 768px){
+    #bubble_container iframe{
+      padding: 8%;
+    }
     .gala-videos{
       width: 50%;
+    }
+    .container-narrow .gallery-wrapper section{
+      padding: 60px 0;
     }
   }
   @media only screen and (max-width: 767px){
@@ -4414,9 +4420,9 @@ readers do not read off random characters that represent icons */
 
     .container .navbar-collapse .social{
       position: absolute;
-      top: 3px;
-      right: 60;
-      left: 92px;
+      top: 120px;
+      right: 45px;
+      width: 20px;
       z-index: 999;
     }
     .container .navbar-collapse .social > a{
@@ -4549,6 +4555,7 @@ font-size: 24px;
   background-image: url(/Content/images/bubble-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  padding: 10% 0;
+  padding: 8% 0;
   background-size: cover;
 }
+
