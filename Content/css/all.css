@@ -4545,3 +4545,10 @@ font-size: 24px;
     text-decoration: underline;
     color: white;
 }
+#bubble_container{
+  background-image: url(/Content/images/bubble-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10% 0;
+  background-size: cover;
+}
