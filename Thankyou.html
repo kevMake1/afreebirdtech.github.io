@@ -248,6 +248,30 @@
                             .small-img{width: 200px;}
                             .med-img{width: 300px;}
                             .med-img2{width: 250px;}
+                            .main-ct {
+                                width: 1000px;
+                                height:600px;
+                                border: 1px solid #000;
+                                position:relative;
+                              }
+                              .fixed-top {
+                                position: sticky;
+                                width:100px;
+                                height:20px;
+                                background: red;
+                                top:10px;
+                              }
+                              .fixed-bottom {
+                                position: sticky;
+                                width:100px;
+                                height:20px;
+                                background: red;
+                                bottom:10px;
+                              }
+                              .like-body {
+                                width: 100%;
+                                height:1300px;
+                              }
                          
 
 </style>
@@ -259,9 +283,13 @@
 <section id="lime" class="section content lime decreased-font">
    
     <div class="grass"></div>
-    <div class="outer">
+<div class="like-body">
+    <div class="main-ct">
+        <div class="fixed-top">
+                <h1 style="text-align:center;">We are thankful for A Free Bird</h1>
+        </div>
+  
         <div class="container-narrow">
-        <h1 style="text-align:center;">We are thankful for A Free Bird</h1>
         <div style="text-align: center" class="thumbnail1">
              
          
@@ -462,15 +490,18 @@
 </div>
 </div>
 </img>
-<h1 class="fixed-title">...and A Free Bird is thankful for you</h1>
 
 
 
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="fixed-bottom">
+                <h1>...and A Free Bird is thankful for you</h1>
+        </div>
+    </div>
+</div>
 </section>
 
     </div>
