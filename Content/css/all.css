@@ -4392,6 +4392,14 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
   @media only screen and (min-width: 768px){
+    .photo-right img{
+      position: absolute;
+      right: -10%;
+  }
+  .photo-left img{
+      position: absolute;
+      left: -10%;
+  }
     #bubble_container iframe{
       padding: 8%;
     }
