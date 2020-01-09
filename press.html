@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-         #backtotop{
+      #backtotop{
                 color: #53351D;
                 position: fixed; 
                 height: 90px;
@@ -31,17 +30,17 @@
             #google_translate_element{
                 position: fixed; 
                 right: 40px;
-                top: 135px;
+                top: 70px;
             }
         .linkwraplink{
          background-color:#222222;
         }
         .navbar  {
-        border-width:1px 0;
-        list-style:none;
-        margin-top:0;
-        padding:0;
-        text-align:center;} 
+          border-width: 10;
+                list-style:none;
+                margin-top:0;
+                padding:0;
+                text-align:center;} 
         .nav li{
         display:inline;
         font-size: 1.05em
@@ -55,8 +54,10 @@
             }
 @media (min-width: 769px){
 .navbar-nav {
-    float: none;
-    margin:0 45px;
+  /* background-color:#FFCC00; */
+            float: none;
+            margin-top: 20px;
+            padding: 5px;
     
   
 }
@@ -72,35 +73,25 @@
         </head>
         
         <body id="top" role="document">
-             <div class="navbar-fixed-top">
-                    <button id="backtotop">
-                        <img src="/Content/upload/up-arrow.png" alt="Top" width="25" height="25">
-                        <span >Top</span >
-                    </button>
-                    <script>
-                        const backtotop = document.querySelector("#backtotop");
-                        backtotop.addEventListener("click",function(){
-                            window.scrollTo({
-                                top:0,
-                                left:0,
-                                behavior:"smooth"
-                            });
-                        });
-                        </script>
-                    <div id="google_translate_element"></div>
-                    </div>
-                    <div class="navbar-fixed-top">
-                        
-                    </div>
+          <div class="navbar-fixed-top">
+            <button id="backtotop">
+                <img src="/Content/upload/up-arrow.png" alt="Top" width="25" height="25">
+                <span >Top</span >
+            </button>
+            <div id="google_translate_element"></div>
+            </div>
+            <div class="navbar-fixed-top">
+                
+            </div>
 
-                    <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-                    }
-                    </script>
-                    
-                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                  
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          
             <nav class="navbar navbar-default navbar-fixed-top smooth yellow text-ceneter landing-nav" data-spy="affix" data-offset-top="50"     >
                 <div class="container">
                     <div class="navbar-header">
@@ -199,9 +190,9 @@
                           <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
                       </ul>
                   </li>-->
-                  <li><a href="/gallery"style="color:white;">Gallery</a></li>   
+                  <li><a href="/gallery.html"style="color:white;">Gallery</a></li>   
                   <!--<li><a href="/blog">Blog</a></li>-->
-                  <li><a href="/sponsors"style="color:white;">Sponsors</a></li>
+                  <li><a href="/sponsors.html"style="color:white;">Sponsors</a></li>
                   <!--<li><a href="/goods">Goods</a></li>-->
 
                   <li><a href="#dark"style="color:white;">Contact us</a></li>
@@ -214,11 +205,11 @@
                       </a>
                       <ul class="dropdown-menu">
                         <!--<li><a href="/event"><span>Events</span></a></li>-->
-                        <li><a href="/blog"style="color:#764c29"><span>Blog</span></a></li>
+                        <li><a href="/blog.html"style="color:#764c29"><span>Blog</span></a></li>
                       
                         <li><a href="/press.html"target="_blank"><span>Press</span></a></li>
 
-                        <li><a href="/goods"style="color:#764c29"><span>The Goods</span></a></li>
+                        <li><a href="/goods.html"style="color:#764c29"><span>The Goods</span></a></li>
                         <!--<li><a href=""><s>I Am Campaign</s></a></li>-->
                         <!--li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
                     </ul>
@@ -246,289 +237,270 @@
       </div>
   </nav>
 
+  <div role="main">
+    <div id="loader-bg">
+      <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
+      <style type="text/css">
+        .st0 {
+          fill: none;
+          stroke: #53351D;
+          stroke-width: 10;
+          stroke-miterlimit: 10;
+        }
 
+        .st1 {
+          fill: none;
+          stroke: #FFCC00;
+          stroke-width: 11;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-miterlimit: 11;
+        }
+        .video-wrapper{
+        overflow:hidden;
+        width:100%;
+        min-height: 700px;
+        height:100%;
+  
+        position: relative;;
+        display:block;
+        }
+      .video-wrapper:after {
+        content:"";
+        background: rgba(184, 184, 184, 0.4);
+        width:100%;
+        height:75%;
+        position:absolute;
+        display:table;
+        left:0;
+        top:0;
+        }
+      .wrapper-message{
+        position:absolute;
+        padding-top: 2%;
+        z-index:999;
+        color: #fff;
+        text-align:center;
+        width:100%;
+        height:100%;
+        }
+        .container{max-width:1500px; align-content: center}
+        .content{padding-top:200px}
+        h1{text-align: center}
 
+        .background-wrapper{
+          width: 560;
+          height:335;
 
+        }
+        .background-wrapper img{
+          height:300px;
+          width: 349px;
+        }
+      </style>
 
-            <div role="main">
-              <div id="loader-bg">
-                <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                    stroke: #53351D;
-                    stroke-width: 10;
-                    stroke-miterlimit: 10;
-                  }
-
-                  .st1 {
-                    fill: none;
-                    stroke: #FFCC00;
-                    stroke-width: 11;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 11;
-                  }
-                  .video-wrapper{
-                  overflow:hidden;
-                  width:100%;
-                  min-height: 1150px;
-                  height:100%;
-            
-                  position: relative;;
-                  display:block;
-                  }
-                .video-wrapper:after {
-                  content:"";
-                  background: rgba(0,0,0,.4);
-                  width:100%;
-                  height:100%;
-                  position:absolute;
-                  display:table;
-                  left:0;
-                  top:0;
-                  }
-                .wrapper-message{
-                  position:absolute;
-                  z-index:999;
-                  color: #fff;
-                  text-align:center;
-                  width:100%;
-                  height:100%;
-                  }
-                  .container{max-width:fit-content; align-content: center}
-                  .content{padding-top:200px}
-            .background-wrapper{width:fit-content}
-            .goods-wrapper section .background-wrapper {
-              background-color: #338aa0;
-              padding: 0;
-              height: 490px;
-              width: 362px;
-              margin: 0px 80px 0px 59px;
-              text-align: center;
-
-
-
-          }
-            h3{font-size:25px; font-weight: 500; color:#8fdbee;}
-            @media (min-width: 768px) {
-              
-            }
-            img{max-width: 362px; max-height: 360px;}
-
-
-                </style>
-        
-                <circle class="st0" cx="30" cy="30" r="24" />
-                <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
-              </svg>
-            </div>
+      <circle class="st0" cx="30" cy="30" r="24" />
+      <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
+    </svg>
+  </div>
             <section class="section content darkblue decreased-font">
               
               <div class="clouds"></div>
               <div class="grass"></div>
               <div class="container">
                 <div class="subsection">
-                
-                  
+                    
 
-                 
                   <header>
-                  
-
-
-                    <h1 style="text-align: center">Press</h1>
-                   
-                  </header>
+                    <h1 style="font-size: 5em;">Press</h1>
+                     </header>
                   <div class="goods-wrapper flex">
-                    <!--Video-01-->
+                    <!--01-->
                     <section>
                       <div class="background-wrapper">
-                      <a href="https://www.broadwayworld.com/brooklyn/article/Ali-Ewoldt-to-Headline-A-Free-Bird-Organization-Gala-20191004?fbclid=IwAR3hDF7xjiuNudss8Kzugbn7ayE6yKbjZlQe4qFVnbgip-stO_xq_NEEAlU" target="_blank"><img src="Content\images\press\Aligala.png">
+                        <a href="https://www.broadwayworld.com/brooklyn/article/Ali-Ewoldt-to-Headline-A-Free-Bird-Organization-Gala-20191004?fbclid=IwAR3hDF7xjiuNudss8Kzugbn7ayE6yKbjZlQe4qFVnbgip-stO_xq_NEEAlU" target="_blank">
+                          <img src="Content\images\press\Aligala.png">
                         </a>
-                          <h3>Ali Ewoldt at Gala
-                          </h3>
-                         
-                          <p> <a href="https://www.broadwayworld.com/brooklyn/article/Ali-Ewoldt-to-Headline-A-Free-Bird-Organization-Gala-20191004?fbclid=IwAR3hDF7xjiuNudss8Kzugbn7ayE6yKbjZlQe4qFVnbgip-stO_xq_NEEAlU"target="_blank">Learn More</a></p>
-                        
-                      </div>
-                    </section>
-                    <section>
-                      <div class="background-wrapper">
-                      <a href="https://www.topbuzz.com/@steveax2004/a-free-birds-5th-annual-gala-afb-on-11719-at-grand-slam-in-harlem-BQKAoVosyl0" target="_blank"><img src="Content\images\press\gala2019.png">
-                        </a>
-                          <h3>A Free Bird's 5th Annual Gala</h3>
-                         
-                          <p> <a href="https://www.topbuzz.com/@steveax2004/a-free-birds-5th-annual-gala-afb-on-11719-at-grand-slam-in-harlem-BQKAoVosyl0"target="_blank">Learn More</a></p>
-                        
-                      </div>
-                    </section>
-                    <section>
-                      <div class="background-wrapper">
-                        <a href="Content\images\press\AFB_Media-Kit_01d-1.pdf" target="_blank"> <img src="Content\images\press\AFB-Media-Cover-Thumbnail_180207_154010.png"></a>
                         <div class="caption">
-                          <h3>A Free Bird Media Kit</h3>
-                          
-                          <p><a href="Content\images\press\AFB_Media-Kit_01d-1.pdf" target="_blank">Click to download</a></p>		
+                          Ali Ewoldt at Gala
+                          <p> <a href="https://www.topbuzz.com/@steveax2004/a-free-birds-5th-annual-gala-afb-on-11719-at-grand-slam-in-harlem-BQKAoVosyl0"target="_blank">
+                            Read More</a></p>
+                        
                         </div>
                       </section>
                       <!--Video-02-->
                       <section>
                         <div class="background-wrapper">
-                        <a href="https://www.instagram.com/p/BfyYINcB8yX/" target="_blank"><img src="Content\images\press\ss+(2019-10-07+at+11.29.15).jpg">
+                          <a href="https://www.topbuzz.com/@steveax2004/a-free-birds-5th-annual-gala-afb-on-11719-at-grand-slam-in-harlem-BQKAoVosyl0" target="_blank">
+                            <img src="Content\images\press\gala2019.png">
                           </a>
-                            <h3>Winner Of Give a Brand</h3>
-                           
-                            <p> <a href="https://www.instagram.com/p/BfyYINcB8yX/"target="_blank">Learn More</a></p>
-                          
-                        </div>
-                      </section>
-                      <section>
-                        <div class="background-wrapper">
-                        <a href="https://www.broadwayworld.com/article/FROZENs-Jelani-Alladin-to-Perform-at-A-Free-Birds-2017-Benefit-Gala-20171115" target="_blank"><img src="Content\images\press\Screenshot-12.png">
-                          </a>
-                            <h3>Broadway World</h3>
-                           
-                            <p> <a href="https://www.broadwayworld.com/article/FROZENs-Jelani-Alladin-to-Perform-at-A-Free-Birds-2017-Benefit-Gala-20171115"target="_blank">Learn More</a></p>
-                          
-                        </div>
-                      </section>
-                      <section>
-                        <div class="background-wrapper">
-                          <a href="http://www.fox5ny.com/public-affairs/221334487-video" target="_blank"><img src="Content\images\press\Screenshot-18-copy.jpg"></a>
                           <div class="caption">
-                            <h3>Fox 5 Spolights A Free Bird</h3>
+                            A Free Bird's 5th Annual Gala
+                            <p> <a href="https://www.topbuzz.com/@steveax2004/a-free-birds-5th-annual-gala-afb-on-11719-at-grand-slam-in-harlem-BQKAoVosyl0"target="_blank">
+                              Read More</a></p>
+                          </div>
+                        </section>
+
+                      <section>
+                      <div class="background-wrapper">
+                        <a href="Content\images\press\AFB_Media-Kit_01d-1.pdf" target="_blank"> <img src="Content\images\press\AFB-Media-Cover-Thumbnail_180207_154010.png"></a>
+                       
+                        <div class="caption">
+                          A Free Bird Media Kit
+                          <p><a href="Content\images\press\AFB_Media-Kit_01d-1.pdf" target="_blank">Read More</a></p>		
+                     
+                        </div>
+                      </section>
+
+                      <section>
+                        <div class="background-wrapper">
+                          <a href="https://www.instagram.com/p/BfyYINcB8yX/" target="_blank"><img src="Content\images\press\ss+(2019-10-07+at+11.29.15).jpg">
+                          </a>
+                          <div class="caption">
+                            Winner Of Give a Brand
+                            <p> <a href="https://www.instagram.com/p/BfyYINcB8yX/"target="_blank">Read More</a></p>
                           
-                            <p> <a href="http://www.fox5ny.com/public-affairs/221334487-video" target="_blank">Learn more</a></p>
                           </div>
                         </section>
 
                         <section>
-                          <div class="background-wrapper">
-                            <a href="https://fliphtml5.com/tupo/wxfc" target="_blank"><img src="Content\images\press\b4cccc84-4cd0-44cf-bd79-c54fb8eea26f.png" ></a>
+                      <div class="background-wrapper">
+                        <a href="https://www.broadwayworld.com/article/FROZENs-Jelani-Alladin-to-Perform-at-A-Free-Birds-2017-Benefit-Gala-20171115" target="_blank"><img src="Content\images\press\Screenshot-12.png">
+                        </a>
+                        <div class="caption">
+                          Broadway World
                            
-                              <h3>4th annual A Free Bird Magazine</h3>
-                         
-                              <p> <a href="https://fliphtml5.com/tupo/wxfc" target="_blank">Click To Read</a></p>
-                            
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                           <a href="https://www.pressreader.com/usa/closer-weekly/20180316/283476436715398" target="_blank"><img src="Content\images\press\Closer-Weekly-Press-copy.jpg"></a>
-                           
-                             <h3>Closer Magazine features "I Am A Free Bird Music Video.</h3>
-                           
-                             <p><a href="https://www.pressreader.com/usa/closer-weekly/20180316/283476436715398" target="_blank">Learn More</a></p>
-                           </div>
-                         </section>
+                            <p> <a href="https://www.broadwayworld.com/article/FROZENs-Jelani-Alladin-to-Perform-at-A-Free-Birds-2017-Benefit-Gala-20171115"target="_blank">Read More</a></p>
+                          
+                        </div>
+                      </section>
+
                          <section>
-                          <div class="background-wrapper">
-                            <a href="https://www.facebook.com/PowerOnTheBlockWithKimKane/posts/1747577315304379"><img src="Content\images\press\kimkane.png"></a>
-                            
-                            <h3>Kim Kane features A Free Bird Organization</h3>
-                              
-                              <p> <a href="https://www.facebook.com/PowerOnTheBlockWithKimKane/posts/1747577315304379" target="_blank">Learn More</a></p>
-                            
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                           <a href="http://njrockstar.com/a-free-bird-organization-of-nyc-is-offering-a-sponsor-membership-program-to-help-children-with-cancer"><img src="Content\images\press\NJrockstar.png"></a>
-                            
-                              <h3>NJ Rockstar features <br> A Free Bird</h3>
-                            
-                              <p> <a href="http://njrockstar.com/a-free-bird-organization-of-nyc-is-offering-a-sponsor-membership-program-to-help-children-with-cancer" target="_blank">Learn More</a></p>
-                         
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <a href="http://pix11.com/2016/06/08/its-a-g-thing-local-nonprofit-a-free-bird-helps-inspire-and-empower-kids-with-cancer-through-the-arts/"><img src="Content\images\press\Screenshot-8.jpg"></a>
-                            
-                              <h3>PIX 11 features Ryan</h3>
-                        
-                              <p> <a href="https://pix11.com/2016/06/08/its-a-g-thing-local-nonprofit-a-free-bird-helps-inspire-and-empower-kids-with-cancer-through-the-arts/" target="_blank">Learn More</a></p>
-                            
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                           <a href="http://brooklyn.news12.com/story/34778091/brooklyn-teen-turns-to-art-after-beating-cancer"><img src="Content\images\press\Screenshot-9.png"></a>
-                            
-                              <h3>Ryan Works with News 12 <br> Brooklyn</h3>
+                      <div class="background-wrapper">
+                        <a href="http://www.fox5ny.com/public-affairs/221334487-video" target="_blank"><img src="Content\images\press\Screenshot-18-copy.jpg"></a>
                           
-                              <p><a href="http://brooklyn.news12.com/story/34778091/brooklyn-teen-turns-to-art-after-beating-cancer" target="_blank">Learn More</a></p>
-                            
-                          </div>
-                        </section>
+                        <div class="caption">
+                          Fox 5 Spolights A Free Bird
+                            <p> <a href="http://www.fox5ny.com/public-affairs/221334487-video" target="_blank">Read More</a></p>
+                        </div>
+                      </section>
+
                         <section>
-                          <div class="background-wrapper">
-                           <a href="https://www.nycservice.org/organizations/index.php?org_id=1955"><img src="Content\images\press\Screenshot-19.png"></a>
-                            
-                              <h3> NYC Service talks about A Free Bird</h3>
-                              
-                              <p> <a href="https://www.nycservice.org/organizations/index.php?org_id=1955" target="_blank">Learn more</a></p>
-                            </div>
-                         
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                           <a href="http://www.drew.edu/news/2016/12/28/6-of-the-coolest-drew-internships"><img src="Content\images\press\Screenshot-21.png"></a>
-                              <h3 style="font-size: 20px">Drew University Names AFB One of the Coolest Internships</h3>
-                              
-                              <p><a href="http://www.drew.edu/news/2016/12/28/6-of-the-coolest-drew-internships" target="_blank">Learn More</a></p>
-                            
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                           <a href="https://www.brooklyndaily.com/stories/2014/23/bn-bb-boody-jhs-dancers-life-2014-06-06-bk_2014_23.html"><img src="Content\images\press\Screenshot-22.png"></a>
-                            
-                              <h3>Brooklyn Daily features Godni</h3>
-                              
-                              <p> <a href="https://www.brooklynpaper.com/stories/2014/23/bn-bb-boody-jhs-dancers-life-2014-06-06-bk_2014_23.html?from=bd" target="_blank">Learn More</a></p>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                           <a href="https://www.theodysseyonline.com/rising-star-falyn-vega-to-perform-at-madison-square-garden-event?utm_expid=.53hHQ_sIS_GVYl9TPM4psw.0&utm_referrer="><img src="Content\images\press\Screenshot-24.png"></a>
-                            
-                              <h3 style="font-size:21px">The Odyssey features AFB's Madison Square Garden Performance!</h3>
-                             
-                              <p> <a href="https://www.theodysseyonline.com/rising-star-falyn-vega-to-perform-at-madison-square-garden-event?utm_expid=.53hHQ_sIS_GVYl9TPM4psw.0&utm_referrer=1" target="_blank">Learn More</a></p>
-                            </div>
-                         
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <a href="https://blogs.baruch.cuny.edu/dogood1/?p=4"><img src="Content\images\press\Screenshot-25.png"></a>
-                            
-                              <h3>#BaruchFightsCancer <br> with A Free Bird</h3>
-                             
-                              <p><a href="https://blogs.baruch.cuny.edu/dogood1/?p=4" target="_blank">Learn More</a></p>
-                            </div>
-                          
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <a href="https://audioboom.com/posts/3227820-06-22-14-part-1-a-free-bird"><img src="Content\images\press\nash.png"></a>
-                            
-                              <h3>NASH Matters with Kelly Ford <br>featuring A Free Bird</h3>
+                      <div class="background-wrapper">
+                        <a href="https://fliphtml5.com/tupo/wxfc" target="_blank"><img src="Content\images\press\b4cccc84-4cd0-44cf-bd79-c54fb8eea26f.png" ></a>
                            
-                             
-                              
-                              <p> <a href="https://audioboom.com/posts/3227820-06-22-14-part-1-a-free-bird" target="_blank">Learn More</a></p>
+                        <div class="caption">
+                          4th annual A Free Bird Magazine
+                              <p> <a href="https://fliphtml5.com/tupo/wxfc" target="_blank">Read More</a></p>
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="https://www.pressreader.com/usa/closer-weekly/20180316/283476436715398" target="_blank"><img src="Content\images\press\Closer-Weekly-Press-copy.jpg"></a>
+                           
+                        <div class="caption">
+                          Closer Magazine features "I Am A Free Bird Music Video.
+                             <p><a href="https://www.pressreader.com/usa/closer-weekly/20180316/283476436715398" target="_blank">Read More</a></p>
+                           </div>
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="https://www.facebook.com/PowerOnTheBlockWithKimKane/posts/1747577315304379"><img src="Content\images\press\kimkane.png"></a>
                             
+                        <div class="caption">
+                          Kim Kane features A Free Bird Organization
+                              <p> <a href="https://www.facebook.com/PowerOnTheBlockWithKimKane/posts/1747577315304379" target="_blank">Read More</a></p>
+                            
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="http://njrockstar.com/a-free-bird-organization-of-nyc-is-offering-a-sponsor-membership-program-to-help-children-with-cancer"><img src="Content\images\press\NJrockstar.png"></a>
+                            
+                        <div class="caption">
+                          NJ Rockstar features <br> A Free Bird
+                            
+                              <p> <a href="http://njrockstar.com/a-free-bird-organization-of-nyc-is-offering-a-sponsor-membership-program-to-help-children-with-cancer" target="_blank">Read More</a></p>
+                         
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="http://pix11.com/2016/06/08/its-a-g-thing-local-nonprofit-a-free-bird-helps-inspire-and-empower-kids-with-cancer-through-the-arts/"><img src="Content\images\press\Screenshot-8.jpg"></a>
+                            
+                        <div class="caption">
+                          PIX 11 features Ryan
+                              <p> <a href="https://pix11.com/2016/06/08/its-a-g-thing-local-nonprofit-a-free-bird-helps-inspire-and-empower-kids-with-cancer-through-the-arts/" target="_blank">Read More</a></p>
+                            
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="http://brooklyn.news12.com/story/34778091/brooklyn-teen-turns-to-art-after-beating-cancer"><img src="Content\images\press\Screenshot-9.png"></a>
+                            
+                        <div class="caption">
+                          Ryan Works with News 12 <br> Brooklyn
+                              <p><a href="http://brooklyn.news12.com/story/34778091/brooklyn-teen-turns-to-art-after-beating-cancer" target="_blank">Read More</a></p>
+                            
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="https://www.nycservice.org/organizations/index.php?org_id=1955"><img src="Content\images\press\Screenshot-19.png"></a>
+                            
+                        <div class="caption">
+                          NYC Service talks about A Free Bird
+                              
+                              <p> <a href="https://www.nycservice.org/organizations/index.php?org_id=1955" target="_blank">Read More</a></p>
+                            </div>
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="http://www.drew.edu/news/2016/12/28/6-of-the-coolest-drew-internships"><img src="Content\images\press\Screenshot-21.png"></a>
+                             
+                        <div class="caption">
+                          Drew University Names AFB One of the Coolest Internships
+                              <p><a href="http://www.drew.edu/news/2016/12/28/6-of-the-coolest-drew-internships" target="_blank">Read More</a></p>
+                            
+                        </div>
+                      </section>
+
+                        <section>
+                      <div class="background-wrapper">
+                        <a href="https://www.brooklyndaily.com/stories/2014/23/bn-bb-boody-jhs-dancers-life-2014-06-06-bk_2014_23.html"><img src="Content\images\press\Screenshot-22.png"></a>
+                            
+                        <div class="caption">
+                          Brooklyn Daily features Godni
+                              <p> <a href="https://www.brooklynpaper.com/stories/2014/23/bn-bb-boody-jhs-dancers-life-2014-06-06-bk_2014_23.html?from=bd" target="_blank">Read More</a></p>
+                        
+                        </div>
+                      </section>
+                      <section>
+                        <div class="background-wrapper">
+                          <a href="https://www.theodysseyonline.com/rising-star-falyn-vega-to-perform-at-madison-square-garden-event?utm_expid=.53hHQ_sIS_GVYl9TPM4psw.0&utm_referrer="><img src="Content\images\press\Screenshot-24.png"></a>
+                              
+                          <div class="caption">
+                            The Odyssey features AFB's Madison Square Garden Performance!
+                             <p> <a href="https://www.theodysseyonline.com/rising-star-falyn-vega-to-perform-at-madison-square-garden-event?utm_expid=.53hHQ_sIS_GVYl9TPM4psw.0&utm_referrer=1" target="_blank">Read More</a></p>
+                            </div>
                           </div>
                         </section>
-                       
                       </div>
                     </div>
 
                   </div>
                 </section>
+
 
                 <div class="modal fade black modal-flex" tabindex="-1" id="getTicketsModal" role="dialog" aria-labelledby="getTicketsModal">
                   <div class="modal-dialog" role="document">
@@ -659,7 +631,7 @@
                   <div class="row">
                     <div class="col-md-offset-2 col-md-8">
                       Copyright © 2019, A Free Bird. All Rights Reserved.
-                     
+                      
                     </div>
                   </div>
                 </div>
@@ -688,7 +660,16 @@
             });
           });
         </script>
-
+<script>
+  const backtotop = document.querySelector("#backtotop");
+  backtotop.addEventListener("click",function(){
+      window.scrollTo({
+          top:0,
+          left:0,
+          behavior:"smooth"
+      });
+  });
+  </script>
       </body>
 
       </html>
