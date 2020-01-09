@@ -21,6 +21,19 @@
     <![endif]-->
 
     <style>
+         #backtotop{
+                color: #53351D;
+                position: fixed; 
+                height: 90px;
+                width: 40px;
+                bottom: 50%;
+                right: 0px;
+            }
+            #google_translate_element{
+                position: fixed; 
+                right: 40px;
+                top: 135px;
+            }
         .linkwraplink{
          background-color:#222222;
         }
@@ -32,7 +45,7 @@
         text-align:center;} 
         .nav li{
         display:inline;
-        font-size: 1.35em
+        font-size: 1.05em
     }
     .nav a{
         display:inline-block;
@@ -59,6 +72,35 @@
         </head>
         
         <body id="top" role="document">
+             <div class="navbar-fixed-top">
+                    <button id="backtotop">
+                        <img src="/Content/upload/up-arrow.png" alt="Top" width="25" height="25">
+                        <span >Top</span >
+                    </button>
+                    <script>
+                        const backtotop = document.querySelector("#backtotop");
+                        backtotop.addEventListener("click",function(){
+                            window.scrollTo({
+                                top:0,
+                                left:0,
+                                behavior:"smooth"
+                            });
+                        });
+                        </script>
+                    <div id="google_translate_element"></div>
+                    </div>
+                    <div class="navbar-fixed-top">
+                        
+                    </div>
+
+                    <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                    }
+                    </script>
+                    
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                  
             <nav class="navbar navbar-default navbar-fixed-top smooth yellow text-ceneter landing-nav" data-spy="affix" data-offset-top="50"     >
                 <div class="container">
                     <div class="navbar-header">
@@ -602,9 +644,7 @@
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
                     Copyright © 2019, A Free Bird. All Rights Reserved.
-                    <div class="pull-right smooth">
-                        <a class="top hvr-bob" href="#top">back to top <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
