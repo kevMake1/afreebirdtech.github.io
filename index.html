@@ -28,13 +28,22 @@
         $(Content/upload/website-animation.gif).hide();
         $(c).show();</script>-->
         <style>
+            #mbtitle{
+               display: none;
+            }
+            #mbtitle img{
+                display: none;
+             }
              #backtotop{
-                color: #53351D;
-                position: fixed; 
-                height: 90px;
-                width: 40px;
+                border-style: none;
+                background-color:rgba(100, 148, 237, 0.479);
+                opacity: 0.9;
+                position: fixed;
+                height: 70px;
+                width: 70px;
                 bottom: 50%;
-                right: 0px;
+                right: 1%;
+                border-radius: 50%;
             }
             #google_translate_element{
                 position: fixed; 
@@ -61,17 +70,31 @@
             .nav>li>a {
                 display: inline-block
             }
-        @media (min-width: 769px){
+            @media screen and (max-width:767px){
         .navbar-nav {
             float: none;
             margin:0 45px;
-            
-          
         }
-        .title{position: relative; bottom: -100px; left:-40px}
-        .title2{position: relative; bottom: -100px;}
+        #google_translate_element{
+            display: none;
+        }
+        #backtotop{
+            display: none;
+        }
+        #mbtitle{
+            display: block;
+            color: #FFCC00;
+        }
+        #mbtitle img{
+            position: block;
+            display: block;
+            height: 270px;
+            width: 300px;
+            margin-top: -95%;
+            /* margin-left: 30%; */
+        }
         .container{height: 1%;}
-            .navbar{margin-top:-29px;}
+            .navbar{margin-top:29px;}
             }
                 </style>
             
@@ -81,8 +104,7 @@
             <body id="top" role="document">
                 <div class="navbar-fixed-top">
                     <button id="backtotop">
-                        <img src="/Content/upload/up-arrow.png" alt="Top" width="25" height="25">
-                        <span >Top</span >
+                        <img src="/Content/upload/up-arrow.png" alt="Top" width="40" height="40">
                     </button>
                     <div id="google_translate_element"></div>
                     </div>
@@ -108,9 +130,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand pull-right visible-xs">
+                <!-- <a href="/" class="navbar-brand pull-right visible-xs">
                  <img src="/Content/images/AFB_Logo.png">
-                </a>
+                </a> -->
 
             </div>
 
@@ -143,34 +165,6 @@
                     <li><a href="/">Home</a></li>
 
                     <li><a href="/about">About us</a></li>
-
-                    <!--<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Tutors
-                                <span class="caret"></span>
-                                <span class="caret-mobile"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/tutors">Our tutors</a></li>
-                                <li><a href="/tutor"><s>Become a tutor</s></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank">Magazine</a></li>
-                        <li><a href="/doctor-corner">Doctor's corner</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Programs
-                                <span class="caret"></span>
-                                <span class="caret-mobile"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/fightfree">Fight free</a></li>
-                                <li><a href="/freepro">Free and Pro</a></li>
-                                <li><a href="/dreaminspiration">Dream Inspiration</a></li>
-                                <li><a href=""><s>Kids supporting kids</s></a></li>
-                                <li><a href=""><s>Artists supporting artists</s></a></li>
-                            </ul>
-                        </li>-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>Get involved</span>
@@ -185,18 +179,6 @@
                         </ul>
                     </li>
                     <li><a href="/EnrollChild"><span>Enroll Your Child</span></a></li>
-                                        <!--<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                          <span>AFB Family</span>
-                          <span class="caret"></span>
-                          <span class="caret-mobile"></span>
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li><a href="/tutors"><span>Tutors</span></a></li>
-                          <li><a href=""><s>AFB Children</s></a></li>
-                          <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
-                      </ul>
-                  </li>-->
                   <li><a href="/gallery">Gallery</a></li>
                   <!--<li><a href="/blog">Blog</a></li>-->
                   <li><a href="/sponsors">Sponsors</a></li>
@@ -307,11 +289,9 @@
         <div class="container smooth text-center-xs">
 
                 <img  class="hidden-xs"src="Content\images\icons\AFB_Logo_Colored_NEIL2019.png" style="position:absolute; bottom:25%; left:20%; width: 450px ;" >
-                <div class="title">
-                        <div class="titleps">
-                              <h2 class="hidden-md hidden-lg hidde-sm">Empower each child <br>to fly free with the arts</h2>
-                              <br><a class="hidden-md hidden-lg hidde-sm" href="#about">Read More!</a>
-                        </div>
+                <div class="mbtitle" id="mbtitle">
+                    <img src="Content\images\icons\AFB_Logo_Colored_NEIL2019.png" >
+                    
                 </div>
         
             <div class="sponsors-shortcut hidden-sm hidden-md hidden-lg">
@@ -374,7 +354,7 @@
                 </div>
             </div>
             <div class="col-md-offset-1 col-md-4 image">
-                <img type="button" data-toggle="modal" data-target=".bs-modal-lg" src="/content/upload/play-vid.png" class="img-responsive play" alt="Responsive image">
+                <img type="button" data-toggle="modal" data-target=".bs-modal-lg" src="/content/upload/play-vid1.png" class="img-responsive play" alt="Responsive image">
                 <div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
