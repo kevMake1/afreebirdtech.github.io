@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
     <link rel="stylesheet" href="/Content/css/all.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css">
     <link rel="stylesheet" href="/Content/css/hover-min.css">
     <link rel="stylesheet" href="/Content/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
@@ -270,9 +270,21 @@
                     max-height: 200px;
                 }
                 .content{padding-top:200px}
-                .sponsors-wrapper section a {
-                    background-color: rgba(32, 152, 189, 0.493);}
-                    .container{max-width:1500px}
+                .sponsors-wrapper{
+                    margin: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    
+                    
+                    background-color:#FFFFFF;}
+                    .container{max-width:1900px}
+
+                
+                #sponsors-background{
+                    background-color: #FFFFFF;
+                }
+
 
 </style>
             <circle class="st0" cx="30" cy="30" r="24" />
@@ -280,7 +292,7 @@
             </svg>
         </div>
 
-<section class="section content darkblue decreased-font">
+<section id="sponsors-background">
     <div class="clouds"></div>
     <div class="grass"></div>
     <div class="container">
@@ -288,116 +300,198 @@
             <header>
                 <h1 style="text-align: center">Our sponsors</h1>
             </header>
-            <div class="flex sponsors-wrapper">
-
-                    <section>
-                        <a href="http://www.thegoodbean.com/">
-                            <img style="height: 170px" src="Content/images/sponsors/thegoodbean.png" alt="Sponsor"/>
+            <div class="sponsors-wrapper">
+                    <section> <!-- Google -->
+                        <a href="https://www.google.com/" target="_blank">
+                            <img style="height: 150px" src="/content/images/sponsors/google.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
+                    <section> <!-- Amazon -->
+                        <a href="https://smile.amazon.com/" target="_blank">
+                            <img style="height: 100px" src="/content/images/sponsors/amazon_logo2.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Ebay -->
+                        <a href="https://www.ebay.com/" target="_blank">
+                            <img style="height: 130px" src="/content/images/sponsors/ebay.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- PayPal -->
+                        <a href="https://www.paypal.com/us/home" target="_blank">
+                            <img style="height: 150px" src="/content/images/sponsors/paypal.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Business Card Shoppe-->
+                        <a href="https://print.thebusinesscardshoppe.com/" target="_blank">
+                            <img style="height: 150px" src="Content/images/sponsors/buscardshoppe.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Tofu -->
+                        <a href="https://www.tofuboxbrooklyn.com/" target="_blank">
+                            <img style="height: 80px" src="Content\images\sponsors\Tofubox632BrooklynNewYork.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Macy's -->
+                        <a href="https://www.macys.com/" target="_blank">
+                            <img style="height: 40px" src="/content/images/sponsors/Macys.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Neiman -->
+                        <a href="https://www.neimanmarcus.com/" target="_blank">
+                            <img style="height: 160px" src="/content/images/sponsors/neiman.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Armani -->
+                        <a href="https://www.armani.com/us/armanicom/unisex/giorgio-armani/cross_section" target="_blank">
+                            <img style="height: 70px" src="/content/images/sponsors/Armani_logo2.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Lovella -->
+                        <a href="https://www.lovellanyc.com/" target="_blank">
+                            <img style="height: 50px" src="/content/images/sponsors/Lovella Logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Stow Away-->
+                        <a href="https://stowawaycosmetics.com/" target="_blank">
+                            <img style="height: 130px" src="/content/images/sponsors/Stowaway logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Paintbox -->
+                        <a href="https://paint-box.com/" target="_blank">
+                            <img style="height: 110px" src="/content/images/sponsors/Paintbox.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Kipling -->
+                        <a href="https://www.kipling-usa.com/" target="_blank">
+                            <img style="height: 170px" src="/content/images/sponsors/kipling.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- hitech moda -->
+                        <a href="https://www.hitechmoda.com/" target="_blank">
+                            <img style="height: 140px" src="/content/images/sponsors/hitechModa_logo2.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Bosomakeup -->
+                        <a href="https://bossomakeup.com/" target="_blank">
+                            <img style="height: 110px" src="/content/images/sponsors/bossomakeup.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- SpaceNK -->
+                        <a href="https://www.spacenk.com/us/en_US/home-us" target="_blank">
+                            <img style="height: 130px" src="/content/images/sponsors/spaceNK_logo2.jpg" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Ice Theatre -->
+                        <a href="https://www.icetheatre.org/" target="_blank">
+                            <img style="height: 150px" src="/content/images/sponsors/ITNY-logo-and-tag-blk_SM (1).png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- NYC ballet -->
+                        <a href="https://www.nycballet.com/" target="_blank">
+                            <img style="height: 160px" src="/content/images/sponsors/NYC Ballet.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- vivendi -->
+                        <a href="https://www.vivendi.com/en/" target="_blank">
+                            <img style="height: 30px" src="/content/images/sponsors/vivendi_logo2.png " alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Rite Aid -->
+                        <a href="https://www.riteaid.com/about-us/the-rite-aid-foundation" target="_blank">
+                            <img style="height: 140px" src="/content/images/sponsors/kidcents.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Barns and Noble -->
+                        <a href="https://www.barnesandnoble.com/" target="_blank">
+                            <img style="height: 40px" src="/content/images/sponsors/Barnes and Noble.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    
+
+
+                    <section> <!--The Good Bean -->
+                        <a href="http://www.thegoodbean.com/">
+                            <img style="height: 110px; width: 100px;" src="Content/images/sponsors/thegoodbean.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+                    <section> <!-- Dark Mountain -->
                         <a href="https://www.facebook.com/darkmountainprinting/" target="_blank">
-                            <img style="height: 170px"src="/content/images/sponsors/darkmountain.png" alt="Sponsor"/>
+                            <img style="height: 110px"src="/content/images/sponsors/darkmountain.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://lavenderbythebay.com/" target="_blank">
-                            <img src="/content/images/sponsors/lavender.png" alt="Sponsor"/>
+                            <img style="height: 110px" src="/content/images/sponsors/lavender.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://bossomakeup.com/" target="_blank">
-                            <img src="/content/images/sponsors/bossomakeup.png" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://www.ebay.com/" target="_blank">
-                            <img src="/content/images/sponsors/ebay.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
+                    
                     <section>
                         <a href="https://www.fourseasons.com/beverlywilshire/" target="_blank">
-                            <img src="/content/images/sponsors/beverlywilshire.png" alt="Sponsor"/>
+                            <img style="height: 160px" src="/content/images/sponsors/beverlywilshire.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://print.thebusinesscardshoppe.com/" target="_blank">
-                            <img src="Content/images/sponsors/buscardshoppe.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
                     <section>
                         <a href="https://www.theadairgroup.com/" target="_blank">
-                            <img src="/content/images/sponsors/adair.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/adair.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://purityorganic.com/" target="_blank">
-                            <img src="/content/images/sponsors/purity.png" alt="Sponsor"/>
+                            <img style="height: 120px" src="/content/images/sponsors/purity.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.traderjoes.com/" target="_blank">
-                            <img src="/content/images/sponsors/trader.png" alt="Sponsor"/>
+                            <img style="height: 110px" src="/content/images/sponsors/trader.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.studioclaremont.com/" target="_blank">
-                            <img src="/content/images/sponsors/studioclaremont.png" alt="Sponsor"/>
+                            <img style="height: 170px" src="/content/images/sponsors/studioclaremont.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.kipling-usa.com/" target="_blank">
-                            <img src="/content/images/sponsors/kipling.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
                     <section>
                         <a href="https://www.artistcraftsman.com/" target="_blank">
-                            <img src="/content/images/sponsors/artistcraft.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/artistcraft.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.westminstercrackers.com/lucys-gluten-free-products" target="_blank">
-                            <img src="/content/images/sponsors/lucy.png" alt="Sponsor"/>
+                            <img style="height: 160px" src="/content/images/sponsors/lucy.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://smile.amazon.com/" target="_blank">
-                            <img src="/content/images/sponsors/amazonsmile.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
                     <section>
                         <a href="http://prestoneprinting.com/" target="_blank">
-                            <img src="/content/images/sponsors/prespress.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/prespress.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.sambazon.com/" target="_blank">
-                            <img src="/content/images/sponsors/samba.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/samba.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.bareburger.com/" target="_blank">
-                            <img src="/content/images/sponsors/bareburger.png" alt="Sponsor"/>
+                            <img style="height: 140px" src="/content/images/sponsors/bareburger.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://www.bartabacny.com/bcps455buzbc64wdqwh1liu4nm5mgb" target="_blank">
-                            <img src="/content/images/sponsors/bartabac.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/bartabac.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.chipotle.com/" target="_blank">
-                            <img src="Content/images/sponsors/Chipotle-Logo.png" alt="Sponsor"/>
+                            <img style="height: 110px" src="Content/images/sponsors/Chipotle-Logo.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://www.atlanticbagelscafe.com/" target="_blank">
-                            <img src="/content/images/sponsors/atlanticbagelscafe.png" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://www.google.com/" target="_blank">
-                            <img src="/content/images/sponsors/google.png" alt="Sponsor"/>
+                            <img style="height: 125px" src="/content/images/sponsors/atlanticbagelscafe.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
@@ -407,298 +501,252 @@
                     </section>
                     <section>
                         <a href="https://www.fotocare.com/" target="_blank">
-                            <img src="/content/images/sponsors/fotocare.png" alt="Sponsor"/>
+                            <img style="height: 140px" src="/content/images/sponsors/fotocare.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://www.gothamministorage.com/" target="_blank">
-                            <img src="/content/images/sponsors/gotham.png" alt="Sponsor"/>
+                            <img style="height: 140px" src="/content/images/sponsors/gotham.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.joyindian.com/" target="_blank">
-                            <img src="/content/images/sponsors/joy.png" alt="Sponsor"/>
-                        </a>
-                    </section><section>
-                        <a href="https://www.riteaid.com/about-us/the-rite-aid-foundation" target="_blank">
-                            <img src="/content/images/sponsors/kidcents.png" alt="Sponsor"/>
+                            <img style="height: 150px" src="/content/images/sponsors/joy.png" alt="Sponsor"/>
                         </a>
                     </section>
+                    
                     <section>
                         <a href="https://www.labreabakery.com/" target="_blank">
-                            <img src="/content/images/sponsors/labrea.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/labrea.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://www.nyc.gov/html/dcla/mfta/html/home/home.shtml" target="_blank">
-                            <img src="/content/images/sponsors/materials.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/materials.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.neimanmarcus.com/" target="_blank">
-                            <img src="/content/images/sponsors/neiman.png" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://www.paypal.com/us/home" target="_blank">
-                            <img src="/content/images/sponsors/paypal.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
+                    
                     <section>
                         <a href="https://rumbatime.com/" target="_blank">
-                            <img src="/content/images/sponsors/rumba.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/rumba.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.salesforce.com/" target="_blank">
-                            <img src="/content/images/sponsors/salesforce.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/salesforce.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.sapidindian.com/" target="_blank">
-                            <img src="/content/images/sponsors/sapid.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/sapid.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.savurlaw.com/" target="_blank">
-                            <img src="/content/images/sponsors/savour.png" alt="Sponsor"/>
+                            <img style="height: 170px" src="/content/images/sponsors/savour.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://newyorkcity.score.org/" target="_blank">
-                            <img src="/content/images/sponsors/score.png" alt="Sponsor"/>
+                            <img style="height: 160px" src="/content/images/sponsors/score.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.storagepost.com/" target="_blank">
-                            <img src="/content/images/sponsors/storagepost.png" alt="Sponsor"/>
+                            <img style="height: 150px" src="/content/images/sponsors/storagepost.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.bellozino.com/" target="_blank">
-                            <img src="/content/images/sponsors/belloz.jpg" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/belloz.jpg" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://bittersweetbk.com/index.html" target="_blank">
-                            <img src="/content/images/sponsors/bittersweet.jpg" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/bittersweet.jpg" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.linkedin.com/company/powerice/about/" target="_blank">
-                            <img src="/content/images/sponsors/PowerICE website.png" alt="Sponsor"/>
+                            <img style="height: 110px" src="/content/images/sponsors/PowerICE website.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.rusticocooking.com/" target="_blank">
-                            <img src="/content/images/sponsors/rusticocooking_favicon2.png" alt="Sponsor"/>
+                            <img style="height: 120px" src="/content/images/sponsors/rusticocooking_favicon2.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.soul-cycle.com/" target="_blank">
-                            <img src="/content/images/sponsors/Soul Cycle.png" alt="Sponsor"/>
+                            <img style="height: 50px; width: 150px;" src="/content/images/sponsors/Soul Cycle.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://vanderplasgallery.com/" target="_blank">
-                            <img src="/content/images/sponsors/Van der Plas Gallery Logo.png" alt="Sponsor"/>
+                            <img style="height: 40px; width: 150px;" src="/content/images/sponsors/Van der Plas Gallery Logo.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://vinosite.com/" target="_blank">
-                            <img src="/content/images/sponsors/Vino Logo.png" alt="Sponsor"/>
+                            <img style="height: 60px" src="/content/images/sponsors/Vino Logo.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.dashawellness.com/" target="_blank">
-                            <img src="/content/images/sponsors/dasha website.png" alt="Sponsor"/>
+                            <img style="height: 90px" src="/content/images/sponsors/dasha website.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://freshmadenyc.com/" target="_blank">
-                            <img src="/content/images/sponsors/Freshmade New Logo May 2017.png" alt="Sponsor"/>
+                            <img style="height: 80px; width: 170px;" src="/content/images/sponsors/Freshmade New Logo May 2017.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://cassandrasangel.com/ginas-ink/" target="_blank">
-                            <img src="/content/images/sponsors/Ginas_ink_logo_blue_hirez.png" alt="Sponsor"/>
+                            <img style="height: 90px" src="/content/images/sponsors/Ginas_ink_logo_blue_hirez.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://runsignup.com/Race/Results/46134/#resultSetId-156733;perpage:10" target="_blank">
-                            <img src="/content/images/sponsors/Grace Race 5K Morgan Adams Foundation.png" alt="Sponsor"/>
+                            <img style="height: 170px" src="/content/images/sponsors/Grace Race 5K Morgan Adams Foundation.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.icetheatre.org/" target="_blank">
-                            <img src="/content/images/sponsors/ITNY-logo-and-tag-blk_SM (1).png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
                     <section>
                         <a href="https://www.instagram.com/deliciosodelights/?hl=en" target="_blank">
-                            <img src="/content/images/sponsors/LogoColorTextBelow.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/LogoColorTextBelow.png" alt="Sponsor"/>
                         </a>
                     </section>
+                    <!-- PowerIce facebook
                     <section>
                         <a href="https://www.facebook.com/powerice/" target="_blank">
                             <img src="/content/images/sponsors/PowerICE website.png" alt="Sponsor"/>
                         </a>
                     </section>
+                -->
                     <section>
                         <a href="http://www.itrulli.com/" target="_blank">
-                            <img src="/content/images/sponsors/Itrulli Logo.png" alt="Sponsor"/>
+                            <img style="height: 90px" src="/content/images/sponsors/Itrulli Logo.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.lovellanyc.com/" target="_blank">
-                            <img src="/content/images/sponsors/Lovella Logo.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
                     <section>
                         <a href="https://www.facebook.com/MarinaKCouture/" target="_blank">
-                            <img src="/content/images/sponsors/Marina K Couture Logo.png" alt="Sponsor"/>
+                            <img style="height: 80px" src="/content/images/sponsors/Marina K Couture Logo.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.lotusbridal.com/" target="_blank">
-                            <img src="/content/images/sponsors/LotusLogowithFlowerOnTop_NoBackground.png" alt="Sponsor"/>
+                            <img style="height: 100px; width: 180px;" src="/content/images/sponsors/LotusLogowithFlowerOnTop_NoBackground.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://citywinery.com/newyork/" target="_blank">
-                            <img src="/content/images/sponsors/CW NY logo (1).png" alt="Sponsor"/>
+                            <img style="height: 60px; width: 170px;" src="/content/images/sponsors/CW NY logo (1).png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.bobbibrowncosmetics.com/" target="_blank">
-                            <img src="/content/images/sponsors/Bobbi Brown Logo 1.png" alt="Sponsor"/>
+                            <img style="height: 100px" src="/content/images/sponsors/Bobbi Brown Logo 1.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://homecookingny.com/" target="_blank">
-                            <img src="/content/images/sponsors/HomecookingNY.png" alt="Sponsor"/>
+                            <img style="height: 50px" src="/content/images/sponsors/HomecookingNY.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://b-m.facebook.com/VEGAZONLLC/" target="_blank">
-                            <img src="/content/images/sponsors/Vegazone logo.png" alt="Sponsor"/>
+                            <img style="height: 50px" src="/content/images/sponsors/Vegazone logo.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.bensdeli.net/" target="_blank">
-                            <img src="/content/images/sponsors/Ben_s Logo.png" alt="Sponsor"/>
+                            <img style="height: 100px" src="/content/images/sponsors/Bens_2.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://www.tonehouse.com/" target="_blank">
-                            <img src="/content/images/sponsors/Tone House Logo.jpg" alt="Sponsor"/>
+                            <img style="height: 110px" src="/content/images/sponsors/Tone House Logo.jpg" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.macys.com/" target="_blank">
-                            <img src="/content/images/sponsors/Macys.png" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://stowawaycosmetics.com/" target="_blank">
-                            <img src="/content/images/sponsors/Stowaway logo.png" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://freshmadenyc.com/" target="_blank">
-                            <img src="/content/images/sponsors/Freshmade New Logo May 2017.png" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://www.barnesandnoble.com/" target="_blank">
-                            <img src="/content/images/sponsors/Barnes and Noble.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
+                    
+                    
                     <section>
                         <a href="https://www.milliesoldworld.com/" target="_blank">
-                            <img src="/content/images/sponsors/Millies old world.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/Millies old world.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://www.jakubredziniak.com/" target="_blank">
-                            <img src="/content/images/sponsors/Logo - Jakub Redziniak Wedding and Portrait - PNG.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/Logo - Jakub Redziniak Wedding and Portrait - PNG.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="http://www.yonispretzelchallah.com/" target="_blank">
-                            <img src="/content/images/sponsors/yonis-logo-color (1).png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/yonis-logo-color (1).png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://encourage-kids.org/" target="_blank">
-                            <img src="/content/images/sponsors/enCourage Kids Foundation.jpg" alt="Sponsor"/>
+                            <img style="height: 100px"  src="/content/images/sponsors/encourageKids_logo2.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://simplyprotein.com/" target="_blank">
-                            <img src="/content/images/sponsors/Simply Protein.png" alt="Sponsor"/>
+                            <img style="height: 60px" src="/content/images/sponsors/Simply Protein.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://bedofnails.org/" target="_blank">
-                            <img src="/content/images/sponsors/Bed of Nails Logo.png" alt="Sponsor"/>
+                            <img style="height: 120px" src="/content/images/sponsors/Bed of Nails Logo.png" alt="Sponsor"/>
                         </a>
                     </section>
                    
                     <section>
                         <a href="https://www.goraw.com/" target="_blank">
-                            <img src="/content/images/sponsors/Go Raw.png" alt="Sponsor"/>
+                            <img style="height: 110px" src="/content/images/sponsors/Go Raw.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                             <a href="https://www.hoshyoga.org/" target="_blank">
-                                <img src="/content/images/sponsors/HOSH-Yoga-Logo-TM.png" alt="Sponsor"/>
+                                <img style="height: 60px" src="/content/images/sponsors/HOSH-Yoga-Logo-TM.png" alt="Sponsor"/>
                             </a>
                         </section>
-                    <section>
-                        <a href="https://paint-box.com/" target="_blank">
-                            <img src="/content/images/sponsors/Paintbox.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
                   
                     <section>
                         <a href="https://www.seamless.com/menu/spice-81st-street-435-amsterdam-ave-new-york/280185" target="_blank">
-                            <img src="/content/images/sponsors/Spice1.jpg" alt="Sponsor"/>
+                            <img style="height: 120px" src="/content/images/sponsors/Spice1.jpg" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                             <a href="http://www.sumptuousbites.com/" target="_blank">
-                                <img src="/content/images/sponsors/Sumptuous Bites.PNG" alt="Sponsor"/>
+                                <img style="height: 120px" src="/content/images/sponsors/Sumptuous Bites.PNG" alt="Sponsor"/>
                             </a>
                         </section>
                     <section>
                         <a href="http://nuebyshani.com/" target="_blank">
-                            <img src="/content/images/sponsors/nue by shani.png" alt="Sponsor"/>
+                            <img style="height: 130px" src="/content/images/sponsors/nue by shani.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://emptyvase.com/" target="_blank">
-                            <img src="/content/images/sponsors/emptyvase.png" alt="Sponsor"/>
+                            <img style="height: 150px" src="/content/images/sponsors/emptyvase.png" alt="Sponsor"/>
                         </a>
                     </section>
                     <section>
                         <a href="https://hildastark.artspan.com/index.php" target="_blank">
-                            <img src="/content/images/sponsors/hildastark.png" alt="Sponsor"/>
+                            <img style="height: 80px" src="/content/images/sponsors/hildastark.png" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.nycballet.com/" target="_blank">
-                            <img src="/content/images/sponsors/NYC Ballet.png" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                            <a href="https://www.armani.com/us/armanicom/unisex/giorgio-armani/cross_section" target="_blank">
-                                <img src="/content/images/sponsors/Armani Logo.jpg" alt="Sponsor"/>
-                            </a>
-                        </section>
+                    
+                    
                     <section>
                             <a href="https://www.thenydancersstudio.com/" target="_blank">
-                                <img src="/content/images/sponsors/NYDancersStudio.png" alt="Sponsor"/>
+                                <img style="height: 150px" src="/content/images/sponsors/NYDancersStudio.png" alt="Sponsor"/>
                             </a>
                         </section>
                    
@@ -707,41 +755,138 @@
                             <img src="/content/images/sponsors/Nico _ Adrian Logo.jpg" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.spacenk.com/us/en_US/home-us" target="_blank">
-                            <img src="/content/images/sponsors/Space NK Apothecary Logo.gif" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
+                    
+                    <section> <!-- Chef Floyd Cardoz -->
                         <a href="https://www.facebook.com/ChefFloydCardoz/" target="_blank">
-                            <img src="/content/images/sponsors/Chef Floyd Cardoz.jpg" alt="Sponsor"/>
+                            <img src="/content/images/sponsors/chef-floyd-cardoz.jpg" alt="Sponsor"/>
                         </a>
                     </section>
-                    <section>
-                        <a href="https://www.vivendi.com/en/" target="_blank">
-                            <img src="/content/images/sponsors/Vivendi logo website.JPG" alt="Sponsor"/>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://www.hitechmoda.com/" target="_blank">
-                            <img src="/content/images/sponsors/hitechmoda.png" alt="Sponsor"/>
-                        </a>
-                    </section>
+                    
+                    
                     <section>
                         <a href="https://www.runwaytherealway.com/" target="_blank">
-                            <img src="/content/images/sponsors/runwaytherealway.png" alt="Sponsor"/>
+                            <img style="height: 120px" src="/content/images/sponsors/runwayTheRealWay_logo2.png" alt="Sponsor"/>
                         </a>
                     </section>
+
+                    
+                    
                     <section>
-                            <a href="https://www.tofuboxbrooklyn.com/" target="_blank">
-                                <img src="Content\images\sponsors\Tofubox632BrooklynNewYork.png" alt="Sponsor"/>
+
+                            <a href="https://www.twotbsp.com/" target="_blank">
+                                 <img style="height: 40px" src="Content/images/sponsors/two tablespoon.png" alt="Sponsor"/>
                             </a>
-                        </section>
-                        <section>
-                                <a href="https://www.twotbsp.com/" target="_blank">
-                                    <img src="Content/images/sponsors/two tablespoon.png" alt="Sponsor"/>
-                                </a>
-                            </section>
+                    </section>
+                    <section> <!-- LAFCO New York -->
+                        <a href="https://www.lafco.com/" target="_blank">
+                            <img style="height: 50px" src="/content/images/sponsors/LAFCO-Logo copy.jpg" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Chef's Table -->
+                        <a href="https://www.brooklynfare.com/pages/chefs-table" target="_blank">
+                            <img style="height: 130px" src="/content/images/sponsors/chefs-table-.jpg" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- iluminate -->
+                        <a href="http://www.iluminate.com/" target="_blank">
+                            <img style="height: 60px" src="/content/images/sponsors/iluminate-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Chef V -->
+                        <a href="https://www.chefv.com/" target="_blank">
+                            <img style="height: 100px" src="/content/images/sponsors/ChefV-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Oribe V -->
+                        <a href="https://www.oribe.com/" target="_blank">
+                            <img style="height: 100px" src="/content/images/sponsors/oribe-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Sarah Jassir -->
+                        <a href="https://sarahjassir.com/" target="_blank">
+                            <img style="height: 130px" src="/content/images/sponsors/sarah jassir-logo.jpg" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Timberland -->
+                        <a href="https://www.timberland.com" target="_blank">
+                            <img style="height: 110px" src="/content/images/sponsors/timberland-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Lowes -->
+                        <a href="https://www.lowes.com/" target="_blank">
+                            <img style="height: 60px" src="/content/images/sponsors/lowes-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- The Super Movers -->
+                        <a href="http://www.thesupermovers.com/" target="_blank">
+                            <img style="height: 110px" src="/content/images/sponsors/super movers-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <!-- John Street florist -->
+
+                    <section> <!-- Bluemercury -->
+                        <a href="https://bluemercury.com/" target="_blank">
+                            <img style="height: 160px" src="/content/images/sponsors/bluemercury.jpg" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Jewish Museum -->
+                        <a href="https://thejewishmuseum.org" target="_blank">
+                            <img style="height: 60px" src="/content/images/sponsors/Jewish museum-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Madison Square Garden -->
+                        <a href="https://www.msg.com/" target="_blank">
+                            <img style="height: 60px" src="/content/images/sponsors/Madison Square Garden-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Darphin Logo -->
+                        <a href="https://www.darphin.com/" target="_blank">
+                            <img style="height: 60px" src="/content/images/sponsors/darphin-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Expert Tech -->
+                        <a href="www.experttech.com/" target="_blank">
+                            <img style="height: 50px" src="/content/images/sponsors/experttech.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- kai fan -->
+                        <a href="https://kaifancuisine.com/" target="_blank">
+                            <img style="height: 90px" src="/content/images/sponsors/kai-fan-top-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Baciperugina -->
+                        <a href="https://www.baciperugina.com/" target="_blank">
+                            <img style="height: 70px" src="/content/images/sponsors/Baci-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    <section> <!-- Lefun -->
+                        <a href="https://www.lefunsmart.com/" target="_blank">
+                            <img style="height: 160px" src="/content/images/sponsors/lefun-logo.png" alt="Sponsor"/>
+                        </a>
+                    </section>
+
+                    
+
+
+
+
+
             </div>
         </div>
     </div>
