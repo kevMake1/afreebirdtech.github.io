@@ -265,29 +265,29 @@
                                 <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="intern" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
                                     <div class="form-tutor">
                                         <div class="form-group inputExtent ">
-                                            <label for="name">First name</label>
-                                            <input type="text" class="form-control" name="First name" placeholder="">
+                                            <label for="name" class="required-field">First name</label>
+                                            <input type="text" class="form-control" name="First name" placeholder="" required>
                                         </div>
                                         <div class="form-group inputExtent">
-                                            <label for="name">Last name</label>
-                                            <input type="text" class="form-control" name="Last name" placeholder="">
+                                            <label for="name" class="required-field">Last name</label>
+                                            <input type="text" class="form-control" name="Last name" placeholder="" required>
                                         </div>
                                     </div>
                                     <div class="form-tutor">
                                         <div class="form-group inputExtent ">
-                                            <label for="adress">Street Address</label>
-                                            <input type="text" class="form-control" name="Street Address" placeholder="">
+                                            <label for="adress" class="required-field">Street Address</label>
+                                            <input type="text" class="form-control" name="Street Address" placeholder="" required> 
                                         </div>
                                         <div class="form-group inputExtent">
-                                            <label for="sity">City</label>
-                                            <input type="text" class="form-control" name="City" placeholder="">
+                                            <label for="sity" class="required-field">City</label>
+                                            <input type="text" class="form-control" name="City" placeholder="" required>
                                         </div>
                                     </div>
                                     <div class="form-tutor">
                                         <div class="inputExtent">
                                             <label class="table-block" for="country">Country</label>
                                             
-                                            <select style="color: black"id="country" name="country" class="form-control">
+                                            <select style="color: black"id="country" name="country" class="form-control" required>
                                                 
                                                 <option value="USA" selected>USA </option>
                                                 <option value="Another Country">Another Country</option>
@@ -302,7 +302,7 @@
                                             <div class="zip-code-form">
                                                 <div class="state-inputExtent">
                                                     <label class="table-block" for="country">State</label>
-                                                    <select style="color: black"id="country" name="State" class="form-control">
+                                                    <select style="color: black"id="country" name="State" class="form-control" required>
                                                         
                                                         <option value="New Jersey">New Jersey</option>
                                                         <option value="New York" selected>NewYork</opton>
@@ -313,24 +313,24 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group zip-inputExtent">
-                                                        <label for="zip">Zip code</label>
-                                                        <input type="text" class="form-control" name="zip" placeholder="">
+                                                        <label for="zip" class="required-field">Zip code</label>
+                                                        <input type="text" class="form-control" name="zip" placeholder="" required>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-tutor">
                                             <div class="form-group inputExtent ">
-                                                <label for="phone">Contact phone</label>
-                                                <input type="phone" class="form-control" name="phone" placeholder="">
+                                                <label for="phone" class="required-field">Contact phone</label>
+                                                <input type="phone" class="form-control" name="phone" placeholder="" required>
                                             </div>
                                             <div class="form-group inputExtent">
-                                                <label for="email">Your email</label>
-                                                <input type="email" class="form-control" name="email" placeholder="">
+                                                <label for="email" class="required-field">Your email</label>
+                                                <input type="email" class="form-control" name="email" placeholder="" required>
                                             </div>
                                         </div>
                                         <div class="form-tutor-days">
-                                            <h5>AVAILABILITY</h5>
+                                            <h5 class="required-field">AVAILABILITY(Please Check At Least One)</h5>
                                             <p class="lightblue">During which hours are you available for volunteer assignments?</p>
                                         </div>
                                         
@@ -430,8 +430,8 @@
                                                 <div class="resume-choose-title">
                                                     <h5>RESUME</h5>
                                                     <div class="freeform-column  freeform-column-12">
-                                                        <label class="freeform-label freeform-required" for="form-input-volunteerResume">My resume</label>
-                                                        <input name="internResume" type="file" id="form-input-volunteerResume" class="freeform-input">
+                                                        <label class="freeform-label freeform-required required-field" for="form-input-volunteerResume">My resume</label>
+                                                        <input name="internResume" type="file" id="form-input-volunteerResume" class="freeform-input" required>
                                                     </div>
                                                     <h5 class="skills-choose-title">AGREEMENT FORM</h5>
                                                     <div class="freeform-column  freeform-column-12">
