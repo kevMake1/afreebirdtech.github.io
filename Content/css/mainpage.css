@@ -1,0 +1,294 @@
+#mbtitle{
+    display: none;
+}
+#mbtitle img{
+    display: none;
+}
+#socialbar-icon{
+    background-color: #53351D;
+    text-align: right;
+    padding-right: 180px;
+    height: 30px;
+}
+#socialbar-icon li i{
+    background-color: white;
+    border-radius: 50% 50%;
+    height: 25px; width: 25px;
+    text-align: center;
+    padding-top: 5px;
+    bottom: 2px;
+}
+#navbar{
+    top: 28px;
+    background-color: #FFCC00;
+    padding-top: 5px;
+    height: 35px;
+    margin: 0;
+    min-width: 1105px;
+    text-align: center;
+}
+nav ul{
+    width: 100%;
+}
+nav ul li{
+    display: inline;
+    margin: 1%;
+    font-size: 1.05em
+}
+nav ul li a{
+    color: #53351D;
+    
+}
+.burger{
+  
+    display: none;
+    left: 10px;
+    width: 40px;
+    height: 30px;
+}
+.burger div{
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px;
+    padding-top: 5px;
+    
+}
+#list{
+    display: none;
+    margin-top: -30px;
+    width:140px;
+}
+
+.sidebar{
+    cursor: pointer; 
+    /* margin-top: 40px; */
+    padding-top: 65px;
+    display: none;
+    width:0;
+    position:fixed;
+    left:-5px;
+    transition: all 0.35s;
+            }
+            
+.sidebar ul li{
+    text-align: center;
+    height: 35px;
+    width: 120px;
+    display: block;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-size: 110px 35px; 
+    padding-top: 6px;
+   
+
+}
+
+
+.sidebar ul li a{
+    /* margin-top: 100px; */
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    /* color: rgb(2, 2, 1); */
+    color: white;
+    text-decoration: none;
+    
+}
+
+.dropdown-content{
+    display: none;
+    margin-top: -60px;
+    margin-left:100px;
+}
+.dropdown-content ul li{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    /* background-color: blanchedalmond; */
+    background-image: url(/Content/images/single-cloud.png);
+    background-size: 180px 50px;
+    /* border-radius: 50px; */
+    margin-top: 13px;
+    
+
+}
+
+.dropdown-content ul li a span{
+    color: black;
+    padding-top: 10px;
+}
+
+.side-dropdown:hover .dropdown-content{display:block}
+.btn-close{
+    /* margin-top: 50px; */
+    color: rgb(255, 255, 255);
+    background-color:#FFCC00;
+    cursor: pointer;
+    /* padding-bottom: 50px; */
+    font-size: 40px;
+    border: none;
+    left: 19px;
+    top: 3px;
+    display: none;
+}         
+
+#backtotop{
+    border-style: none;
+    background-color:rgba(100, 148, 237, 0.479);
+    opacity: 0.9;
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    bottom: 50%;
+    right: 1%;
+    border-radius: 50%;
+}
+#google_translate_element{
+    /* background-color: rgba(83, 53, 29, 0)!important; */
+    position: fixed;
+    top: 1px;
+    right:5px;
+}
+.goog-te-gadget {
+    font-family: Roboto, 'Comic Sans', Comic Sans MS!important;
+    text-transform: uppercase;
+}
+.goog-te-gadget-simple  {
+    background-color: #53351D!important;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.50) !important;
+    padding: 8px!important;
+    border-radius: 4px!important;
+    font-size: 13px!important;
+    line-height:2px!important;
+    display: inline-block;
+    cursor: pointer;
+}
+.goog-te-menu-value {
+    color: #fff !important;
+}
+
+.goog-te-gadget-icon {
+    display: none;
+}
+
+
+.linkwraplink{
+    background-color:#222222;
+}
+
+.container{height: 1%;}
+section.landing .tree-nav .treeInner .linkWrap .enroll{font-size: 1.7em; top:25.9%;left:50%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .dream-link{font-size: 1.7em; top:13.3%;right:26.5%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .take-flight{font-size: 1.5em; top:22%;right:19.9%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .flyfree{font-size: 1.5em;top:42.3%;right:23.2%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .magazine{font-size: 0.8em;top:44.7%;right:43.6%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .aboutUs{font-size: 0.8em; top:23.8%;right:39.8%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .event-link{top:17%;right:34.6%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .blog-link{font-size: 1.7em;top:3.9%;right:41.2%;width:2.5%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .thank-link{font-size: 0.8em;top:54.5%;right:39.8%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .donate-link{font-size: 0.8em;top:39.9%;right:33.0%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .corner-link{top:51.7%;right:30%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .sponsors-link{font-size: 0.7em;top:27%;right:31.2%;width:2.7%;height:5%} 
+section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;top:51.5%;right:32.3%;width:2.7%;height:5%} 
+
+
+
+@media screen and (max-width:1116px){
+    .enroll{font-size: 0.1em; }
+    .sidebar{
+        display: block;
+    }
+    #navbar{
+        display: none;
+    }
+    #socialbar-icon{
+        display: block;
+        background-color: #FFCC00;
+        /* text-align: right; */
+        height: 70px;
+        padding-right: 0px;
+        padding-top: 25px;
+    }
+    #socialbar-icon i{
+        color: #53351D;
+        font-size: 20px;
+    }
+    #socialbar-icon li i{
+        height: 30px;
+        width: 30px;
+        /* padding-top: 20px; */
+        margin-top: 10px;
+    }
+    .burger{
+        display: block;
+    }
+    #google_translate_element{
+        text-align: right;
+        background-color: #53351D;right: 0px;
+        margin-top: -10px;
+        height: 30px;
+        width: 120%;
+
+        top: 10px;
+    }
+    .goog-te-gadget-simple  {
+    font-size: 10px!important;
+    line-height:10px!important;
+}
+.goog-te-menu-value {
+    color: white !important;
+}
+}
+
+@media screen and (max-width:767px){
+    
+    #mbtitle{
+        display: block;
+    }
+    #mbtitle img{
+       
+        display: block;
+        height: 270px;
+        width: 300px;
+        margin-top: -95%;
+        margin-left: 30%;
+    }
+    #backtotop{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:375px){
+    #mbtitle img{
+        height: 270px;
+        width: 300px;
+        margin-top: -95%;
+        margin-left: 10%;
+    }
+
+}
+section.landing .tree-nav .treeInner .linkWrap a{
+    color:white;
+    text-align: center;
+}
+
+
+
+/* DO NOT DELETE */
+
+/* section.landing .tree-nav .treeInner .linkWrap .enroll{top:24.9%;left:52.4%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .aboutFight{top:3%;right:36.7%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .dream-link{top:12.5%;right:24.2%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .fightFree{top:25%;right:17.9%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .fightPro{top:44%;right:21.1%;width:5.6%;height:8.1%}
+section.landing .tree-nav .treeInner .linkWrap .social-link{top:43.7%;right:47.8%;width:3%;height:5.5%}
+section.landing .tree-nav .treeInner .linkWrap .magazine{top:45%;right:41.2%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .aboutUs{top:24.3%;right:37.3%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .event-link{top:18.3%;right:32.4%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .blog-link{top:37.5%;right:36.8%;width:2.5%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .thank-link{top:53.5%;right:37.5%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .donate-link{top:39.3%;right:30.7%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .corner-link{top:51.7%;right:30%;width:2.7%;height:5%}
+section.landing .tree-nav .treeInner .linkWrap .sponsors- link{top:26%;right:28.7%;width:2.7%;height:5%} */
