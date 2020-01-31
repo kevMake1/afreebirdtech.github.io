@@ -62,7 +62,6 @@ nav ul li a{
 
 .sidebar{
     cursor: pointer; 
-    /* margin-top: 40px; */
     padding-top: 65px;
     display: none;
     width:0;
@@ -86,11 +85,9 @@ nav ul li a{
 
 
 .sidebar ul li a{
-    /* margin-top: 100px; */
     text-align: center;
     cursor: pointer;
     font-size: 15px;
-    /* color: rgb(2, 2, 1); */
     color: white;
     text-decoration: none;
     
@@ -105,10 +102,8 @@ nav ul li a{
     width: 200px;
     height: 50px;
     text-align: center;
-    /* background-color: blanchedalmond; */
     background-image: url(/Content/images/single-cloud.png);
     background-size: 180px 50px;
-    /* border-radius: 50px; */
     margin-top: 13px;
     
 
@@ -121,11 +116,9 @@ nav ul li a{
 
 .side-dropdown:hover .dropdown-content{display:block}
 .btn-close{
-    /* margin-top: 50px; */
     color: rgb(255, 255, 255);
     background-color:#FFCC00;
     cursor: pointer;
-    /* padding-bottom: 50px; */
     font-size: 40px;
     border: none;
     left: 19px;
@@ -145,7 +138,6 @@ nav ul li a{
     border-radius: 50%;
 }
 #google_translate_element{
-    /* background-color: rgba(83, 53, 29, 0)!important; */
     position: fixed;
     top: 1px;
     right:5px;
@@ -206,7 +198,6 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
     #socialbar-icon{
         display: block;
         background-color: #FFCC00;
-        /* text-align: right; */
         height: 70px;
         padding-right: 0px;
         padding-top: 25px;
@@ -218,7 +209,6 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
     #socialbar-icon li i{
         height: 30px;
         width: 30px;
-        /* padding-top: 20px; */
         margin-top: 10px;
     }
     .burger{
@@ -253,7 +243,7 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
         height: 270px;
         width: 300px;
         margin-top: -95%;
-        margin-left: 30%;
+        margin-left: 20%;
     }
     #backtotop{
         display: none;
@@ -265,7 +255,7 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
         height: 270px;
         width: 300px;
         margin-top: -95%;
-        margin-left: 10%;
+        margin-left: 20%;
     }
 
 }
