@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,645 +11,614 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
   <link rel="stylesheet" href="/Content/css/hover-min.css">
   <link rel="stylesheet" href="/Content/css/styles.css">
+  <link rel="stylesheet" href="/Content/css/nav.css">
   <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-       #backtotop{
-                color: #53351D;
-                position: fixed; 
-                height: 90px;
-                width: 40px;
-                bottom: 50%;
-                right: 0px;
-            }
-            #google_translate_element{
-                position: fixed; 
-                right: 40px;
-                top: 135px;
-            }
-      .linkwraplink{
-       background-color:#222222;
-      }
-      .navbar  {
-      border-width:1px 0;
-      list-style:none;
-      margin-top:0;
-      padding:0;
-      text-align:center;} 
-      .nav li{
-      display:inline;
-      font-size: 1.05em
-  }
-  .nav a{
-      display:inline-block;
-      padding:1px;
-    }
-            .nav>li>a {
-                display: inline-block
-            }
-@media (min-width: 769px){
-.navbar-nav {
-  float: none;
-  margin:0 45px;
+    
+  </head>
   
-
-}
-.title{position: relative; bottom: -100px; left:-40px}
-.title2{position: relative; bottom: -100px;}
-.container{height: 1%;}
-  .navbar{margin-top:-29px;}
-  }
-      </style>
-    
-    
-    </head>
-    
-   <body id="top" role="document">
-     <div class="navbar-fixed-top">
-                    <button id="backtotop">
-                        <img src="/Content/upload/up-arrow.png" alt="Top" width="25" height="25">
-                        <span >Top</span >
-                    </button>
-                    <script>
-                        const backtotop = document.querySelector("#backtotop");
-                        backtotop.addEventListener("click",function(){
-                            window.scrollTo({
-                                top:0,
-                                left:0,
-                                behavior:"smooth"
-                            });
-                        });
-                        </script>
-                    <div id="google_translate_element"></div>
-                    </div>
-                    <div class="navbar-fixed-top">
-                        
-                    </div>
-
-                    <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-                    }
-                    </script>
-                    
-                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                  
-            <nav class="navbar navbar-default navbar-fixed-top smooth yellow text-ceneter landing-nav" data-spy="affix" data-offset-top="50"     >
-                <div class="container">
-                    <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand pull-right visible-xs">
-                 <img src="/Content/images/AFB_Logo.png">
-                </a>
-
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbar-main">
-                <div class="menu-up-fix">
-
-                    
-                        <div class="social">
-                            <a href="https://twitter.com/AFreeBirdOrg">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.facebook.com/afreebirdorg/">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.instagram.com/afreebirdorg/">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.youtube.com/user/AFreeBirdOrg">
-                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/3505146/admin/">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-
-                       
-
-                    </div>
-                </div>
-                <ul class="nav navbar-nav navbar-center">
-                    <li><a href="/">Home</a></li>
-
-                    <li><a href="/about">About us</a></li>
-
-                    <!--<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Tutors
-                                <span class="caret"></span>
-                                <span class="caret-mobile"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/tutors">Our tutors</a></li>
-                                <li><a href="/tutor"><s>Become a tutor</s></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank">Magazine</a></li>
-                        <li><a href="/doctor-corner">Doctor's corner</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Programs
-                                <span class="caret"></span>
-                                <span class="caret-mobile"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/fightfree">Fight free</a></li>
-                                <li><a href="/freepro">Free and Pro</a></li>
-                                <li><a href="/dreaminspiration">Dream Inspiration</a></li>
-                                <li><a href=""><s>Kids supporting kids</s></a></li>
-                                <li><a href=""><s>Artists supporting artists</s></a></li>
-                            </ul>
-                        </li>-->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span>Get involved</span>
-                            <span class="caret"></span>
-                            <span class="caret-mobile"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/volunteer"><span>Become a volunteer</span></a></li>
-                            <li><a href="/tutor"><span>Become a tutor</span></a></li>
-                            <li><a href="/intern"><span>Become an intern</span></a></li>
-                            <li><a href="/ambassadors"><span>Become an ambassador</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/EnrollChild"><span>Enroll Your Child</span></a></li>
-                                        <!--<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                          <span>AFB Family</span>
-                          <span class="caret"></span>
-                          <span class="caret-mobile"></span>
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li><a href="/tutors"><span>Tutors</span></a></li>
-                          <li><a href=""><s>AFB Children</s></a></li>
-                          <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
-                      </ul>
-                  </li>-->
-                  <li><a href="/gallery">Gallery</a></li>
-                  <!--<li><a href="/blog">Blog</a></li>-->
-                  <li><a href="/sponsors">Sponsors</a></li>
-                  <!--<li><a href="/goods">Goods</a></li>-->
-
-                  <li><a href="#dark">Contact us</a></li>
-
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                          <span>AFB Happenings</span>
-                          <span class="caret"></span>
-                          <span class="caret-mobile"></span>
-                      </a>
-                      <ul class="dropdown-menu">
-                          <!--<li><a href="/event"><span>Events</span></a></li>-->
-                          <li><a href="/blog"><span>Blog</span></a></li>
-                     
-                          <li><a href="/press.html"target="_blank"><span>Press</span></a></li>
-
-                          <li><a href="/goods"><span>The Goods</span></a></li>
-                          <!--<li><a href=""><s>I Am Campaign</s></a></li>-->
-                          <!--li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
-                      </ul>
-                    </li-->
-                    <li><a href="/Thankyou.html"><span>ThankYou</span></a></li>
-                </ul>
-                <li><a href="/gala.html">Gala</a></li>
-                <li><a href="/magazine.html"target="_blank"><span>Magazine</span></a></li>
-                <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                              <span>Donate</span>
-                              <span class="caret"></span>
-                              <span class="caret-mobile"></span>
-                          </a>
-                        
-                          <ul class="dropdown-menu">
-                              <!--<li><a href="/event"><span>Events</span></a></li>-->
-                              <li><a href="/Donate.html"><span>Donate</span></a></li>
-                              <li><a href="/Sponsorachild.html"><span>Sponsor a child</span></a></li>
-                              <li><a href="/give-art.html"><span>Give Arts</span></a></li>
-    
-                         
-               
-            </div>
-        </div>
-    </nav>
-
-
-
-
-            <div role="main">
-              <div id="loader-bg">
-                <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                    stroke: #53351D;
-                    stroke-width: 10;
-                    stroke-miterlimit: 10;
-                  }
-
-                  .st1 {
-                    fill: none;
-                    stroke: #FFCC00;
-                    stroke-width: 11;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 11;
-                  }
-                  .video-wrapper{
-                  overflow:hidden;
-                  width:100%;
-                  min-height: 700px;
-                  height:100%;
-            
-                  position: relative;;
-                  display:block;
-                  }
-                .video-wrapper:after {
-                  content:"";
-                  background: rgba(184, 184, 184, 0.4);
-                  width:100%;
-                  height:75%;
-                  position:absolute;
-                  display:table;
-                  left:0;
-                  top:0;
-                  }
-                .wrapper-message{
-                  position:absolute;
-                  padding-top: 2%;
-                  z-index:999;
-                  color: #fff;
-                  text-align:center;
-                  width:100%;
-                  height:100%;
-                  }
-                  .container{max-width:1500px}
-                  .content{padding-top:200px}
-                  h1{text-align: center}
-
-                  .background-wrapper{
-                    width: 560;
-                    height: 335;
-                  }
-                </style>
+  <body id="top" role="document">
+    <nav>
+      <ul class="navbar-fixed-top" id="socialbar-icon">
+        <li><a href="https://twitter.com/AFreeBirdOrg" >
+          <i class="fa fa-twitter" aria-hidden="true" ></i>
+        </a>
+      </li>
+      <li><a href="https://www.facebook.com/afreebirdorg/">
+        <i class="fa fa-facebook" aria-hidden="true" ></i>
+      </a></li>
+      
+      <li><a href="https://www.instagram.com/afreebirdorg/">
+        <i class="fa fa-instagram" aria-hidden="true" ></i>
+      </a></li>
+      
+      <li><a href="https://www.youtube.com/user/AFreeBirdOrg">
+        <i class="fa fa-youtube-play" aria-hidden="true" ></i>
+      </a></li>
+      
+      <li><a href="https://www.linkedin.com/company/3505146/admin/">
+        <i class="fa fa-linkedin" aria-hidden="true" ></i>
+      </a></li>
+    </ul>
+  </nav>
+  <nav >
+    <ul class="navbar-fixed-top" id="navbar" group="navb" style="color: #53351D;">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about.html">About us</a></li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <span>Get involved</span>
+          <span class="caret"></span>
+          <!-- <span class="caret-mobile"></span> -->
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/volunteer.html"><span>Become a volunteer</span></a></li>
+          <li><a href="/tutor.html"><span>Become a tutor</span></a></li>
+          <li><a href="/intern.html"><span>Become an intern</span></a></li>
+          <li><a href="/ambassadors.html"><span>Become an ambassador</span></a></li>
+        </ul>
+      </li>
+      <li><a href="/EnrollChild.html"><span>Enroll Your Child</span></a></li>
+      
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/sponsors.html">Sponsors</a></li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="size:50px;">
+          <span>AFB Happenings</span>
+          <span class="caret"></span>
+          <span class="caret-mobile"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/blog.html"><span>Blog</span></a></li>
+          
+          <li><a href="/press.html"target="_blank"><span>Press</span></a></li>
+          
+          <li><a href="/goods.html"><span>The Goods</span></a></li>
+          <li><a href="/Thankyou.html"><span>ThankYou</span></a></li>
+        </ul>
+      </li>
+      <li><a href="/gala.html">Gala</a></li>
+      <li><a href="/magazine.html"target="_blank"><span>Magazine</span></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <span>Donate</span>
+          <span class="caret"></span>
+          <span class="caret-mobile"></span>
+        </a>
         
-                <circle class="st0" cx="30" cy="30" r="24" />
-                <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
-              </svg>
+        <ul class="dropdown-menu">
+          <li><a href="/Donate.html"><span>Donate</span></a></li>
+          <li><a href="/Sponsorachild.html"><span>Sponsor a child</span></a></li>
+          <li><a href="/give-art.html"><span>Give Arts</span></a></li>
+          
+        </ul>
+        <li><a href="#dark">Contact us</a></li>
+      </nav>
+      
+      
+      
+      <!-- ******************************************************************************************************** -->
+      <!-- mobile view Side bar -->
+      <!-- ******************************************************************************************************** -->            
+      
+      <div class="sidebar navbar-fixed-top" id="sidebar"  >
+        <span class="glyphicon glyphicon-remove btn-close" ></span>
+        <ul id="list">
+          <li><span class="glyphicon glyphicon-remove btn-close" ></span></li>
+          <li style="background-image: url(/Content/upload/panel1.png); margin-left: -30px;background-size:110px 50px;height: 50px;padding-top: 23px;"><a href="/">Home</a></li>
+          
+          <li style="background-image: url(/Content/upload/panel2.png);margin-left: -27px;"><a href="/about.html">About us</a></li>
+          <li class="side-dropdown" style="background-image: url(/Content/upload/panel3.png);margin-left: -26px;">
+            <a><span>Get involved</span></a>
+            <div class="dropdown-content">
+              <ul class="getin-dropdown-content">
+                <li  style="padding-top: 13px;"><a href="/volunteer.html"><span>Become a volunteer</span></a></li>
+                <li  style="padding-top: 13px;"><a href="/tutor.html"><span>Become a tutor</span></a></li>
+                <li  style="padding-top: 13px;"><a href="/intern.html"><span>Become an intern</span></a></li>
+                <li  style="padding-top: 13px;"><a href="/ambassadors.html"><span>Become an ambassador</span></a></li>
+              </ul>
             </div>
-            <section class="section content darkblue decreased-font">
+            
+          </li>
+          <li style="background-image: url(/Content/upload/panel4.png);margin-left: -27px;"><a href="/EnrollChild.html"><span>Enroll Your Child</span></a></li>
+          
+          <li style="background-image: url(/Content/upload/panel5.png);margin-left: -29px; background-size:110px 40px;height: 40px;padding-top: 10px;"><a href="/gallery.html">Gallery</a></li>
+          <li style="background-image: url(/Content/upload/panel6.png);margin-left: -33px;background-size:110px 45px;height: 45px;padding-top: 15px;"><a href="/sponsors.html">Sponsors</a></li>
+          
+          <li class="side-dropdown" style="background-image: url(/Content/upload/panel7.png);margin-left: -35px; background-size:110px 45px;height: 45px;padding-top: 13px;">
+            
+            <a><span>AFB Happenings</span></a>
+            <div class="dropdown-content">
+              <ul class="AFBH-dropdown-content">
+                <li><a href="/blog.html"><span>Blog</span></a></li>
+                
+                <li><a href="/press.html"target="_blank"><span>Press</span></a></li>
+                
+                <li><a href="/goods.html"><span>The Goods</span></a></li>
+                <li><a href="/Thankyou.html"><span>ThankYou</span></a></li>
+              </ul>
               
-              <div class="clouds"></div>
-              <div class="grass"></div>
-              <div class="container">
-                <div class="subsection">
-                    <div class="video-wrapper hidden-xs">
-                        <div class="wrapper-message" >
-                          <video style="width: 75%" src="Content/upload/The GoodS fb header.mp4" autoplay="autoplay" loop="loop" controls="controls">
-                          </video>
-                      
+            </div>
+          </li>
+          
+          <li style="background-image: url(/Content/upload/panel8.png);margin-left: -35px; background-size:110px 45px;height: 45px;padding-top: 15px;">
+            <a href="/gala.html">Gala</a>
+          </li>
+          
+          <li style="background-image: url(/Content/upload/panel9.png);margin-left: -26px;background-size:110px 40px;height: 40px;padding-top: 13px;">
+            <a href="/magazine.html"target="_blank"><span>Magazine</span></a>
+          </li>
+          <li class="side-dropdown"style="background-image: url(/Content/upload/panel10.png);margin-left: -19px;padding-top: 10px;">
+            <a><span>Donate</span></a>
+            <div class="dropdown-content">
+              <ul class="donate-dropdown-content">
+                <li><a href="/Donate.html"><span>Donate</span></a></li>
+                <li><a href="/Sponsorachild.html"><span>Sponsor a child</span></a></li>
+                <li><a href="/give-art.html"><span>Give Arts</span></a></li>
+                
+              </ul>
+            </div>
+          </li>
+          <li class="side-dropdown" style="background-image: url(/Content/upload/panel11.png);margin-left: -12px; background-size:110px 65px;height: 65px;padding-top: 10px;">
+            <a href="#dark">Contact us</a>
+            
+          </li>
+        </ul>
+      </div>
+      
+      <!-- ******************************************************************************************************** -->
+      <!-- Back to top button & google translator widget-->
+      <!-- ******************************************************************************************************** -->                
+      <div class="navbar-fixed-top">
+        <div id="flip" class="burger navbar-fixed-top" >
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <button id="backtotop">
+          <img src="/Content/upload/up-arrow.png" alt="Top" width="40" height="40">
+        </button>
+        
+        
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en',  layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+          }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+        <div id="google_translate_element"></div>
+      </div>
+      <script>
+        const backtotop = document.querySelector("#backtotop");
+        backtotop.addEventListener("click",function(){
+          window.scrollTo({
+            top:0,
+            left:0,
+            behavior:"smooth"
+          });
+        });
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script> 
+        $(document).ready(function(){
+          $("#flip").click(function(){
+            $("#list").slideToggle("slow");
+          });
+        });
+      </script>
+      <div role="main">
+        <div id="loader-bg">
+          <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
+          <style type="text/css">
+            .st0 {
+              fill: none;
+              stroke: #53351D;
+              stroke-width: 10;
+              stroke-miterlimit: 10;
+            }
+            
+            .st1 {
+              fill: none;
+              stroke: #FFCC00;
+              stroke-width: 11;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 11;
+            }
+            .video-wrapper{
+              overflow:hidden;
+              width:100%;
+              min-height: 700px;
+              height:100%;
+              
+              position: relative;;
+              display:block;
+            }
+            .video-wrapper:after {
+              content:"";
+              background: rgba(184, 184, 184, 0.4);
+              width:100%;
+              height:75%;
+              position:absolute;
+              display:table;
+              left:0;
+              top:0;
+            }
+            .wrapper-message{
+              position:absolute;
+              padding-top: 2%;
+              z-index:999;
+              color: #fff;
+              text-align:center;
+              width:100%;
+              height:100%;
+            }
+            .container{max-width:1500px}
+            .content{padding-top:200px}
+            h1{text-align: center}
+            
+            .background-wrapper{
+              width: 560;
+              height: 335;
+            }
+          </style>
+          
+          <circle class="st0" cx="30" cy="30" r="24" />
+          <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
+        </svg>
+      </div>
+      <section class="section content darkblue decreased-font">
+        
+        <div class="clouds"></div>
+        <div class="grass"></div>
+        <div class="container">
+          <div class="subsection">
+            <div class="video-wrapper hidden-xs">
+              <div class="wrapper-message" >
+                <video style="width: 75%" src="Content/upload/The GoodS fb header.mp4" autoplay="autoplay" loop="loop" controls="controls">
+                </video>
+                
+              </div>
+            </div><!-- end video-container -->
+            
+            <header>
+              <h1>The GoodS</h1>
+              <p>The “GoodS” is a TV-Show following our work as a non-profit organization which is dedicated to creating a balance between inspiration, education, and art appreciation.  We offer opportunities for children and their families to heal themselves through the arts and learn to process complex emotions that arise when a child is diagnosed with cancer.</p>
+            </header>
+            <div class="goods-wrapper flex">
+              <!--Video-01-->
+              <section>
+                <div class="background-wrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/JrW_WwnvMdc" target="_blank" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="caption">
+                    <p>Noelia's Story as A Culinary Chef</p>
+                    <p class="date-added">Published on Jul 25, 2019</p>
+                    <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                  </div>
+                </section>
+                <!--Video-02-->
+                <section>
+                  <div class="background-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PesS8ddIW1I" target="_blank" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="caption">
+                      <p>A preview of The Goods' First Episode of 2019!</p>
+                      <p class="date-added">Published on Jul 25, 2019</p>
+                      <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&amp;list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&amp;index=1"target="_blank">click here</a></p>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="background-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mFFML1ahigg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="caption">
+                      <p>Check out the trailer for the newest episode of AFB The GoodS!</p>
+                      <p class="date-added">Published on Jul 25, 2019</p>
+                      <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                    </div>
+                  </section>
+                  
+                  <section>
+                    <div class="background-wrapper">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/OInRuD60UZo" target="_blank"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <div class="caption">
+                        <p>Godni and Falyn at MSG</p>
+                        <p class="date-added">Published on Jul 25, 2019</p>
+                        <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
                       </div>
-                    </div><!-- end video-container -->
-
-                  <header>
-                    <h1>The GoodS</h1>
-                    <p>The “GoodS” is a TV-Show following our work as a non-profit organization which is dedicated to creating a balance between inspiration, education, and art appreciation.  We offer opportunities for children and their families to heal themselves through the arts and learn to process complex emotions that arise when a child is diagnosed with cancer.</p>
-                  </header>
-                  <div class="goods-wrapper flex">
-                    <!--Video-01-->
+                    </div>
+                  </section>
+                  <section>
+                    <div class="background-wrapper">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/rPzSlnRk_eo" target="_blank"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <div class="caption">
+                        <p>Fly Free participant, Ben's recital.</p>
+                        <p class="date-added">Published on Jul 25, 2019</p>
+                        <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                      </div>
+                    </section>
                     <section>
                       <div class="background-wrapper">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JrW_WwnvMdc" target="_blank" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hVUA_4YgoYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="caption">
-                          <p>Noelia's Story as A Culinary Chef</p>
+                          <p>AFB at Maimonides</p>
                           <p class="date-added">Published on Jul 25, 2019</p>
                           <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
                         </div>
-                      </section>
-                      <!--Video-02-->
-                      <section>
-                        <div class="background-wrapper">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/PesS8ddIW1I" target="_blank" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          <div class="caption">
-                            <p>A preview of The Goods' First Episode of 2019!</p>
-                            <p class="date-added">Published on Jul 25, 2019</p>
-                            <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&amp;list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&amp;index=1"target="_blank">click here</a></p>
-                          </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/M4IiIwGilsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>Noelia The Chef Returns!</p>
+                          <p class="date-added">Published on Jul 25, 2019</p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
                         </div>
-                      </section>
-                      <section>
-                        <div class="background-wrapper">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/mFFML1ahigg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          <div class="caption">
-                            <p>Check out the trailer for the newest episode of AFB The GoodS!</p>
-                            <p class="date-added">Published on Jul 25, 2019</p>
-                            <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                          </div>
-                        </section>
-
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OInRuD60UZo" target="_blank"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>Godni and Falyn at MSG</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rPzSlnRk_eo" target="_blank"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                             <p>Fly Free participant, Ben's recital.</p>
-                             <p class="date-added">Published on Jul 25, 2019</p>
-                             <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                           </div>
-                         </section>
-                         <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hVUA_4YgoYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>AFB at Maimonides</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/M4IiIwGilsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>Noelia The Chef Returns!</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xzD1nKWDnGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>Noelia is a makeup artist  at the Sarah Jassir runway show!</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1ANR1UET5vs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p> Ryan Reyes AFB "Free" at Call for Chelsea.</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O_9LtpnWCFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>Fashion Week with Mia</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxVxehrxOPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>King at NJ Kids Fashion Week</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DCuyVXYc5w0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>Behind the scenes of Falyn and Godni at Madison Square Garden!</p>
-                              <p class="date-added">Published on Jul 25, 2019</p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sM9R-YaJxHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>The premiere of The GoodS 2015 with special guest Miral Kotb!</p>
-                              <p class="date-added">
-                                Published on Jul 25, 2019
-                              </p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yrfoYaqkJd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>The premiere of The GoodS 2019!</p>
-                              <p class="date-added">
-                                Published on Jul 25, 2019
-                              </p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div class="background-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/w06QR5DZ5eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption">
-                              <p>AFB The GoodS Episode 2</p>
-                              <p class="date-added">
-                                Published on Jul 25, 2019
-                              </p>
-                              <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_bl  ank">click here</a></p>
-                            </div>
-                          </div>
-                        </section>
                       </div>
-                    </div>
-
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xzD1nKWDnGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>Noelia is a makeup artist  at the Sarah Jassir runway show!</p>
+                          <p class="date-added">Published on Jul 25, 2019</p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1ANR1UET5vs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p> Ryan Reyes AFB "Free" at Call for Chelsea.</p>
+                          <p class="date-added">Published on Jul 25, 2019</p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/O_9LtpnWCFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>Fashion Week with Mia</p>
+                          <p class="date-added">Published on Jul 25, 2019</p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxVxehrxOPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>King at NJ Kids Fashion Week</p>
+                          <p class="date-added">Published on Jul 25, 2019</p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DCuyVXYc5w0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>Behind the scenes of Falyn and Godni at Madison Square Garden!</p>
+                          <p class="date-added">Published on Jul 25, 2019</p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sM9R-YaJxHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>The premiere of The GoodS 2015 with special guest Miral Kotb!</p>
+                          <p class="date-added">
+                            Published on Jul 25, 2019
+                          </p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yrfoYaqkJd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>The premiere of The GoodS 2019!</p>
+                          <p class="date-added">
+                            Published on Jul 25, 2019
+                          </p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_blank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="background-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w06QR5DZ5eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="caption">
+                          <p>AFB The GoodS Episode 2</p>
+                          <p class="date-added">
+                            Published on Jul 25, 2019
+                          </p>
+                          <p>If you would like to see more episodes of The GoodS <a href="https://www.youtube.com/watch?v=w06QR5DZ5eY&list=PLjv8dOTzIpGRN8QL9cmQNbmXKHfzzek4W&index=1" target="_bl  ank">click here</a></p>
+                        </div>
+                      </div>
+                    </section>
                   </div>
-                </section>
-
-                <div class="modal fade black modal-flex" tabindex="-1" id="getTicketsModal" role="dialog" aria-labelledby="getTicketsModal">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title">GET TICKETS</h3>
-                      </div>
-                      <div class="modal-body">
-                        <form action="/" method="post" class="get-ticket-form">
-                          <div class="form-group">
-                            <label for="nameOfParents">Name of the parents</label>
-                            <input type="text" id="nameOfParents" name="nameOfParents" value=" " class="form-control bordered" />
-                          </div>
-                          <div class="row">
-                            <div class="form-group col-sm-6">
-                              <label for="numberOfAdults">How many adults</label>
-                              <input type="number" id="numberOfAdults" name="numberOfAdults" value=" " class="form-control bordered" />
-                            </div>
-                            <div class="form-group col-sm-6">
-                              <label for="numberOfChildren">How many children</label>
-                              <input type="number" id="numberOfChildren" name="numberOfChildren" value=" " class="form-control bordered" />
-                            </div>
-                          </div>
-                          <div class="form-group margin-null">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email" value=" " class="form-control bordered" />
-                          </div>
-                          <div class="form-group checkbox-group">
-                            <input type="checkbox" id="reminder" name="reminder" value="" class="form-control bordered hidden" />
-                            <label for="reminder" class="flex">
-                              <i class="icon checkbox-icon"></i>
-                              <span>
-                                Reminder we will send you a reminder of the event, remember that cancellations are only accepted a week before so we can give this opportunity to other children if necessary”
-                              </span>
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer text-center">
-                        <button type="button" class="btn btn-details btn-xl">Get tickets</button>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-
+                </div>
+                
               </div>
-
-              <section id="dark" class="section dark information">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-offset-2 col-md-10 text-center-xs">
-                      <h3>Contact us</h3>
+            </section>
+            
+            <div class="modal fade black modal-flex" tabindex="-1" id="getTicketsModal" role="dialog" aria-labelledby="getTicketsModal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">GET TICKETS</h3>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/" method="post" class="get-ticket-form">
+                      <div class="form-group">
+                        <label for="nameOfParents">Name of the parents</label>
+                        <input type="text" id="nameOfParents" name="nameOfParents" value=" " class="form-control bordered" />
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-sm-6">
+                          <label for="numberOfAdults">How many adults</label>
+                          <input type="number" id="numberOfAdults" name="numberOfAdults" value=" " class="form-control bordered" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                          <label for="numberOfChildren">How many children</label>
+                          <input type="number" id="numberOfChildren" name="numberOfChildren" value=" " class="form-control bordered" />
+                        </div>
+                      </div>
+                      <div class="form-group margin-null">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" value=" " class="form-control bordered" />
+                      </div>
+                      <div class="form-group checkbox-group">
+                        <input type="checkbox" id="reminder" name="reminder" value="" class="form-control bordered hidden" />
+                        <label for="reminder" class="flex">
+                          <i class="icon checkbox-icon"></i>
+                          <span>
+                            Reminder we will send you a reminder of the event, remember that cancellations are only accepted a week before so we can give this opportunity to other children if necessary”
+                          </span>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-details btn-xl">Get tickets</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            
+          </div>
+          
+          <section id="dark" class="section dark information">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-offset-2 col-md-10 text-center-xs">
+                  <h3>Contact us</h3>
+                </div>
+                <div class="flex-column-reverse flex-wrap">
+                  <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
+                    <address>
+                      <strong class="contact-subheading">Contact us</strong>
+                      <br>Attn: A Free Bird
+                      <br>539 Atlantic Av
+                      <br>P.O. Box 170112
+                      <br>Brooklyn NY 11217
+                    </address>
+                    <address>
+                      <strong class="contact-subheading">To contact a specific department, please refer to the following:</strong>
+                      <dl class="dl-horizontal">
+                        <dt>Human Resources:</dt>
+                        <dd>hr@afreebird.org</dd>
+                        <br />
+                        <dt>Programs:</dt>
+                        <dd>programs@afreebird.org</dd>
+                        <br />
+                        <dt>Public Relations:</dt>
+                        <dd>pr@afreebird.org</dd>
+                        <br />
+                        <dt>Marketing:</dt>
+                        <dd>marketing@afreebird.org</dd>
+                      </dl>
+                    </address>
+                    <div class="social">
+                      <a href="https://twitter.com/AFreeBirdOrg">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.facebook.com/afreebirdorg/">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.instagram.com/afreebirdorg/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/company/3505146/admin/">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
                     </div>
-                    <div class="flex-column-reverse flex-wrap">
-                      <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
-                        <address>
-                          <strong class="contact-subheading">Contact us</strong>
-                          <br>Attn: A Free Bird
-                          <br>539 Atlantic Av
-                          <br>P.O. Box 170112
-                          <br>Brooklyn NY 11217
-                        </address>
-                        <address>
-                          <strong class="contact-subheading">To contact a specific department, please refer to the following:</strong>
-                          <dl class="dl-horizontal">
-                            <dt>Human Resources:</dt>
-                            <dd>hr@afreebird.org</dd>
-                            <br />
-                            <dt>Programs:</dt>
-                            <dd>programs@afreebird.org</dd>
-                            <br />
-                            <dt>Public Relations:</dt>
-                            <dd>pr@afreebird.org</dd>
-                            <br />
-                            <dt>Marketing:</dt>
-                            <dd>marketing@afreebird.org</dd>
-                          </dl>
-                        </address>
-                        <div class="social">
-                          <a href="https://twitter.com/AFreeBirdOrg">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.facebook.com/afreebirdorg/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.instagram.com/afreebirdorg/">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.youtube.com/user/AFreeBirdOrg">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/3505146/admin/">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="wrapper">
+                      <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="contactform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
+                        <strong class="text-center-xs">For general information, please complete the following form</strong>
+                        <div class="form-group name">
+                          <label for="name">your name</label>
+                          <input type="text" class="form-control" id="name" placeholder="please introduce" name="name">
                         </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="wrapper">
-                          <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="contactform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
-                            <strong class="text-center-xs">For general information, please complete the following form</strong>
-                            <div class="form-group name">
-                                <label for="name">your name</label>
-                                <input type="text" class="form-control" id="name" placeholder="please introduce" name="name">
-                            </div>
-                            <div class="form-group email">
-                                <label for="email">Your email</label>
-                                <input type="email" class="form-control" id="email" placeholder="example@mail.com" name="email">
-                            </div>
-                            <div class="form-group subject">
-                                <label for="subject">Subject</label>
-                                <input type="text" class="form-control" id="subject" placeholder=""name="subject"> 
-                            </div>
-                            <div class="form-group message">
-                                <label for="message">What's your message?</label>
-                                <textarea class="form-control" rows="4"name="message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-warning submit">Send</button>
-                        </form>
+                        <div class="form-group email">
+                          <label for="email">Your email</label>
+                          <input type="email" class="form-control" id="email" placeholder="example@mail.com" name="email">
                         </div>
-                      </div>
+                        <div class="form-group subject">
+                          <label for="subject">Subject</label>
+                          <input type="text" class="form-control" id="subject" placeholder=""name="subject"> 
+                        </div>
+                        <div class="form-group message">
+                          <label for="message">What's your message?</label>
+                          <textarea class="form-control" rows="4"name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning submit">Send</button>
+                      </form>
                     </div>
                   </div>
                 </div>
-              </section>
-              <footer class="footer">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                      Copyright © 2019, A Free Bird. All Rights Reserved.
-                      
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                  Copyright © 2019, A Free Bird. All Rights Reserved.
+                  
                 </div>
-              </footer>
-
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-              crossorigin="anonymous"></script>
-
-              <script>
-                $(document).ready(function () {
-            // loader hides when page is loaded
-            $('#loader-bg').fadeOut(600);
-
-            $('body').scrollspy({ target: ".navbar", offset: 72 });
-            $(".smooth a").on('click', function (event) {
-              if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                  scrollTop: $(hash).offset().top
-                }, 600, function () {
-                  window.location.hash = hash;
-                });
-              }
+              </div>
+            </div>
+          </footer>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
+          
+          <script>
+            $(document).ready(function () {
+              // loader hides when page is loaded
+              $('#loader-bg').fadeOut(600);
+              
+              $('body').scrollspy({ target: ".navbar", offset: 72 });
+              $(".smooth a").on('click', function (event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 600, function () {
+                    window.location.hash = hash;
+                  });
+                }
+              });
             });
-          });
-        </script>
-
-      </body>
-
-      </html>
+          </script>
+          
+        </body>
+        
+        </html>
+        
