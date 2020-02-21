@@ -204,6 +204,25 @@
                     <div id="google_translate_element"></div>
                 </div>
                 
+		<script>
+                const backtotop = document.querySelector("#backtotop");
+                backtotop.addEventListener("click",function(){
+                    window.scrollTo({
+                        top:0,
+                        left:0,
+                        behavior:"smooth"
+                    });
+                });
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script> 
+                $(document).ready(function(){
+                    $("#flip").click(function(){
+                        $("#list").slideToggle("slow");
+                    });
+                });
+            </script>
+		
  <div role="main">
         <div id="loader-bg">
             <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
