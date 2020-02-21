@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/Content/js/turn.js"></script>
+    <script type="text/javascript" src="/Content/js/modernizr.2.5.3.min.js"></script>
+    <link rel="stylesheet" href="/Content/css/magazine-pages-mobile.css">
+    
+   
+</head>
+<body>
+    
+    <div class="magazine-viewport">
+        <div class="container" >
+            <div class="share-tool-placeholder"></div>
+            <div class="magazine">
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-01.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-02.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-03.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-04.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-05.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-06.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-07.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-08.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-09.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-10.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-11.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-12.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-13.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-14.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-15.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-16.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-17.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-18.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-19.png);"></div>
+                <div style="background-image: url(pages/AFB_Magazine_Volume_1_2013-20.png);"></div>
+                
+            </div>
+            <div class="toolbar" style="text-align: center;">
+                
+                <button class="turn-button" id="previous" >
+                    <img src="/Content/upload/left-arrow.png" alt="Top" width="40" height="40"></button>
+                    
+                    <button class="turn-button" id="next">
+                        <img src="/Content/upload/right-arrow.png" alt="Top" width="40" height="40">
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <script type="text/javascript">
+            $(function(){
+                $(".share-tool-placeholder").load("/Content/share-magazine-tool.html");
+            });
+            $("#previous").on("click",function(event) {
+                $('.magazine').turn('previous');
+            });
+            $("#next").on("click",function(event) {
+                $('.magazine').turn('next');
+            });
+            
+            $(window).ready(function() {
+                $('.magazine').turn({
+                    display: 'single',
+                    acceleration: true,
+                    gradients: !$.isTouch,
+                    elevation:50,
+                    when: {
+                        turned: function(e, page) {
+                            /*console.log('Current view: ', $(this).turn('view'));*/
+                        }
+                    }
+                });
+            });
+            
+            
+            $(window).bind('keydown', function(e){
+                
+                if (e.keyCode==37)
+                $('.magazine').turn('previous');
+                else if (e.keyCode==39)
+                $('.magazine').turn('next');
+                
+            });
+            
+        </script>
+        
+    </body>
+    </html>
+    
