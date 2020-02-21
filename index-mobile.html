@@ -5,13 +5,13 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="/Content/js/turn.js"></script>
     <script type="text/javascript" src="/Content/js/modernizr.2.5.3.min.js"></script>
-    <link rel="stylesheet" href="/Content/css/magazine-pages-mobile.css">
+    <link rel="stylesheet" href="/Content/css/magazine-pages.css">
     
-   
+    
 </head>
 <body>
-    
     <div class="magazine-viewport">
+       
         <div class="container" >
             <div class="share-tool-placeholder"></div>
             <div class="magazine" >
@@ -25,7 +25,7 @@
                 <div style="background-image: url(pages/Magazine_2019_v6-08.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-09.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-10.png);">
-                    <iframe width="140" height="88" style="margin-top: 47%; margin-left: 6%;" src="https://www.youtube.com/embed/QqX1_96YF3c?autoplay=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen>
+                    <iframe width="200" height="120" style="margin-top: 47%; margin-left: 6%;" src="https://www.youtube.com/embed/QqX1_96YF3c?autoplay=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen>
                     </iframe>
                 </div>	              
                 <div style="background-image: url(pages/Magazine_2019_v6-11.png);"></div>
@@ -37,7 +37,7 @@
                 <div style="background-image: url(pages/Magazine_2019_v6-17.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-18.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-19.png);">
-                    <iframe width="183" height="238" style="margin-left: 45%;"  src="https://www.youtube.com/embed/ZxVxehrxOPc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="252.5" style="margin-left: 45%;" height="333" src="https://www.youtube.com/embed/ZxVxehrxOPc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div style="background-image: url(pages/Magazine_2019_v6-20.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-21.png);"></div>
@@ -47,7 +47,7 @@
                 <div style="background-image: url(pages/Magazine_2019_v6-25.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-26.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-27.png);">
-                    <iframe src="https://player.vimeo.com/video/304205572?autoplay=1" style="margin-top: 73%;" width="312" height="160" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/304205572?autoplay=1" style="margin-top: 73%;" width="480" height="220" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
                 <div style="background-image: url(pages/Magazine_2019_v6-28.png);"></div>
                 <div style="background-image: url(pages/Magazine_2019_v6-29.png);"></div>
@@ -82,32 +82,23 @@
             $(function(){
                 $(".share-tool-placeholder").load("/Content/share-magazine-tool.html");
             });
+            
             $("#previous").on("click",function(event) {
                 $('.magazine').turn('previous');
             });
             $("#next").on("click",function(event) {
                 $('.magazine').turn('next');
             });
-            
-            $(window).ready(function() {
-                
+            function loadApp() {
                 $('.magazine').turn({
-                    display: 'single',
-                    acceleration: true,
-                    gradients: !$.isTouch,
-                    elevation:50,
-                    when: {
-                        turned: function(e, page) {
-                            /*console.log('Current view: ', $(this).turn('view'));*/
-                        }
-                    }
+                    
+                    elevation: 50,
+                    gradients: true,
+                    autoCenter: true
+                    
                 });
-                
-            });
-            
-            
+            }
             $(window).bind('keydown', function(e){
-                
                 if (e.keyCode==37)
                 $('.magazine').turn('previous');
                 else if (e.keyCode==39)
@@ -115,8 +106,12 @@
                 
             });
             
+            yepnope({
+                test : Modernizr.csstransforms,
+                complete: loadApp
+            });
+            
         </script>
         
     </body>
     </html>
-    
