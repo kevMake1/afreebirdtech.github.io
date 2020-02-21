@@ -1,0 +1,107 @@
+
+.card
+{
+	position: relative;
+	margin: 20px;
+	width: 300px;
+	height: 360px;
+	background: #fff;
+	transform: perspective(200px);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 20px rgba(0,0,0,.5);
+	transition: 1s;
+}
+.card:hover
+{
+	z-index: 100;
+	transform: perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+	
+}
+
+
+#big{
+	display: block;
+}
+#small{
+display: none;
+}
+
+.column{
+	height: 370px; width: 300px;
+}
+
+.column:hover{
+	background-color: rgba(214, 248, 135, 0.87);
+}
+
+.imgBox
+{
+	position: relative;
+	width: 300px;
+	height: 360px;
+	position: relative;
+	transform-origin: left;
+	z-index: 1;
+	transition: 1s ;
+	background: #111;
+}
+.imgBox img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 370px;
+	object-fit: cover;
+}
+.card:hover .imgBox
+{
+	transform: rotateY(-135deg);
+}
+.details
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.details img{
+	width: 300px;
+}
+
+/* regular */
+.magazine-popup{
+	position: absolute; width: 1000px; height: 790px; border-radius: 3px;
+	background-color: rgba(83, 53, 29, 0);	
+} 
+.modal-content{
+	height: 900px;width:100%;background-color: rgba(51, 51, 51, 0.493);
+}
+.modal-dialog{
+	position:center; width: 1100px; height: 800px;                      
+	margin:auto;
+}
+
+
+
+@media screen and (max-width:375px){
+	#big{
+		display: none;
+	}
+	#small{
+	display: block;
+	}
+	.magazine-popup{
+		position: absolute; width: 380px; height: 750px; border-radius: 3px;
+		background-color: rgba(83, 53, 29, 0);
+		margin-left: -18%;
+		margin-top: -10%;
+	}
+	.modal-content{
+		height: 620px;width:360px;background-color: rgba(54, 56, 55, 0.493);
+		margin-left: 0.5%;
+		margin-top: 10%;
+	}
+}
+
