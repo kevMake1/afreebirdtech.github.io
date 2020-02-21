@@ -130,7 +130,7 @@ nav ul li a{
 
 #backtotop{
     border-style: none;
-    background-color:rgba(100, 148, 237, 0.479);
+    background-color:rgba(235, 216, 48, 0.87);
     opacity: 0.9;
     position: fixed;
     height: 70px;
@@ -140,7 +140,6 @@ nav ul li a{
     border-radius: 50%;
 }
 #google_translate_element{
-    /* background-color: rgba(83, 53, 29, 0)!important; */
     position: fixed;
     top: 1px;
     right:5px;

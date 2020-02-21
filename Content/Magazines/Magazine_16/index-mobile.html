@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/Content/js/turn.js"></script>
+    <script type="text/javascript" src="/Content/js/modernizr.2.5.3.min.js"></script>
+    <link rel="stylesheet" href="/Content/css/magazine-pages.css">
+    <link rel="stylesheet" href="/Content/css/magazine-pages-mobile.css">
+   
+</head>
+<body>
+    
+    <div class="magazine-viewport">
+        <div class="container" >
+            <div class="share-tool-placeholder"></div>
+            <div class="magazine">
+                <div style="background-image: url(pages/Magazine_16-01.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-02.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-03.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-04.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-05.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-06.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-07.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-08.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-09.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-10.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-11.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-12.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-13.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-14.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-15.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-16.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-17.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-18.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-19.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-20.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-21.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-22.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-23.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-24.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-25.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-26.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-27.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-28.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-29.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-30.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-31.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-32.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-33.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-34.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-35.png);"></div>
+                <div style="background-image: url(pages/Magazine_16-36.png);"></div>
+            </div>
+            <div class="toolbar" style="text-align: center;">
+                
+                <button class="turn-button" id="previous" >
+                    <img src="/Content/upload/left-arrow.png" alt="Top" width="40" height="40"></button>
+                    
+                    <button class="turn-button" id="next">
+                        <img src="/Content/upload/right-arrow.png" alt="Top" width="40" height="40">
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <script type="text/javascript">
+            $(function(){
+                $(".share-tool-placeholder").load("/Content/share-magazine-tool.html");
+            });
+            $("#previous").on("click",function(event) {
+                $('.magazine').turn('previous');
+            });
+            $("#next").on("click",function(event) {
+                $('.magazine').turn('next');
+            });
+            
+            $(window).ready(function() {
+                $('.magazine').turn({
+                    display: 'single',
+                    acceleration: true,
+                    gradients: !$.isTouch,
+                    elevation:50,
+                    when: {
+                        turned: function(e, page) {
+                            /*console.log('Current view: ', $(this).turn('view'));*/
+                        }
+                    }
+                });
+            });
+            
+            
+            $(window).bind('keydown', function(e){
+                
+                if (e.keyCode==37)
+                $('.magazine').turn('previous');
+                else if (e.keyCode==39)
+                $('.magazine').turn('next');
+                
+            });
+            
+        </script>
+        
+    </body>
+    </html>
+    

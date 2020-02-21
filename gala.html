@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/Content/css/hover-min.css">
     <link rel="stylesheet" href="/Content/css/styles.css">
     <link rel="stylesheet" href="/Content/css/gala.css">
+    <link rel="stylesheet" href="/Content/css/nav.css">
+    <link rel="stylesheet" href="/Content/css/modal-video.min.css">
     <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
@@ -183,535 +185,484 @@
                 <!-- Back to top button & google translator widget-->
                 <!-- ******************************************************************************************************** -->                
                 <div class="navbar-fixed-top">
-                    <div id="flip" class="burger navbar-fixed-top" >
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-                    <button id="backtotop">
-                        <img src="/Content/upload/up-arrow.png" alt="Top" width="40" height="40">
-                    </button>
-                    
-                    
-                    <script type="text/javascript">
-                        function googleTranslateElementInit() {
-                            new google.translate.TranslateElement({pageLanguage: 'en',  layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-                        }
-                    </script>
-                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                    
-                    <div id="google_translate_element"></div>
+                  <div id="flip" class="burger navbar-fixed-top" >
+                      <div class="line1"></div>
+                      <div class="line2"></div>
+                      <div class="line3"></div>
+                  </div>
+                  <button id="backtotop">
+                      <img src="/Content/upload/up-arrow.png" alt="Top" width="40" height="40">
+                  </button>
+                  
+                  
+                  <script type="text/javascript">
+                      function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({pageLanguage: 'en',  layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+                      }
+                  </script>
+                  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                  
+                  <div id="google_translate_element"></div>
+              </div>
+              <script>
+                  const backtotop = document.querySelector("#backtotop");
+                  backtotop.addEventListener("click",function(){
+                      window.scrollTo({
+                          top:0,
+                          left:0,
+                          behavior:"smooth"
+                      });
+                  });
+              </script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script> 
+                  $(document).ready(function(){
+                      $("#flip").click(function(){
+                          $("#list").slideToggle("slow");
+                      });
+                  });
+              </script>
+                
+
+
+
+
+    <div role="main">
+        <div id="loader-bg">
+            <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
+       
+            
+                 <style type="text/css">
+                    .st0 {
+                        fill: none;
+                        stroke: #53351D;
+                        stroke-width: 10;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .st1 {
+                        fill: none;
+                        stroke: #FFCC00;
+                        stroke-width: 11;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-miterlimit: 11;
+                    }
+                    .small-btn {
+                        width: 140px;
+                        height: 31px;
+                        display:inline-block;
+                        text-align:center;
+                        margin: 4px 2px;
+
+
+                    }
+
+                    .row donate-buttons{
+                        width:1140px;
+                        height: 56px;
+
+
+                    }
+                    .container{max-width:1500px}
+                    img{width:100%; height: auto; margin-left:auto; margin-right:auto; padding-left:auto; }
+                    area{background:#fff;
+                         display:block;
+                         height:auto;
+                         opacity:0;}
+                         .content{padding-top:120px}
+                         @media (max-width:629px) {
+                            img#optional {
+                              display: none;
+                            }
+                          }
+                          @media (min-width:629px) {
+                            img#optionalphone {
+                              display: none;
+                            }
+                          }
+             
+                      
+                        .gala-wrapper img {
+                            width: 100px;
+                        }            
+                       .diamond{
+                           display: flex;
+                       }
+                       .row .column{
+                           display: block;
+                       }
+                       .gala-wrapper {
+                        max-width: 1000px;
+                    padding: 5%;
+                    margin: auto;
+                    text-align: center;
+                    background-image:url(/Content/upload/gala_background_image_2.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat; 
+                    background-size: cover;
+                }
+                .content-wrap{
+                        max-width: 800px;
+                        padding:5%;
+                    margin: auto;
+                    background: rgb(255,255,255, 0.3)	;
+                  
+                }
+                .content-wrap p, .content-wrap h3 {
+                    color: black;
+                }
+                .diamond .purchase-sec{
+                      display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                }
+                .diamond .des-sec{
+                    margin-right: 40px;
+                }
+                @media only screen and (max-width: 768px){
+                    .content-wrap .diamond{
+                        display: block;
+                    }
+                    .content-wrap .diamond .des-sec{
+                        margin: 0;
+                    }
+                  }
+                .hide{
+                    display: none;
+                }
+                select{ color: black; }
+                .my-info-1{
+                    margin: 15px 0;
+                }
+                * {
+                    box-sizing: border-box;
+                  }
+                  
+                  /* Create three equal columns that floats next to each other */
+                  .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 10px;
+                    height: 2200px; /* Should be removed. Only for demonstration */
+                  }
+                  
+                  /* Clear floats after the columns */
+                  .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
+                  
+                  figure{
+                      display: inline-block;
+                  }
+                  
+                  .scroll {
+                    background-color: transparent;
+                    margin-left: 40px;
+                    width: 600px;
+                    height: 1950px;
+                    border: 1px;
+                    overflow: scroll;
+                  }
+                  
+
+    </style>
+             
+    <circle class="st0" cx="30" cy="30" r="24" />
+    <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
+    </svg>
+</div>
+
+<link href="/Content/css/tutor.css" rel="stylesheet"/>
+
+<link href="/Content/css/enroll.css" rel="stylesheet"/>
+   
+
+    <section  class="section content pink decreased-font">
+        <div class="grass"></div>
+<div class="row">
+    <div class="column" style="width:100%; text-align: center; background-color: transparent">
+        <h1 style="padding-bottom:50px; font-size: 70px">Gala</h1>
+        <!-- <div class="gala-address">
+        <p>Address: Grand Slam Banquet Hall</p>
+        <p>3534 Broadway Ave</p>
+        <p>New York, NY 10031</p>
+        <a href="https://goo.gl/maps/vV9KfQJCboSXuvRm7">Click for direction to Grand Slam Banquet Hall</a>
+        </div> -->
+
+
+<div class="column" style="background-color: transparent">
+        
+        <p style="text-align: center; font-size: 40px;">Gala Videos</p>
+        <p style="text-align: center; font-size: 25px;">2019</p>
+        <img src="Content/upload/Gala 2019.png" style="width:279px;height:314px;">
+        
+        <p style="text-align: center; font-size: 25px;">2018</p>
+        <img class="video-play" data-video-id="ep8fVDGujsI" src="Content/upload/Gala 2018.png" style="width:279px;height:314px;">
+        
+        <p style="text-align: center; font-size: 25px;">2017</p>
+        <img class="video-play" data-video-id="8vvNitzXZrM" src="Content/upload/Gala 2017.png" style="width:279px;height:314px;">
+        
+        <p style="text-align: center; font-size: 25px;">2016</p>
+        <img class="video-play" data-video-id="-8G1IHJBBDU" src="Content/upload/Gala 2016.png" style="width:279px;height:314px;">
+        
+        <p style="text-align: center; font-size: 25px;">2015</p>
+        <img class="video-play" data-video-id="ARq5wSIZOOE" src="Content/upload/Gala 2015.png" style="width:279px;height:314px;">
+        
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- <script src="/Content/js/jquery-modal-video.min.js"></script> -->
+
+<script>
+    !function e(t,n,o){function i(a,l){if(!n[a]){if(!t[a]){var u="function"==typeof require&&require;if(!l&&u)return u(a,!0);if(r)return r(a,!0);var d=new Error("Cannot find module '"+a+"'");throw d.code="MODULE_NOT_FOUND",d}var s=n[a]={exports:{}};t[a][0].call(s.exports,function(e){var n=t[a][1][e];return i(n||e)},s,s.exports,e,t,n,o)}return n[a].exports}for(var r="function"==typeof require&&require,a=0;a<o.length;a++)i(o[a]);return i}({1:[function(e,t,n){try{var o=new window.CustomEvent("test");if(o.preventDefault(),!0!==o.defaultPrevented)throw new Error("Could not prevent default")}catch(e){var i=function(e,t){var n,o;return t=t||{bubbles:!1,cancelable:!1,detail:void 0},n=document.createEvent("CustomEvent"),n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail),o=n.preventDefault,n.preventDefault=function(){o.call(this);try{Object.defineProperty(this,"defaultPrevented",{get:function(){return!0}})}catch(e){this.defaultPrevented=!0}},n};i.prototype=window.Event.prototype,window.CustomEvent=i}},{}],2:[function(e,t,n){"use strict";function o(e,t){if(void 0===e||null===e)throw new TypeError("Cannot convert first argument to object");for(var n=Object(e),o=1;o<arguments.length;o++){var i=arguments[o];if(void 0!==i&&null!==i)for(var r=Object.keys(Object(i)),a=0,l=r.length;a<l;a++){var u=r[a],d=Object.getOwnPropertyDescriptor(i,u);void 0!==d&&d.enumerable&&(n[u]=i[u])}}return n}function i(){Object.assign||Object.defineProperty(Object,"assign",{enumerable:!1,configurable:!0,writable:!0,value:o})}t.exports={assign:o,polyfill:i}},{}],3:[function(e,t,n){"use strict";var o=e("../index"),i=function(e){e.fn.modalVideo=function(e){return"strings"==typeof e||new o(this,e),this}};if("function"==typeof define&&define.amd)define(["jquery"],i);else{var r=window.jQuery?window.jQuery:window.$;void 0!==r&&i(r)}t.exports=i},{"../index":5}],4:[function(e,t,n){"use strict";function o(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(n,"__esModule",{value:!0});var i=function(){function e(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,n,o){return n&&e(t.prototype,n),o&&e(t,o),t}}();e("custom-event-polyfill");var r=e("../lib/util"),a=e("es6-object-assign").assign,l={channel:"youtube",facebook:{},youtube:{autoplay:1,cc_load_policy:1,color:null,controls:1,disablekb:0,enablejsapi:0,end:null,fs:1,h1:null,iv_load_policy:1,list:null,listType:null,loop:0,modestbranding:null,origin:null,playlist:null,playsinline:null,rel:0,showinfo:1,start:0,wmode:"transparent",theme:"dark",nocookie:!1},ratio:"16:9",vimeo:{api:!1,autopause:!0,autoplay:!0,byline:!0,callback:null,color:null,height:null,loop:!1,maxheight:null,maxwidth:null,player_id:null,portrait:!0,title:!0,width:null,xhtml:!1},allowFullScreen:!0,animationSpeed:300,classNames:{modalVideo:"modal-video",modalVideoClose:"modal-video-close",modalVideoBody:"modal-video-body",modalVideoInner:"modal-video-inner",modalVideoIframeWrap:"modal-video-movie-wrap",modalVideoCloseBtn:"modal-video-close-btn"},aria:{openMessage:"You just openned the modal video",dismissBtnMessage:"Close the modal by clicking here"}},u=function(){function e(t,n){var i=this;o(this,e);var u=a({},l,n),d="string"==typeof t?document.querySelectorAll(t):t,s=document.querySelector("body"),c=u.classNames,f=u.animationSpeed;[].forEach.call(d,function(e){e.addEventListener("click",function(t){"A"===e.tagName&&t.preventDefault();var n=e.dataset.videoId,o=e.dataset.channel||u.channel,a=(0,r.getUniqId)(),l=e.dataset.videoUrl||i.getVideoUrl(u,o,n),d=i.getHtml(u,l,a);(0,r.append)(s,d);var v=document.getElementById(a),m=v.querySelector(".js-modal-video-dismiss-btn");v.focus(),v.addEventListener("click",function(){(0,r.addClass)(v,c.modalVideoClose),setTimeout(function(){(0,r.remove)(v),e.focus()},f)}),v.addEventListener("keydown",function(e){9===e.which&&(e.preventDefault(),document.activeElement===v?m.focus():(v.setAttribute("aria-label",""),v.focus()))}),m.addEventListener("click",function(){(0,r.triggerEvent)(v,"click")})})})}return i(e,[{key:"getPadding",value:function(e){var t=e.split(":"),n=Number(t[0]);return 100*Number(t[1])/n+"%"}},{key:"getQueryString",value:function(e){var t="";return Object.keys(e).forEach(function(n){t+=n+"="+e[n]+"&"}),t.substr(0,t.length-1)}},{key:"getVideoUrl",value:function(e,t,n){return"youtube"===t?this.getYoutubeUrl(e.youtube,n):"vimeo"===t?this.getVimeoUrl(e.vimeo,n):"facebook"===t?this.getFacebookUrl(e.facebook,n):""}},{key:"getVimeoUrl",value:function(e,t){return"//player.vimeo.com/video/"+t+"?"+this.getQueryString(e)}},{key:"getYoutubeUrl",value:function(e,t){var n=this.getQueryString(e);return!0===e.nocookie?"//www.youtube-nocookie.com/embed/"+t+"?"+n:"//www.youtube.com/embed/"+t+"?"+n}},{key:"getFacebookUrl",value:function(e,t){return"//www.facebook.com/v2.10/plugins/video.php?href=https://www.facebook.com/facebook/videos/"+t+"&"+this.getQueryString(e)}},{key:"getHtml",value:function(e,t,n){var o=this.getPadding(e.ratio),i=e.classNames;return'\n      <div class="'+i.modalVideo+'" tabindex="-1" role="dialog" aria-label="'+e.aria.openMessage+'" id="'+n+'">\n        <div class="'+i.modalVideoBody+'">\n          <div class="'+i.modalVideoInner+'">\n            <div class="'+i.modalVideoIframeWrap+'" style="padding-bottom:'+o+'">\n              <button class="'+i.modalVideoCloseBtn+' js-modal-video-dismiss-btn" aria-label="'+e.aria.dismissBtnMessage+"\"></button>\n              <iframe width='460' height='230' src=\""+t+"\" frameborder='0' allowfullscreen="+e.allowFullScreen+' tabindex="-1"/>\n            </div>\n          </div>\n        </div>\n      </div>\n    '}}]),e}();n.default=u,t.exports=n.default},{"../lib/util":6,"custom-event-polyfill":1,"es6-object-assign":2}],5:[function(e,t,n){"use strict";t.exports=e("./core/")},{"./core/":4}],6:[function(e,t,n){"use strict";Object.defineProperty(n,"__esModule",{value:!0});n.append=function(e,t){var n=document.createElement("div");for(n.innerHTML=t;n.children.length>0;)e.appendChild(n.children[0])},n.getUniqId=function(){return(Date.now().toString(36)+Math.random().toString(36).substr(2,5)).toUpperCase()},n.remove=function(e){e&&e.parentNode&&e.parentNode.removeChild(e)},n.addClass=function(e,t){e.classList?e.classList.add(t):e.className+=" "+t},n.triggerEvent=function(e,t,n){var o=void 0;window.CustomEvent?o=new CustomEvent(t,{cancelable:!0}):(o=document.createEvent("CustomEvent"),o.initCustomEvent(t,!1,!1,n)),e.dispatchEvent(o)}},{}]},{},[3]);
+    $(".video-play").modalVideo();    
+</script>
+
+<div class="column" style="background-color: transparent">
+    <p style="text-align: center; font-size: 20px;">A Free Bird’s annual gala is our largest fundraising event of the year. Each year, we gather in glitz and glamour to showcase incredible talents and raise money to expand our mission of helping children and ensuring each child has the best possible opportunity to pursue their dream. At the gala, guests enjoy performances from incredible talent and artists, AFB honorees are recognized and a select number of children showcase their artistic learnings. Past gala performances include singer Kim Viera, opera singer Kirsten Scott, performers from America’s Got Talent including Str8jacket and Calysta Bevier, and Broadway performers from The Lion King, Phantom of the Opera, Frozen, Les Miserables, Cats and more. In 2019, the AFB Gala featured a vegan dinner prepared by chef Stephen Yen of Sugarcane Raw Bar Grill. </p>
+    <br>
+    <img src="/Content/images/gala/gala-2020-placeholder_720.jpg"; style="width: 529px; height: 719px;">
+</div>
+
+
+<div class="column" style="background-color: transparent">
+    <div class="scroll">
+    <p style="text-align: center; font-size: 40px;">Honorees</p>
+    <p style="text-align: center; font-size: 25px;">2019</p>
+    <div class="gallery5">
+        <figure>
+        <img src="Content/images/gala/Gala 2019/Alessandro Berni - Leadership Excellence Award.JPG" style="width:250px;height:250px;">
+        <figcaption>Alessandro Berni - Leadership <br>Excellence Award</figcaption>
+        </figure>
+
+        <figure>
+        <img src="Content/images/gala/Gala 2019/Blades Family - Inspirational Parents Award.JPG" style="width:250px;height:250px;">
+        <figcaption>Blades Family - Inspirational Parents <br>Award</figcaption>
+        </figure>
+    </div>
+    <br>
+    <p style="text-align: center; font-size: 25px; line-height: normal;">2018</p>
+    <div class="gallery4"> 
+        <figure>
+        <img src="Content/images/gala/Gala 2018/Janelle Funari - Artists Supporting Artists Award.JPG" style="width:250px;height:250px;">
+        <figcaption>Janelle Funari - Artists Supporting <br>Artists Award</figcaption>
+        </figure>
+
+        <figure>
+        <img src="Content/images/gala/Gala 2018/Shameeza Singh - Inspirational Mom Award.JPG" style="width:250px;height:250px;">
+        <figcaption>Shameeza Singh - Inspirational <br>Mom Award</figcaption>
+        </figure>
+    </div>
+    
+    <br>
+    <p style="text-align: center; font-size: 25px;">2017</p>
+    <div class="gallery3">
+        <figure>
+        <img src="Content/images/gala/Gala 2017/Lenia Batas - Leadership Excellence Award.JPG" style="width:250px;height:250px;">
+        <figcaption>Lenia Batas - Leadership <br>Excellence Award</figcaption>    
+        </figure> 
+
+        <figure>
+        <img src="Content/images/gala/Gala 2017/Solomon Greenfeld - Philanthropy Award.JPG" style="width:250px;height:250px;">
+        <figcaption>Solomon Greenfeld - Philanthropy <br>Award</figcaption>       
+        </figure>
+    </div>
+    <br>
+    <p style="text-align: center; font-size: 25px;">2016</p>
+    <div class="gallery2"> 
+        <figure>
+        <img src="Content/images/gala/Gala 2016/Miral Kotb - Inspirational Award-small.jpg" style="width:250px;height:250px;">
+        <figcaption>Miral Kotb - Inspirational <br>Award</figcaption>    
+        </figure>
+        
+        <figure>
+        <img src="Content/images/gala/Gala 2016/Sarah Jassir Final - Artists Supporting Artists Award-small.jpg" style="width:250px;height:250px;">
+        <figcaption>Sarah Jassir Final - Artists <br>Supporting Artists Award</figcaption>
+        </figure>
+    </div>
+    <br>
+    <p style="text-align: center; font-size: 25px;">2015</p>
+    <div class="gallery">
+        <figure>
+            <img src="Content/images/gala/Gala 2015/Karl Alorbi - Innovation Award.jpg" style="width:250px;height:250px;">
+            <figcaption>Karl Alorbi - Innovation <br>Award</figcaption>
+        </figure>
+
+        <figure>
+            <img src="Content/images/gala/Gala 2015/Phil Miller Final - Philanthropy Award .JPG" style="width:250px;height:250px;">
+            <figcaption>Phil Miller Final - Philanthropy <br>Award</figcaption>
+        </figure> 
+        
+        <figure>
+            <img src="Content/images/gala/Gala 2015/Tamar Madmoni-Reich - Creative Arts Award.JPG" style="width:250px;height:250px;">
+            <figcaption>Tamar Madmoni-Reich - <br>Creative Arts Award</figcaption>
+        </figure> 
+        
+        <figure>
+            <img src="Content/images/gala/Gala 2015/Vivienne Fleischer - Artists Supporting Artists Award.JPG" style="width:250px;height:250px;">
+            <figcaption>Vivienne Fleischer - Artists <br>Supporting Artists Award</figcaption>
+        </figure> 
+    </div> 
+    </div>
+</div>
+   
+
+
+      
+
+<iframe style="display: none" width="25%" height="315" src="https://www.youtube.com/embed/ARq5wSIZOOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe style="display: none" width="25%" height="315" src="https://www.youtube.com/embed/-8G1IHJBBDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div class="caption">
+     
+<iframe style="display: none" style="text-align: left;" width="25%" height="315" src="https://www.youtube.com/embed/8vvNitzXZrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <iframe style="display: none"  width="25%" height="315" src="https://www.youtube.com/embed/ep8fVDGujsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div></div>
+
+        
+</section>
+
+    </div>
+
+
+    <section id="dark" class="section dark information">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-10 text-center-xs">
+                    <h3>Contact us</h3>
                 </div>
-                
-                
-                
-                
-                <div role="main">
-                    <div id="loader-bg">
-                        <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
-                        
-                        
-                        <style type="text/css">
-                            .st0 {
-                                fill: none;
-                                stroke: #53351D;
-                                stroke-width: 10;
-                                stroke-miterlimit: 10;
-                            }
-                            
-                            .st1 {
-                                fill: none;
-                                stroke: #FFCC00;
-                                stroke-width: 11;
-                                stroke-linecap: round;
-                                stroke-linejoin: round;
-                                stroke-miterlimit: 11;
-                            }
-                            .small-btn {
-                                width: 140px;
-                                height: 31px;
-                                display:inline-block;
-                                text-align:center;
-                                margin: 4px 2px;
-                                
-                                
-                            }
-                            
-                            .row donate-buttons{
-                                width:1140px;
-                                height: 56px;
-                                
-                                
-                            }
-                            .container{max-width:1500px}
-                            img{width:100%; height: auto; margin-left:auto; margin-right:auto; padding-left:auto; }
-                            area{background:#fff;
-                                display:block;
-                                height:auto;
-                                opacity:0;}
-                                .content{padding-top:120px}
-                                @media (max-width:629px) {
-                                    img#optional {
-                                        display: none;
-                                    }
-                                }
-                                @media (min-width:629px) {
-                                    img#optionalphone {
-                                        display: none;
-                                    }
-                                }
-                                
-                                
-                                .gala-wrapper img {
-                                    width: 100px;
-                                }            
-                                .diamond{
-                                    display: flex;
-                                }
-                                .row .column{
-                                    display: block;
-                                }
-                                .gala-wrapper {
-                                    max-width: 1000px;
-                                    padding: 5%;
-                                    margin: auto;
-                                    text-align: center;
-                                    background-image:url(/Content/upload/gala_background_image_2.jpg);
-                                    background-position: center;
-                                    background-repeat: no-repeat; 
-                                    background-size: cover;
-                                }
-                                .content-wrap{
-                                    max-width: 800px;
-                                    padding:5%;
-                                    margin: auto;
-                                    background: rgb(255,255,255, 0.3)	;
-                                    
-                                }
-                                .content-wrap p, .content-wrap h3 {
-                                    color: black;
-                                }
-                                .diamond .purchase-sec{
-                                    display: flex;
-                                    justify-content: center;
-                                    flex-direction: column;
-                                }
-                                .diamond .des-sec{
-                                    margin-right: 40px;
-                                }
-                                @media only screen and (max-width: 768px){
-                                    .content-wrap .diamond{
-                                        display: block;
-                                    }
-                                    .content-wrap .diamond .des-sec{
-                                        margin: 0;
-                                    }
-                                }
-                                .hide{
-                                    display: none;
-                                }
-                                select{ color: black; }
-                                .my-info-1{
-                                    margin: 15px 0;
-                                }
-                                
-                            </style>
-                            
-                            <circle class="st0" cx="30" cy="30" r="24" />
-                            <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
-                        </svg>
-                    </div>
-                    
-                    <link href="/Content/css/tutor.css" rel="stylesheet"/>
-                    
-                    <link href="/Content/css/enroll.css" rel="stylesheet"/>
-                    
-                    
-                    <section  class="section content pink decreased-font">
-                        
-                        
-                        
-                        <div class="tutor-title">
-                            
+                <div class="flex-column-reverse flex-wrap">
+                    <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
+                        <address>
+                            <strong class="contact-subheading">Contact us</strong>
+                            <br>Attn: A Free Bird
+                            <br>539 Atlantic Av
+                            <br>P.O. Box 170112
+                            <br>Brooklyn NY 11217
+                        </address>
+                        <address>
+                            <strong class="contact-subheading">To contact a specific department, please refer to the following:</strong>
+                            <dl class="dl-horizontal">
+                                <dt>Human Resources:</dt>
+                                <dd>hr@afreebird.org</dd>
+                                <br />
+                                <dt>Programs:</dt>
+                                <dd>programs@afreebird.org</dd>
+                                <br />
+                                <dt>Public Relations:</dt>
+                                <dd>pr@afreebird.org</dd>
+                                <br />
+                                <dt>Marketing:</dt>
+                                <dd>marketing@afreebird.org</dd>
+                            </dl>
+                        </address>
+                        <div class="social">
+                            <a href="https://twitter.com/AFreeBirdOrg">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/afreebirdorg/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/afreebirdorg/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/3505146/admin/">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
                         </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="row">
-                            <div class="column" style="width:100%; text-align: center; background-color: transparent">
-                                <h1 style="padding-bottom:50px">Gala</h1>
-                                <!-- <div class="gala-address">
-                                    <p>Address: Grand Slam Banquet Hall</p>
-                                    <p>3534 Broadway Ave</p>
-                                    <p>New York, NY 10031</p>
-                                    <a href="https://goo.gl/maps/vV9KfQJCboSXuvRm7">Click for direction to Grand Slam Banquet Hall</a>
-                                </div> -->
-                                <div class="gala-videos">
-                                    
-                                    <p>Gala 2018</p>
-                                    <iframe class="hidden-xs"  width="350" height="197" src="https://www.youtube.com/embed/ep8fVDGujsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <iframe class="hidden-md hidden-lg"  width="100%" height="315" src="https://www.youtube.com/embed/ep8fVDGujsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <p>Gala 2016</p>
-                                    <iframe class="hidden-xs"  width="350" height="197" src="https://www.youtube.com/embed/8vvNitzXZrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <iframe class="hidden-md hidden-lg"  width="100%" height="315" src="https://www.youtube.com/embed/8vvNitzXZrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <p>Gala 2015</p>
-                                    <iframe class="hidden-xs"  width="350" height="197" src="https://www.youtube.com/embed/ARq5wSIZOOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <iframe class="hidden-md hidden-lg"  width="100%" height="315" src="https://www.youtube.com/embed/ARq5wSIZOOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="wrapper">
+                            <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="contactform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
+                                <strong class="text-center-xs">For general information, please complete the following form</strong>
+                                <div class="form-group name">
+                                    <label for="name">your name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="please introduce" name="name">
                                 </div>
-                                
-                                
-                                <iframe style="display: none" width="25%" height="315" src="https://www.youtube.com/embed/ARq5wSIZOOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                
-                                
-                                <iframe style="display: none" width="25%" height="315" src="https://www.youtube.com/embed/-8G1IHJBBDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                
-                                <!-- <div class="gala-wrapper">
-                                    <div class="content-wrap">
-                                        <p>
-                                            A Free Bird is committed to empowering children battling cancer to fly free through the arts. We have
-                                            chosen the theme Diamonds for this years gala to symbolize our mission of helping children with cancer
-                                            achieve their artistic potential of shining as bright and being as strong as a diamond. Through your
-                                            support of our gala, you help us accomplish this mission.
-                                        </p>
-                                        <div class="diamond">
-                                            <div class="des-sec">
-                                                <h3>The Cullinan</h3>
-                                                <p>The single largest diamond ever found, The Cullinan was discovered in South Africa in 1905. Also called
-                                                    The Star of Africa, the stone is peerless in beauty as well as size. It was gifted to King Edward VII and is
-                                                    currently mounted in the Sovereign’s Scepter with Cross. Your gift of $5,000 gives you access to the highest tier of sponsorship and includes a reserved table for
-                                                    10, your company logo in the gala program, prominent placement of your name at the event, and
-                                                    acknowledgement of your organization from the podium.</p>
-                                                </div>
-                                                <div class="purchase-sec ">
-                                                    <img src="Content\upload\Dia1.png" alt="">
-                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW">Purchase The Cullinan Ticket</a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="diamond">
-                                                <div class="des-sec">
-                                                    <h3>Lesedi La Rona</h3>
-                                                    <p>
-                                                        The second largest diamond ever found, Lesedi La Rona was discovered in Botswana in 2015. Its name,
-                                                        which means "Our Light" in the Tswana language, was given to it because "the diamond is a pride, light
-                                                        and hope of Botswana. Your gift of $3,500 gives you access to this tier of sponsorship and includes a reserved table for 5, your
-                                                        company logo in the program, and prominent placement of your name at the event.
-                                                    </p>
-                                                </div>
-                                                <div class="purchase-sec">
-                                                    <img src="Content\upload\Dia2.png" alt="">
-                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS">Purchase Lesedi La Rona Ticket</a>
-                                                </div>
-                                            </div>
-                                            <div class="diamond">
-                                                <div class="des-sec">
-                                                    <h3>The Excelsior</h3>
-                                                    <p>
-                                                        The third largest diamond ever found, The Excelsior was discovered in South Africa in 1893. Its name,
-                                                        which means "higher," refers to its spectacular quality. Your gift of $2,500 gives you access to this tier of sponsorship and includes 3 tickets to the gala and a
-                                                        listing of you and your company logo in the gala program.
-                                                    </p>
-                                                </div>
-                                                <div class="purchase-sec">
-                                                    <img src="Content\upload\Dia3.png" alt="">
-                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS">Purchase The Excelsior Ticket</a>
-                                                </div>
-                                            </div>
-                                            <div class="diamond">
-                                                <div class="des-sec">
-                                                    <h3>The Star of Sierra Leone</h3>
-                                                    <p>The fourth largest diamond ever found, The Star of Sierra Leone is a breathtaking gem discovered in
-                                                        Sierra Leone in 1972. It has been ranked in the top 1% of all diamonds in terms of its chemical purity. Your gift of $1,000 gives you access to this tier of sponsorship and 2 tickets to the gala.</p>
-                                                    </div>
-                                                    <div class="purchase-sec">
-                                                        <img src="Content\upload\Dia4.png" alt="">
-                                                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS">Purchase The Star of Sierra Leone Ticket</a>
-                                                    </div>
-                                                </div>
-                                                <div class="ticket1">
-                                                    <h3>Ticket Option 1(2 tickets)</h3>
-                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EX2VBSCT6CH8G">$225</a>
-                                                </div>
-                                                <div class="ticket2">
-                                                    <h3>Ticket Option 2(1 ticket)</h3>
-                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6FBFW3HYD9N92">$125</a>
-                                                </div>
-                                                <div class="name-table">
-                                                    <h3>Table Name</h3>
-                                                    <select class="div-toggle" data-target=".my-info-1" style="border: 1px solid black;">
-                                                        <option value="godni" data-show=".godni">Godni</option>
-                                                        <option value="tamar" data-show=".tamar">Tamar</option>
-                                                        <option value="vivienne" data-show=".vivienne">Vivienne</option>
-                                                        <option value="alon" data-show=".alon">Alon</option>
-                                                        <option value="naama" data-show=".naama">Naama</option>
-                                                        <option value="stavit" data-show=".stavit">Stavit</option>
-                                                        <option value="rekha" data-show=".rekha">Rekha</option>
-                                                        <option value="kalpana" data-show=".kalpana">Kalpana</option>
-                                                        <option value="guy" data-show=".guy">Guy</option>
-                                                        <option value="ryan" data-show=".ryan">Ryan</option>
-                                                        <option value="adva" data-show=".adva">Adva</option>
-                                                        <option value="lili" data-show=".lili">Lili</option>
-                                                        <option value="lulu" data-show=".lulu">Lulu</option>
-                                                        <option value="alison" data-show=".alison">Alison</option>
-                                                        <option value="diana" data-show=".diana">Diana</option>
-                                                        <option value="alla" data-show=".alla">Alla</option>
-                                                        <option value="evi" data-show=".evi">Evi</option>
-                                                        <option value="tom" data-show=".tom">Tom</option>
-                                                        <option value="gabby" data-show=".gabby">Gabby</option>
-                                                        <option value="rinat" data-show=".rinat">Rinat</option>
-                                                        
-                                                    </select>
-                                                    
-                                                    <div class="my-info-1">
-                                                        <a class="tamar hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMFNRETEWPHAS&source=url">Donate For Tamar's Table</a>
-                                                        <a class="vivienne hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NXX8EM9NSN2AA&source=url">Donate For Vivienne's Table</a>
-                                                        <a class="alon hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZFQXDDXR77YA&source=url">Donate For Alon's Table</a>
-                                                        <a class="naama hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EB6AHMPADJQKW&source=url">Donate For Naama's Table</a>
-                                                        <a class="stavit hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D5NKX2T93RGWA&source=url">Donate For Stavit's Table</a>
-                                                        <a class="rekha hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7RPXKE5554QYA&source=url">Donate For Rekha's Table</a>
-                                                        <a class="kalpana hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NH5LRBABHRM5Q&source=url">Donate For kalpana's Table</a>
-                                                        <a class="godni hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7D7GKAG3WNLTU&source=url">Donate For Godni's Table</a>
-                                                        <a class="guy hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2W85KKBJLQSBN&source=url">Donate For Guy's Table</a>
-                                                        <a class="ryan hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VZBUNFXQYDMD8&source=url">Donate For Ryan's Table</a>
-                                                        <a class="adva hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZJ2RTK382RGKC&source=url">Donate For Adva's Table</a>
-                                                        <a class="lili hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZW484QMEQ6TYJ&source=url">Donate For Lili's Table</a>
-                                                        <a class="lulu hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MA6S4YKQGHEZ4&source=url">Donate For Lulu's Table</a>
-                                                        <a class="alison hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WC9NBWNEP8ZQ6&source=url">Donate For Alison's Table</a>
-                                                        <a class="diana hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UBPR2L7LDEU5W&source=url">Donate For Diana's Table</a>
-                                                        <a class="alla hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=93R4KG6ZJMQMY&source=url">Donate For Alla's Table</a>
-                                                        <a class="evi hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X523EUF9S7RWY&source=url">Donate For Evi's Table</a>
-                                                        <a class="tom hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZGECYDFLSN69L&source=url">Donate For Tom's Table</a>
-                                                        <a class="gabby hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QW5HVKAYQ6SHU&source=url">Donate For Gabby's Table</a>
-                                                        <a class="rinat hide" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JER76KHTTYFZU&source=url">Donate For Rinat's Table</a>
-                                                        
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="bottom-content">
-                                                    
-                                                    <p>If you have any questions, please reach out to <a href="mailto:gala@afreebird.org">gala@afreebird.org</a></p>
-                                                    <p>*All ticket purchasers are listed as donors on the program</p>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                        
-                                        <a href="/Donate.html">General Donation</a>
-                                        
-                                        <!-- <img id="optional"src="Content\upload\Gala Sponsors Page.png"style="width:100%;" usemap="#galamap">
-                                            <map name="galamap">
-                                                
-                                                
-                                                <area target="_blank" alt="$5,000" title="$5,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW" coords="5031,1419,206" shape="circle">
-                                                <area target="_blank" alt="$5,000" title="$5,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW" coords="2707,1144,3004,1201" shape="rect">
-                                                <area target="_blank" alt="$5,000" title="$5,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW" coords="2975,1505,3166,1448" shape="rect">
-                                                <area target="_blank" alt="$5,000" title="$5,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW" coords="4834,1102,5272,1187" shape="rect">
-                                                <area target="_blank" alt="$3,500" title="$3,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS" coords="5025,2070,211"  shape="circle">
-                                                <area target="_blank" alt="$3,500" title="$3,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS" coords="2700,1886,3067,1936" shape="rect">
-                                                <area target="_blank" alt="$3,500" title="$3,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS"  coords="2975,2119,3159,2183"  shape="rect">
-                                                <area target="_blank" alt="$3,500" title="$3,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS"  coords="4827,1766,5279,1844"  shape="rect">
-                                                <area target="_blank" alt="$2,500" title="$2,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5FUF6FFE7GBA" coords="5039,2678,210"  shape="circle">
-                                                <area target="_blank" alt="$2,500" title="$2,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5FUF6FFE7GBA" coords="2714,2487,3018,2550"  shape="rect">
-                                                <area target="_blank" alt="$2,500" title="$2,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5FUF6FFE7GBA"  coords="2975,2656,3166,2748" shape="rect">
-                                                <area target="_blank" alt="$2,500" title="$2,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5FUF6FFE7GBA"  coords="4820,2359,5258,2451" shape="rect">
-                                                <area target="_blank" alt="$1,000" title="$1,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS" coords="5025,3264,219"  shape="circle">
-                                                <area target="_blank" alt="$1,000" title="$1,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS" coords="2700,3038,3293,3101" shape="rect">
-                                                <area target="_blank" alt="$1,000" title="$1,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS" coords="2975,3285,3145,3341" shape="rect">
-                                                <area target="_blank" alt="$1,000" title="$1,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS" coords="4841,2960,5265,3038" shape="rect">
-                                                <area target="_blank" alt="$225" title="$225" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EX2VBSCT6CH8G"  coords="3399,3560,3823,3688"  shape="rect">
-                                                <area target="_blank" alt="$125" title="$125" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6FBFW3HYD9N92" coords="3392,3737,3809,3871"  shape="rect">
-                                                <area target="_blank" alt="$225" title="$225" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EX2VBSCT6CH8G" coords="4339,3568,4495,3638"  shape="rect">
-                                                <area target="_blank" alt="$125" title="$125" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6FBFW3HYD9N92"  coords="4332,3744,4495,3822"  shape="rect">
-                                            </map>
-                                            <img id="optionalphone"src="Content\upload\Gala Sponsors Page  (2).png"style="width:100%;" usemap="#galamap2">
-                                            <map name="galamap2">   
-                                                <area target="_blank" alt="$5,000;"title="$5,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW"coords="2566,1130,194" shape="circle">
-                                                <area target="_blank" alt="$5,000" title="$5,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW" coords="380,871,654,919"  shape="rect">
-                                                <area target="_blank" alt="$5,000" title="$5,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2V7WHLG8F22QW" coords="623,1165,796,1207" shape="rect">
-                                                <area target="_blank" alt="$3,500" title="$3,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS"  coords="2568,1756,197"  shape="circle">
-                                                <area target="_blank" alt="$3,500" title="$3,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS" coords="380,1569,708,1620" shape="rect">
-                                                <area target="_blank" alt="$3,500" title="$3,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3VXBR9R2DGAJS"  coords="620,1787,784,1840" shape="rect">
-                                                <area target="_blank" alt="$2,500" title="$2,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5FUF6FFE7GBA" coords="2568,2319,207"  shape="circle">
-                                                <area target="_blank" alt="$2,500" title="$2,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5FUF6FFE7GBA" coords="375,2129,674,2188"  shape="rect">
-                                                <area target="_blank" alt="$2,500" title="$2,500" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5FUF6FFE7GBA"coords="635,2318,796,2355"  shape="rect">
-                                                <area target="_blank" alt="$1,000" title="$1,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS" coords="2574,2869,205"  shape="circle">
-                                                <area target="_blank" alt="$1,000" title="$1,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS" coords="377,2652,926,2703"  shape="rect">
-                                                <area target="_blank" alt="$1,000" title="$1,000" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8MGVN7TGZHGDS" coords="620,2883,787,2937"  shape="rect">
-                                                <area target="_blank" alt="$225" title="$225" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EX2VBSCT6CH8G"coords="1047,3146,1384,3214"   shape="rect">
-                                                <area target="_blank" alt="$125" title="$125" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6FBFW3HYD9N92" coords="1036,3322,1398,3375"   shape="rect">
-                                                <area target="_blank" alt="$225" title="$225" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EX2VBSCT6CH8G" coords="1932,3152,2051,3211"   shape="rect">
-                                                <area target="_blank" alt="$125" title="$125" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6FBFW3HYD9N92"coords="1935,3330,2051,3381" shape="rect">
-                                            </map>   -->
-                                            <div class="caption">
-                                                
-                                                <iframe style="display: none" style="text-align: left;" width="25%" height="315" src="https://www.youtube.com/embed/8vvNitzXZrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                
-                                                
-                                                <iframe style="display: none"  width="25%" height="315" src="https://www.youtube.com/embed/ep8fVDGujsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                
-                                            </div></div>
-                                            
-                                            <!-- <li style="text-align: center;"> Check your <b>inbox</b> of a ticket purchase conformation email. </li>
-                                                <li  style="text-align: center;">We will have your name and guest names in our records for <b>event check in.</b></li>
-                                                <li  style="text-align: center;">There are <b>no printed tickets</b> for this.</li>
-                                                <li  style="text-align: center;"> You will receive a tax-receipt email after the gala on Thrusday November 7, 2019 for the <b>tax-deductible portion</b> of your ticket purchase.</li>
-                                                <p style="text-align: center;"></pstyle> If you can't make it to the Gala your donate will still be greatly appreciated. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=67Z6BEJNYV2SA&source=url">(Click here to Donate through paypal) </a> </p>
-                                                <p style="text-align: center;">If you have any question ask us at (gala@afreebird.org)</p> -->
-                                                
-                                            </section>
-                                            
-                                        </div>
-                                        
-                                        
-                                        <section id="dark" class="section dark information">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-md-offset-2 col-md-10 text-center-xs">
-                                                        <h3>Contact us</h3>
-                                                    </div>
-                                                    <div class="flex-column-reverse flex-wrap">
-                                                        <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
-                                                            <address>
-                                                                <strong class="contact-subheading">Contact us</strong>
-                                                                <br>Attn: A Free Bird
-                                                                <br>539 Atlantic Av
-                                                                <br>P.O. Box 170112
-                                                                <br>Brooklyn NY 11217
-                                                            </address>
-                                                            <address>
-                                                                <strong class="contact-subheading">To contact a specific department, please refer to the following:</strong>
-                                                                <dl class="dl-horizontal">
-                                                                    <dt>Human Resources:</dt>
-                                                                    <dd>hr@afreebird.org</dd>
-                                                                    <br />
-                                                                    <dt>Programs:</dt>
-                                                                    <dd>programs@afreebird.org</dd>
-                                                                    <br />
-                                                                    <dt>Public Relations:</dt>
-                                                                    <dd>pr@afreebird.org</dd>
-                                                                    <br />
-                                                                    <dt>Marketing:</dt>
-                                                                    <dd>marketing@afreebird.org</dd>
-                                                                </dl>
-                                                            </address>
-                                                            <div class="social">
-                                                                <a href="https://twitter.com/AFreeBirdOrg">
-                                                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                                </a>
-                                                                <a href="https://www.facebook.com/afreebirdorg/">
-                                                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                                                </a>
-                                                                <a href="https://www.instagram.com/afreebirdorg/">
-                                                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                                                </a>
-                                                                <a href="https://www.youtube.com/user/AFreeBirdOrg">
-                                                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                                </a>
-                                                                <a href="https://www.linkedin.com/company/3505146/admin/">
-                                                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="wrapper">
-                                                                <form   method="POST" action="thank-you" class="contact" data-netlify="true" name="contactform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
-                                                                    <strong class="text-center-xs">For general information, please complete the following form</strong>
-                                                                    <div class="form-group name">
-                                                                        <label for="name">your name</label>
-                                                                        <input type="text" class="form-control" id="name" placeholder="please introduce" name="name">
-                                                                    </div>
-                                                                    <div class="form-group email">
-                                                                        <label for="email">Your email</label>
-                                                                        <input type="email" class="form-control" id="email" placeholder="example@mail.com" name="email">
-                                                                    </div>
-                                                                    <div class="form-group subject">
-                                                                        <label for="subject">Subject</label>
-                                                                        <input type="text" class="form-control" id="subject" placeholder=""name="subject"> 
-                                                                    </div>
-                                                                    <div class="form-group message">
-                                                                        <label for="message">What's your message?</label>
-                                                                        <textarea class="form-control" rows="4"name="message"></textarea>
-                                                                    </div>
-                                                                    <button type="submit" class="btn btn-warning submit">Send</button>
-                                                                </form>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <footer class="footer">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-md-offset-2 col-md-8">
-                                                        Copyright © 2019, A Free Bird. All Rights Reserved.
-                                                        
-                                                    </div>
-                                                    
-                                                </div>
-                                            </footer>
-                                            
-                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-                                            crossorigin="anonymous"></script>
-                                            
-                                            
-                                            <script>
-                                                $(document).ready(function () {
-                                                    // loader hides when page is loaded
-                                                    $('#loader-bg').fadeOut(600);
-                                                    
-                                                    $('body').scrollspy({ target: ".navbar", offset: 72 });
-                                                    $(".smooth a").on('click', function (event) {
-                                                        if (this.hash !== "") {
-                                                            event.preventDefault();
-                                                            var hash = this.hash;
-                                                            $('html, body').animate({
-                                                                scrollTop: $(hash).offset().top
-                                                            }, 600, function () {
-                                                                window.location.hash = hash;
-                                                            });
-                                                        }
-                                                    });
-                                                });
-                                                $(document).on('change', '.div-toggle', function() {
-                                                    var target = $(this).data('target');
-                                                    var show = $("option:selected", this).data('show');
-                                                    $(target).children().addClass('hide');
-                                                    $(show).removeClass('hide');
-                                                });
-                                                $(document).ready(function(){
-                                                    $('.div-toggle').trigger('change');
-                                                });
-                                            </script>
-                                            <script>
-                                                imageMapResize();</script>
-                                                <script>
-                                                    const backtotop = document.querySelector("#backtotop");
-                                                    backtotop.addEventListener("click",function(){
-                                                        window.scrollTo({
-                                                            top:0,
-                                                            left:0,
-                                                            behavior:"smooth"
-                                                        });
-                                                    });
-                                                </script>
-                                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                                                <script> 
-                                                    $(document).ready(function(){
-                                                        $("#flip").click(function(){
-                                                            $("#list").slideToggle("slow");
-                                                        });
-                                                    });
-                                                </script>
-                                                
-                                            </body>
-                                            
-                                            </html>
-                                            
+                                <div class="form-group email">
+                                    <label for="email">Your email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="example@mail.com" name="email">
+                                </div>
+                                <div class="form-group subject">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder=""name="subject"> 
+                                </div>
+                                <div class="form-group message">
+                                    <label for="message">What's your message?</label>
+                                    <textarea class="form-control" rows="4"name="message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning submit">Send</button>
+                            </form>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    Copyright © 2019, A Free Bird. All Rights Reserved.
+                    <div class="pull-right smooth">
+                        <a class="top hvr-bob" href="#top">back to top <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+    
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+            
+
+    <script>
+        $(document).ready(function () {
+            // loader hides when page is loaded
+            $('#loader-bg').fadeOut(600);
+
+            $('body').scrollspy({ target: ".navbar", offset: 72 });
+            $(".smooth a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+        $(document).on('change', '.div-toggle', function() {
+  var target = $(this).data('target');
+  var show = $("option:selected", this).data('show');
+  $(target).children().addClass('hide');
+  $(show).removeClass('hide');
+});
+$(document).ready(function(){
+	$('.div-toggle').trigger('change');
+});
+    </script>
+    <script>
+    imageMapResize();</script>
+
+</body>
+
+</html>
