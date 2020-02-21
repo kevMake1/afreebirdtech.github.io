@@ -140,7 +140,6 @@ nav ul li a{
     border-radius: 50%;
 }
 #google_translate_element{
-    /* background-color: rgba(83, 53, 29, 0)!important; */
     position: fixed;
     top: 1px;
     right:5px;
