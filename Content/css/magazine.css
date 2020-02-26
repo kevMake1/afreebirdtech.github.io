@@ -100,7 +100,7 @@ display: none;
 	}
 	.modal-content{
 		height: 620px;width:360px;background-color: rgba(54, 56, 55, 0.493);
-		margin-left: 3.5%;
+		margin-left: 1.5%;
 		margin-top: 10%;
 	}
 }
