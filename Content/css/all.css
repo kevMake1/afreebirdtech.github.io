@@ -18,6 +18,19 @@
     stroke-miterlimit: 11;
 }
 
+/*
+.brown-text{
+     color: #53351D;
+}
+*/
+
+/*
+#brown-text{
+     color: #53351D;
+    opacity: 1;
+}
+*/
+
 .content {}
 
 .container {
@@ -26,7 +39,6 @@
 
 .standard-title {
     font-size: 1.5em;
-    background-color: red;
     padding-top: 3%;
 }
 
@@ -35,6 +47,10 @@
     color: #F6F6F6;
     padding-top: 3%;
     padding-bottom: 50px;
+}
+
+#white-text{
+    color: white;
 }
 
 .st0 {
