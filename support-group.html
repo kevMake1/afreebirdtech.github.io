@@ -38,6 +38,7 @@
 
 <style>
     .video-container {
+        
         text-align: center;
     }
 
@@ -59,7 +60,6 @@
     #calendar {
         padding-bottom: 2%;
     }
-
 </style>
 
 <body id="top" role="document">
@@ -257,7 +257,6 @@
                     autoDisplay: false
                 }, 'google_translate_element');
             }
-
         </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
@@ -272,7 +271,6 @@
                 behavior: "smooth"
             });
         });
-
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
@@ -281,7 +279,6 @@
                 $("#list").slideToggle("slow");
             });
         });
-
     </script>
     <div role="main">
         <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
@@ -301,7 +298,7 @@
             <div class="row subsection">
                 <div class="col-md-offset-2 white-text col-md-8 decreased-font ">
                     <div class="standard-title" style="width:100%; text-align: center; background-color: transparent">
-                        <h1 class="standard-title-h" >Support group</h1>
+                        <h1 class="standard-title-h">Support group</h1>
                     </div>
                     <p class="white-text">OSC events offer moms a few hours to get out of their usual environments and be themselves. Join a supportive community and develop meaningful relationships with others through events that are specifically tailored for moms of children diagnosed with cancer and other chronic illnesses. Attending these events will not only ignite enjoyment for her but also for the family.</p>
                     <p>Questions? Contact us at <a class="white-text" href="mailto:programs@afreebird.org">programs@afreebird.org</a></p>
@@ -353,13 +350,7 @@
             <div class="wrapper-tutor text-black">
 
                 <hr />
-                <div>
-                    <div class="">
-                        <!-- FullCalendar (initialized in js/pages/compCalendar.js), for more info and examples you can check out http://arshaw.com/fullcalendar/ -->
-                        <div id="calendar"></div>
-                    </div>
-                </div>
-                <hr />
+
                 <div class="support-group-definition">
                     <p>According to Kazak A.E, Ph.D. out of all pediatric cancer survivor's families, 29.6% of mothers met the criteria for a PTSD diagnosis at some point since their child's diagnosis with cancer and 11.5% of fathers fulfilled the same criteria.</p>
 
@@ -383,12 +374,18 @@
                     </p>
 
                     <p>Battling cancer is a tough job, so having a <span class="text-primary">Support Group</span> is a necessity.</p>
-
-                    <hr />
                     <div class="text-center">
                         <a href="https://www.facebook.com/A-Free-Bird-Support-Group-906146706179243/"><span class="text-black">facebook.com/</span><span class="text-primary">afreebirdsupportgroup</span></a>
                     </div>
+                    <hr />
 
+                    <div>
+                        <div class="">
+                            <!-- FullCalendar (initialized in js/pages/compCalendar.js), for more info and examples you can check out http://arshaw.com/fullcalendar/ -->
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                    <hr />
                 </div>
 
             </div>
@@ -497,9 +494,8 @@
         $(function() {
             CompCalendar.init();
         });
-
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
     <script>
         $(document).ready(function() {
@@ -522,9 +518,6 @@
                 }
             });
         });
-
     </script>
 
-</body>
-
-</html>
+</body></html>
