@@ -38,8 +38,12 @@
 
 <style>
     .video-container {
-        
+        margin-top: 1%;
         text-align: center;
+    }
+    
+    .calendar-container{
+        padding-top: 8%;
     }
 
     .text-black {
@@ -48,6 +52,7 @@
 
     #calendar>div.fc-toolbar.fc-header-toolbar>div.fc-left>h2 {
         /*        color: red;*/
+        
         font-size: 20px;
         padding-top: 10px;
 
@@ -60,6 +65,14 @@
     #calendar {
         padding-bottom: 2%;
     }
+    
+    .wrapper-tutor-nobotton {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 6%;
+  width: 680px;
+}
 </style>
 
 <body id="top" role="document">
@@ -321,8 +334,8 @@
 
     <section class="section">
         <div class="video-wrapper hidden-xs">
-            <div class="">
-                <div class="wrapper-tutor ">
+            <div class="video-container">
+                <div class="wrapper-tutor-nobotton">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe src="https://www.youtube.com/embed/Dqu7fSaZUco?autoplay=1&loop=1">
                         </iframe>
@@ -339,16 +352,8 @@
 
 
         <div class="row">
-            <div class="col-md-3 col-md-push-9 col-lg-2 col-lg-push-10">
-                <div class="block-section">
-                    <!-- Add event functionality (initialized in js/pages/compCalendar.js) -->
-
-                </div>
-                <div class="block-section">
-
-                </div>
-            </div>
-            <div class="wrapper-tutor text-black">
+           
+            <div class="wrapper-tutor-nobotton text-black">
 
                 <hr />
 
@@ -375,18 +380,19 @@
                     </p>
 
                     <p>Battling cancer is a tough job, so having a <span class="text-primary">Support Group</span> is a necessity.</p>
+                    <hr />
+                    
                     <div class="text-center">
                         <a href="https://www.facebook.com/A-Free-Bird-Support-Group-906146706179243/"><span class="text-black">facebook.com/</span><span class="text-primary">afreebirdsupportgroup</span></a>
                     </div>
                     <hr />
 
                     <div>
-                        <div class="">
+                        <div class="calendar-container">
                             <!-- FullCalendar (initialized in js/pages/compCalendar.js), for more info and examples you can check out http://arshaw.com/fullcalendar/ -->
                             <div id="calendar"></div>
                         </div>
                     </div>
-                    <hr />
                 </div>
 
             </div>
