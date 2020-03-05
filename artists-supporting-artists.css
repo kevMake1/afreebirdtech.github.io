@@ -174,4 +174,13 @@ body{
     margin-right: 10vh;
 }
 
+#get-excited-submitBtn{
+    background-color: #FAFF69;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 25px;
+    color: black;
+
+}
+
 
