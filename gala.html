@@ -325,14 +325,6 @@
                 .diamond .des-sec{
                     margin-right: 40px;
                 }
-                @media only screen and (max-width: 768px){
-                    .content-wrap .diamond{
-                        display: block;
-                    }
-                    .content-wrap .diamond .des-sec{
-                        margin: 0;
-                    }
-                  }
                 .hide{
                     display: none;
                 }
@@ -349,7 +341,6 @@
                     float: left;
                     width: 33.33%;
                     padding: 10px;
-                    height: 2200px; /* Should be removed. Only for demonstration */
                   }
                   
                   /* Clear floats after the columns */
@@ -370,6 +361,17 @@
                     height: 1950px;
                     border: 1px;
                     overflow: scroll;
+                  }
+		  @media screen and (max-width: 768px) {
+                    .column {
+                      width: 100%;
+                      flex  :  50%;
+                    }
+                    .scroll {
+                        width: 100%;
+                        margin: 0px;
+                    }
+                   
                   }
                   
 
@@ -446,8 +448,8 @@
 
 
 <div class="column" style="background-color: transparent">
+	<p style="text-align: center; font-size: 40px;">Honorees</p>
     <div class="scroll">
-    <p style="text-align: center; font-size: 40px;">Honorees</p>
     <p style="text-align: center; font-size: 25px;">2019</p>
     <div class="gallery5">
         <figure>
