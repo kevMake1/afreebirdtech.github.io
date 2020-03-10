@@ -267,8 +267,9 @@
 
 <h1>Get Excited</h1>
 <!--FB icon -->
-<div id="fb-icon">
-    <a href = "https://www.facebook.com/Get-Excited-487913161411199/"><img style= "height: 25vh;" src="Content/images/icons/GE.PNG" alt="ASA FB link"></a>
+<div id="fb-feed">
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGet-Excited-487913161411199%2F&tabs=timeline&width=250&height=250&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+    width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </div>
 
 
@@ -312,11 +313,11 @@
         <p style="text-align: center;">
             -Have your business logo on our Get Excited platform, 
             on our website and in our AFB Magazine
-            -Your business will also be mentioned on our social 
+            <br>-Your business will also be mentioned on our social 
             channels and marketing communications including 
             our Facebook and Instagram pages and our monthly 
             newsletter.
-            -Your contribution will qualify as a charitable contribution 
+            <br>-Your contribution will qualify as a charitable contribution 
             under the IRS.
         </p>
     </div>
@@ -325,73 +326,90 @@
 
 
 
-<div id = "form_Box" >
-    <form method="POST" action="thank-you" class="contact2" data-netlify="true" name="Enrollchildform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
-        
-        <div class="asa-contact-label">
-            <h3 style="text-align: center; margin-bottom: 60px">CONTACT INFORMATION</h3>
+<div id="form-cal">
+
+    <div id = "form_Box" >
+        <form method="POST" action="thank-you" class="contact2" data-netlify="true" name="Enrollchildform" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
             
-        </div>
-    <div id="sections-asa">
-        
-        
-        <div class="form-tutor">
-            <div class="form-group inputExtent">
-                <label for="name">First Name</label>
-                <input type="text" class="form-control"  placeholder="" name="firstname">
-            </div>
-        </div>
-        <div class="form-group inputExtent">
-            <label for="name">Last name</label>
-            <input type="text" class="form-control" placeholder="" name="lastname">
-        </div>
-        <div class="form-group inputExtent">
-            <label for="name">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="" name="contactemail">
-        </div>
-        <div class="form-group inputExtent ">
-            <label for="name">Contact Phone</label>
-            <input type="tle" class="form-control" id="contactphone" placeholder="" name="contactphone">
-        </div>
-              
-        
-            <div class="form-group inputExtent">
-                <label for="name">Street Address</label>
-                <input type="text" class="form-control" placeholder="" name="address">
-            </div>
-            <div class="form-group inputExtent">
-                <label for="state">State</label>
-                <input type="text" class="form-control" placeholder="" name="state">
+            <div class="asa-contact-label">
+                <h3 style="text-align: center; margin-bottom: 60px">CONTACT INFORMATION</h3>
                 
             </div>
-            <div class="form-group inputExtent">
-                <label for="name">City</label>
-                <input type="text" class="form-control" placeholder="" name="city">
-                
+        <div id="sections-asa">
+            
+            
+            <div class="form-tutor">
+                <div class="form-group inputExtent">
+                    <label for="name">First Name</label>
+                    <input type="text" class="form-control"  placeholder="" name="firstname">
+                </div>
             </div>
+            <div class="form-group inputExtent">
+                <label for="name">Last name</label>
+                <input type="text" class="form-control" placeholder="" name="lastname">
+            </div>
+            <div class="form-group inputExtent">
+                <label for="name">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="" name="contactemail">
+            </div>
+            <div class="form-group inputExtent ">
+                <label for="name">Contact Phone</label>
+                <input type="tle" class="form-control" id="contactphone" placeholder="" name="contactphone">
+            </div>
+                  
+            
+                <div class="form-group inputExtent">
+                    <label for="name">Street Address</label>
+                    <input type="text" class="form-control" placeholder="" name="address">
+                </div>
+                <div class="form-group inputExtent">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" placeholder="" name="state">
+                    
+                </div>
+                <div class="form-group inputExtent">
+                    <label for="name">City</label>
+                    <input type="text" class="form-control" placeholder="" name="city">
+                    
+                </div>
+                <div class="form-group zip-inputExtent">
+                    <label for="zip">Zip code</label>
+                    <input type="text" class="form-control" id="zip-code-form" placeholder="" name="zip">
+                </div>
+
+    
+            <div class="form-group inputExtent">
+                <h5 class="">Additional Info</h5>
+                <textarea id ="description-of-event"class="form-control" rows="5" cols="56" name="SPECIAL SKILLS OR QUALIFICATIONS"></textarea>
+            </div>
+            <div class="form-group inputExtent">
+                <h5 class="">Upload your Event Flyer</h5>
+                <input type="file" name="flyer">
+            </div>
+            <div class="form-group inputExtent">
+                <h5 class="">Upload your Logo</h5>
+                <input type="file" name="logo">
+            </div>
+    
             <div class="form-group zip-inputExtent">
-                <label for="zip">Zip code</label>
-                <input type="text" class="form-control" id="zip-code-form" placeholder="" name="zip">
+                <label for="zip">Your Website Url</label>
+                <textarea type="text" class="form-control" cols="56" rows="1"  id="" placeholder="" name="website"></textarea>
             </div>
-      
-
-        <div class="form-group inputExtent">
-            <h5 class="">Additional Information</h5>
-            <textarea id ="description-of-event"class="form-control" rows="5" cols="56" name="SPECIAL SKILLS OR QUALIFICATIONS"></textarea>
+    
+            <button id="get-excited-submitBtn" type="submit" >Submit</button>
+    
         </div>
-
-        <button id="get-excited-submitBtn" type="submit" >Submit</button>
-
-
+        </form>
+    
     </div>
-    </form>
-
-
     
-
+    <!-- Calendar place holder-->
+    <div id="cal">
+        <h3 style="text-align: center;">Upcoming Events</h3>
+        <img id="calendar-place-holder"src="Content/images/icons/calendar-place-holder.PNG" alt="calendar">
+    </div>
     
-
-</div>
+    </div>
 
 
 

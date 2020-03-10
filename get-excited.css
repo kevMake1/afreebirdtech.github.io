@@ -2,40 +2,30 @@
     text-align: center;
     max-height: 20vh;
     margin-top: 110px;
+    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 #asa-logo{
-    width: 30vh;
+    width: 180px;
+    
 }
-#fb-icon{
-  position: absolute;
-  right: 50px;
-  top:40vh;
+#fb-feed{
+    margin-left: 76%; 
+    margin-top: -200px; 
+    margin-bottom: -150px;
+    
 }
 
-#photo1{
-    position: absolute;
-    top: 100vh;
-    left: 60px;
-}
-#photo2{
-    position: absolute;
-    right: 10px;
-    top: 110vh;
-}
-#photo3{
-    position: absolute;
-    left: 10px;
-    top: 100px;
-}
+
 
 
 h1{
     text-align: center;
-    margin-top: 20vh;
-    font-size: 6vh;
+    margin-top: 10px;
+    font-size: 40px;
 }
 body{
-    background-color: #60C563;
+    background-color: rgb(114, 141, 64);
     
     
 }
@@ -45,7 +35,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 120px;
     margin-bottom: 100px;
    
     
@@ -68,7 +58,7 @@ body{
 
 
 @media screen and (max-width: 1100px){
-    #fb-icon{
+    #fb-feed{
         display:none;
     }
     #photo1{
@@ -138,10 +128,16 @@ body{
 }
 
 #form_Box{
-    max-width: 40vw;
-    display:block;
-    margin: auto;
-    margin-bottom: 30vh;
+    max-width: 600px;
+    margin-bottom: 200px;
+}
+#cal{
+
+}
+#form-cal{
+    display: flex;
+    justify-content: center;
+    
 }
 
 #sections-asa{
@@ -166,11 +162,7 @@ body{
     width: 35vw;
 
 }
-#cal{
-    float: right;
-    display: inline-block;
-    margin-right: 10vh;
-}
+
 
 
 #get-excited-submitBtn{
