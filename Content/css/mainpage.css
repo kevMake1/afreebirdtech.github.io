@@ -4,166 +4,8 @@
 #mbtitle img{
     display: none;
 }
-#socialbar-icon{
-    background-color: #53351D;
-    text-align: right;
-    padding-right: 180px;
-    height: 30px;
-}
-#socialbar-icon li i{
-    background-color: white;
-    border-radius: 50% 50%;
-    height: 25px; width: 25px;
-    text-align: center;
-    padding-top: 5px;
-    bottom: 2px;
-}
-#navbar{
-    top: 28px;
-    background-color: #FFCC00;
-    padding-top: 5px;
-    height: 35px;
-    margin: 0;
-    min-width: 1105px;
-    text-align: center;
-}
-nav ul{
-    width: 100%;
-}
-nav ul li{
-    display: inline;
-    margin: 1%;
-    font-size: 1.05em
-}
-nav ul li a{
-    color: #53351D;
-    
-}
-.burger{
-  
-    display: none;
-    left: 10px;
-    width: 40px;
-    height: 30px;
-}
-.burger div{
-    width: 40px;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    margin: 4px;
-    padding-top: 5px;
-    
-}
-#list{
-    display: none;
-    margin-top: -30px;
-    width:140px;
-}
-
-.sidebar{
-    cursor: pointer; 
-    padding-top: 65px;
-    display: none;
-    width:0;
-    position:fixed;
-    left:-5px;
-    transition: all 0.35s;
-            }
-            
-.sidebar ul li{
-    text-align: center;
-    height: 35px;
-    width: 120px;
-    display: block;
-    list-style: none;
-    background-repeat: no-repeat;
-    background-size: 110px 35px; 
-    padding-top: 6px;
-   
-
-}
 
 
-.sidebar ul li a{
-    text-align: center;
-    cursor: pointer;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    
-}
-
-.dropdown-content{
-    display: none;
-    margin-top: -60px;
-    margin-left:100px;
-}
-.dropdown-content ul li{
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    background-image: url(/Content/images/single-cloud.png);
-    background-size: 180px 50px;
-    margin-top: 13px;
-    
-
-}
-
-.dropdown-content ul li a span{
-    color: black;
-    padding-top: 10px;
-}
-
-.side-dropdown:hover .dropdown-content{display:block}
-.btn-close{
-    color: rgb(255, 255, 255);
-    background-color:#FFCC00;
-    cursor: pointer;
-    font-size: 40px;
-    border: none;
-    left: 19px;
-    top: 3px;
-    display: none;
-}         
-
-#backtotop{
-    border-style: none;
-    background-color:rgba(235, 216, 48, 0.87);
-    opacity: 0.9;
-    position: fixed;
-    height: 70px;
-    width: 70px;
-    bottom: 50%;
-    right: 1%;
-    border-radius: 50%;
-}
-#google_translate_element{
-    position: fixed;
-    top: 1px;
-    right:5px;
-}
-.goog-te-gadget {
-    font-family: Roboto, 'Comic Sans', Comic Sans MS!important;
-    text-transform: uppercase;
-}
-.goog-te-gadget-simple  {
-    background-color: #53351D!important;
-    color: white;
-    border: 1px solid rgba(255,255,255,0.50) !important;
-    padding: 8px!important;
-    border-radius: 4px!important;
-    font-size: 13px!important;
-    line-height:2px!important;
-    display: inline-block;
-    cursor: pointer;
-}
-.goog-te-menu-value {
-    color: #fff !important;
-}
-
-.goog-te-gadget-icon {
-    display: none;
-}
 
 
 .linkwraplink{
@@ -189,47 +31,7 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
 
 @media screen and (max-width:1116px){
     .enroll{font-size: 0.1em; }
-    .sidebar{
-        display: block;
-    }
-    #navbar{
-        display: none;
-    }
-    #socialbar-icon{
-        display: block;
-        background-color: #FFCC00;
-        height: 70px;
-        padding-right: 0px;
-        padding-top: 25px;
-    }
-    #socialbar-icon i{
-        color: #53351D;
-        font-size: 20px;
-    }
-    #socialbar-icon li i{
-        height: 30px;
-        width: 30px;
-        margin-top: 10px;
-    }
-    .burger{
-        display: block;
-    }
-    #google_translate_element{
-        text-align: right;
-        background-color: #53351D;right: 0px;
-        margin-top: -10px;
-        height: 30px;
-        width: 120%;
-
-        top: 10px;
-    }
-    .goog-te-gadget-simple  {
-    font-size: 10px!important;
-    line-height:10px!important;
-}
-.goog-te-menu-value {
-    color: white !important;
-}
+    
 }
 
 @media screen and (max-width:767px){
@@ -245,9 +47,7 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
         margin-top: -95%;
         margin-left: 20%;
     }
-    #backtotop{
-        display: none;
-    }
+   
     
 }
 @media screen and (max-width:375px){
