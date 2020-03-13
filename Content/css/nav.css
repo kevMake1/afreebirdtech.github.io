@@ -149,7 +149,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 .goog-te-gadget-simple  {
-    background-color: #53351D!important;
+    background-color: rgb(211, 169, 0)!important;
     color: white;
     border: 1px solid rgba(255,255,255,0.50) !important;
     padding: 8px!important;
@@ -205,7 +205,7 @@ nav ul li a{
     }
     #google_translate_element{
         text-align: right;
-        background-color: #53351D;right: 0px;
+        background-color: #FFCC00;right: 0px;
         margin-top: -10px;
         height: 30px;
         width: 120%;
