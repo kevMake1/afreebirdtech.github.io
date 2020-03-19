@@ -83,7 +83,7 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
     
     
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:545px){
     .latest-news-cloud{
         margin-top:-50%; margin-left: 5%;
     }
