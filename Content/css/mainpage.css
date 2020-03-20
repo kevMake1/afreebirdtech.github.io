@@ -5,7 +5,9 @@
     display: none;
 }
 
-
+.link-tags-mobile{
+    display: none;
+}
 .latest-news-cloud{
     margin-top:-30%; margin-left: 15%;
 }
@@ -33,7 +35,10 @@
 .linkwraplink{
     background-color:#222222;
 }
-
+section.landing .tree-nav .treeInner .linkWrap a{
+    color:white;
+    text-align: center;
+}
 .container{height: 1%;}
 section.landing .tree-nav .treeInner .linkWrap .enroll{font-size: 1.7em; top:25.9%;left:50%;width:5.6%;height:8.1%}
 section.landing .tree-nav .treeInner .linkWrap .dream-link{font-size: 1.7em; top:13.3%;right:26.5%;width:5.6%;height:8.1%}
@@ -99,12 +104,16 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
         margin-top: -150%;
         margin-left: -230%;
     }
+    .link-tags-mobile{
+        display: block;
+        font-size: 0.7em;
+        margin-top: -100%;
+        text-align: center;
+    }
+   
     
 }
-section.landing .tree-nav .treeInner .linkWrap a{
-    color:white;
-    text-align: center;
-}
+
 
 
 
