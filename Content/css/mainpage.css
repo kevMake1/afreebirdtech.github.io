@@ -84,14 +84,20 @@ section.landing .tree-nav .treeInner .linkWrap .give-art-link{font-size: 0.8em;t
     
 }
 @media screen and (max-width:545px){
+    .new-content{
+        margin-top: 40%; padding-top: 2%; padding-left: 7%;
+    }
     .latest-news-cloud{
-        margin-top:-50%; margin-left: 5%;
+        margin-top:-50%; margin-left: 14%;
+    }
+    .new-container{
+        background-size: 300px 100px;
     }
     #mbtitle img{
-        height: 270px;
-        width: 300px;
-        margin-top: -120%;
-        margin-left: -160%;
+        height: 200px;
+        width: 200px;
+        margin-top: -150%;
+        margin-left: -230%;
     }
     
 }
