@@ -92,6 +92,12 @@ display: none;
 	#small{
 	display: block;
 	}
+	.container-fluid{
+		margin-left: -30%;
+	}
+	.AFB-title{
+		margin-left: 23%;
+	}
 	.magazine-popup{
 		position: absolute; width: 380px; height: 750px; border-radius: 3px;
 		background-color: rgba(83, 53, 29, 0);
@@ -100,7 +106,7 @@ display: none;
 	}
 	.modal-content{
 		height: 620px;width:360px;background-color: rgba(54, 56, 55, 0.493);
-		margin-left: 1.5%;
+		margin-left: 0.5%;
 		margin-top: 10%;
 	}
 }
