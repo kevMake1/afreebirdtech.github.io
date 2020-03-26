@@ -1,0 +1,212 @@
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 150px;
+  }
+  .rightbar{
+    width: 15%;
+    padding-top: 250px;
+  }
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+
+.column {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    
+     <!--height: 850px; /* Should be removed. Only for demonstration */-->
+  }
+
+  .quicklinks {
+    float: left;
+    width: 18%;
+    background: rgba(255, 255, 255, 0.3)
+   
+  }
+  .text-box {
+    background-color: transparent;
+    max-width: 100%;
+    height: 500px
+  }
+  .fragrance {
+    max-width: 1200px;
+    padding:5%;
+    margin: auto;-->
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.3)
+  }
+
+  .birthstone {
+    max-width: 1200px;
+    <!--padding:5%;
+    margin: auto;-->
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.3)
+  }
+
+  .mia {
+    max-width: 1200px;
+    <!--padding:5%;
+    margin: auto;-->
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.3)
+  }
+
+  .sponsors {
+    max-width: 1200px;
+    <!--padding:5%;
+    margin: auto;-->
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.3)
+  }
+  .mia_pic{
+    float: left;
+    width: 450px;
+    height: 768px;
+    margin-left: 75px;
+  }
+  .main_text{
+    margin-top: 25px;
+  
+  }
+
+  .perfume_pic{
+    margin-left: 75px;
+      width: 500px;
+      height: 500px;
+      float:left;
+  }
+  .bstones{
+      float: left;
+      width: 800px;
+      height: 719px;
+  }
+  .bs-blurb{
+    margin-top: 50px;
+    float: left;
+    width: 400px;
+    height: 719px;
+  }
+  .perfume{
+    margin-top: 110px;
+    float: left;
+    width: 450px;
+    height: 450pxpx;
+    margin-left: 125px;
+  }
+  .purchase{
+      width: 1000px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+ 
+  .news-feed{
+     margin-top: -100px; margin-bottom: -150px;
+}
+.news-bubble{
+    text-align: center; width: 370px;
+}
+
+  @media only screen and (max-width: 768px){
+    .quicklinks{
+        visibility: hidden;
+        display: none;
+    }
+   #line1{
+    visibility: hidden;
+   }
+   #line2{
+    visibility: hidden;
+   }
+   #line3{
+    visibility: hidden;
+   }
+   #line4{
+    visibility: hidden;
+   }
+   #line5{
+    visibility: hidden;
+   }
+   .sidenav {
+    visibility: hidden;
+    display: none;
+   }
+   .rightbar{
+    visibility: hidden;
+    display: none;
+   }
+   .purchase{
+       width: 300px;
+   }
+     
+    .row{
+        margin-left:auto;
+        margin-right:auto;
+        float: none;
+        display: block;
+        width:100%;
+    }
+    .column{
+        margin-left:auto;
+        margin-right:auto;
+        float: none;
+        display: block;
+        width:100%;
+    }
+    
+    .birthstone{
+        padding: none;
+    }
+    .perfume_pic{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 300px;
+        height: 300px;
+        float: none;
+    }
+    .perfume{
+        float: none;
+        width: 250px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+     
+    .bstones{
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        width:350px;
+        height: 350px;
+        display: block;
+    }
+    .bs-blurb{
+        float: none;
+        display: block;
+        width:350px;
+        height: 719px;
+        margin-right:auto;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
