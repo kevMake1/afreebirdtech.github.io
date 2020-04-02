@@ -1,0 +1,175 @@
+#asa-logo-box{
+    text-align: center;
+    max-height: 20vh;
+    margin-top: 110px;
+    margin-bottom: 100px;
+    margin-bottom: 90px;
+}
+#asa-logo{
+    width: 180px;
+    
+}
+#fb-feed{
+    margin-left: 76%; 
+    margin-top: -200px; 
+    margin-bottom: -150px;
+    
+}
+
+
+
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+body{
+    background-color: rgb(114, 141, 64);
+    
+    
+}
+#content-container{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 100px;
+   
+    
+   
+
+}
+
+#ASA{
+    max-width: 80vh;
+    margin-left: 20px;
+    margin-left: 10px;
+
+}
+#why-should-we-participate{
+    
+    max-width: 80vh;
+    text-align: center;
+    
+}
+
+
+@media screen and (max-width: 1100px){
+    #fb-feed{
+        display:none;
+    }
+    #photo1{
+        display: none;
+    }
+    #photo2{
+        display: none;
+    }
+    
+    #photo3{
+        display: none;
+    }
+    
+
+    
+    #content-container{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    #ASA{
+        display: block;
+        float: none;
+        max-width: 80vh;
+        
+    
+    }
+    #why-should-we-participate{
+        display: block;
+        max-width: 80vh;
+        text-align: none;
+        
+    }
+    #form_Box{
+        min-width: 100vw;
+        display:block;
+        margin: auto;
+        margin-bottom: 30vh;
+        
+    }
+    #sections-asa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .form-control{
+        width: 100%;
+        padding-right: 40px;
+    }
+    
+    #cal h3{
+        display: none;
+    }
+    #calendar-place-holder{
+        display: none;
+    
+    }
+    
+    
+    
+
+}
+
+#form_Box{
+    max-width: 600px;
+    margin-bottom: 200px;
+}
+#cal{
+
+}
+#form-cal{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#sections-asa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+   
+    
+}
+
+.form-control{
+    width: 100%;
+    padding-right: 40px;
+    display:flex;
+}
+
+
+
+
+#calendar-place-holder{
+    width: 35vw;
+
+}
+
+
+
+#get-excited-submitBtn{
+    background-color: #FAFF69;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 25px;
+    color: black;
+
+}

@@ -1,100 +1,7 @@
-.title{
-    color: #53351D;
-}
-body{background-color: rgb(223, 147, 191);}
-.header-section h1{
-    margin-top:-100px;  font-size: 50px; height: 120px;
-}
-
-.header-section p{
-    margin-left:-15px; margin-top: -10px;
-}
-
-.give-art-logo{
-    /* position:absolute; */
-    height:250px; width: 250px; border-radius: 50%; 
-    margin-left: -15%;
-    /* display: none; */
-}
-
-#ASA{max-width: 500px;}
-
-.side-bubble{
-    height:250px;width: 250px;
-}
-.news-feed{
-    margin-left: 73%; margin-top: 100px; margin-bottom: -150px;
-}
-.news-bubble{
-    text-align: center; width: 370px;
-}
-.news-feed-mobile{
-    display: none;
-}
-.wrapper-tutor{
-padding-top: 5px; padding-bottom: 150px;
-}
-
-@media screen and (max-width:1116px){
-    .header-section h1{
-    margin-top:-100px;  font-size: 40px; height: 120px;
-    
-    
-}
-#mobile-asa-logo-box{
-    display: block;
+#asa-logo-box{
     text-align: center;
     max-height: 20vh;
     margin-top: 110px;
-   
-}
-
-.header-section p{
-    margin-left:-15px; margin-top: 5px;
-}
-    .give-art-logo{
-        display: none;
-    }
-    .side-bubble{
-        display: none;
-    }
-    .news-bg{
-        display: none;
-    }
-    .news-feed-mobile{
-        display: block;
-        padding-top: -40px;
-    }
-    .news-bubble{
-        display: none;
-    }
-    .news-feed{
-        text-align: center;
-        margin-left: 0%; margin-top: 80px; margin-bottom: 20px;
-    }
-    .skills-choose-title{
-        padding-top: 100px;
-    }
-}
-@media screen and (max-width:375px){
-    .header-section h1{
-    margin-top:-100px;  font-size: 50px; height: 120px;
-}
-.header-section p{
-    font-size: 15px;
-}
-    .news-feed{
-        text-align: center;
-        margin-left: 0%; margin-top: 20px; margin-bottom: 20px;
-    }
-    .wrapper-tutor{
-padding-top: 5px; padding-bottom: 250px;
-}
-}
-
-
-#mobile-asa-logo-box{
-    display: none;
    
 }
 #asa-logo{
@@ -120,6 +27,50 @@ padding-top: 5px; padding-bottom: 250px;
     margin-bottom: 40px;
     margin-left: 83%;
     margin-top: -300px;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 40px;
+}
+body{
+    background-color: rgb(223, 147, 191);
+    
+    
+}
+@media screen and (min-width: 1100px){
+    h1{
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 30px;
+        font-size: 40px;
+    }
+}
+#content-container{
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -700px;
+    margin-bottom: 100px;
+
+}
+
+#ASA{
+    
+    max-width: 500px;
+    margin-left: 20px;
+    margin-left: 10px;
+
+}
+#why-should-we-participate{
+    
+    max-width: 500px;
+    text-align: center;
+    
 }
 
 
@@ -194,16 +145,18 @@ padding-top: 5px; padding-bottom: 250px;
 
 }
 
+
+
 #form_Box{
     max-width: 600px;
     margin-bottom: 200px;
 }
+#cal{
 
+}
 #stuff{
     display: flex;
     justify-content: center;
-    padding-bottom: 120px;
-    margin-top: -200px;
     
 }
 #sections-asa{
