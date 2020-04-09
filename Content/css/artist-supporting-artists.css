@@ -1,0 +1,125 @@
+body{background-color: rgb(223, 147, 191);}
+
+/* logo and title */
+#asa-logo-box{
+    padding-top: 7rem;
+}
+#page-logo{
+    width: 240px;
+}
+#ASA-title{
+    display: inline-block;
+    font-size: 50px;
+}
+
+/* facebook feed */
+.news-feed{
+    margin-left: 73%; margin-top: -600px; margin-bottom: 30rem;
+}
+.news-bubble{
+    text-align: center; width: 370px;
+}
+@media screen and (max-width:1047px){
+    .news-feed{
+        display: none;
+    }
+}
+
+/* videos */
+#vids{
+    margin-top: -550px;
+    margin-bottom: 600px;
+
+}
+#vids img{
+    width: 200px;
+}
+@media screen and (max-width:1047px){
+    #vids{
+        display: none;
+    }
+}
+
+
+/* regular */
+@media screen and (min-width: 1101px){
+    #form_Box{
+        max-width: 600px;
+        margin-bottom: 200px;
+        
+    }
+    
+    #stuff{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 120px;
+        margin-top: -600px;
+        
+    }
+    #sections-asa{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: auto;
+       
+        
+    }
+    
+    .form-control{
+        width: 100%;
+        padding-right: 40px;
+        display:flex;
+    }
+    
+    
+    
+    
+    #calendar-place-holder{
+        width: 35vw;
+    
+    }
+    
+    
+    #get-excited-submitBtn{
+        background-color: #FAFF69;
+        border-radius: 10px;
+        border: none;
+        padding: 8px 25px;
+        color: black;
+    
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 1100px){
+    #fb-feed{
+        display:none;
+    }
+    
+    #form_Box{
+        min-width: 100vw;
+        display:block;
+        margin: 15rem auto;
+        margin-top: 100px;
+    }
+    #sections-asa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-control{
+        width: 100%;
+        padding-right: 40px;
+    }
+    
+    #cal h3{
+        display: none;
+    }
+    #calendar-place-holder{
+        display: none;
+    
+    }
+}
+
