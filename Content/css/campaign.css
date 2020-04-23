@@ -1,0 +1,150 @@
+body{background-color: #B77AD3;}
+
+/* #headpic{
+    background-image:url('../images/campaign/fbd.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 100%;
+    
+} */
+
+#headpic img{
+    width: 100%;
+    margin-top: 60px;
+}
+
+#headvid{
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 100px;
+}
+#headvid iframe{
+    width: 80%; height: 500px;
+}
+
+
+/* facebook feed */
+.news-feed{
+    margin-left: 75%; margin-top: -350px; margin-bottom: 4rem;
+}
+.news-bubble{
+    text-align: center; width: 370px;
+}
+@media screen and (max-width:1047px){
+    .news-feed{
+        display: none;
+    }
+    .news-bubble{
+        display: none;
+    }
+}
+
+/* first 2 videos */
+.vid-group1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vid-group1 img{
+    width: 300px;
+    padding: 0 30px;
+}
+.videos1{
+    text-align: center;
+}
+
+/* quote */
+#quote{
+    background-color: #D3D3D3;
+    text-align: center;
+    margin: 10rem 0;
+}
+
+
+/* frag */
+#frag-logo-box{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+#frag-logo{
+    width: 30rem;
+}
+#frag-title{
+    display: inline-block;
+    font-size: 50px;
+}
+
+/* form */
+#campaign-form{
+    background-image:url('../images/campaign/formBack.png');
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center; 
+    height: 100%;
+    margin-bottom: 5rem;
+}
+#campaign-form form{
+    color: black;
+    padding-left: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#campaign-form form input{
+    max-width: 20rem;
+    border-style: solid;
+    border-color: black;
+}
+
+/* middle video */
+.vid-middle{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.vid-middle img{
+    width: 30rem;
+}
+
+/* videos */
+#vid-group2-back{
+    background-color: #D3D3D3;
+    text-align: center;
+    padding: 5rem 0;
+}
+.vid-group2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.videos2{
+    text-align: center;
+    padding: 0 20px;
+}
+.videos2 img{
+    width: 300px;
+}
+
+
+
+
+
+@media screen and (max-width:1047px){
+    
+}
+
+
+/* regular */
+@media screen and (min-width: 1101px){
+    
+}
+
+/* mobile */
+@media screen and (max-width: 1100px){
+    
+}
+
