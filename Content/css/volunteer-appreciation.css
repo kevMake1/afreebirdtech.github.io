@@ -1,0 +1,46 @@
+body{background-color: #006D88;}
+
+header p{
+    margin: 0 auto;
+}
+#blurb{
+    max-width: 25rem;
+}
+
+section h3{
+    text-align: center;
+}
+
+#each-sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#each-sections section{
+    /* padding: 0 5rem; */
+    max-width: 35rem;
+}
+.vol-sections{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.vol-sections img{
+    width: 200px
+}
+.vol-sections div{
+    padding: 0 2rem;
+}
+.vol-sections div, h5, p{
+    text-align: center;
+}
+#party{
+
+}
+#awards{
+
+}
+#volunteer-of-the-month{
+
+}
